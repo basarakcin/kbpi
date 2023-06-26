@@ -9,7 +9,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 USER root
 ENV USER=root
 
-COPY /src/*.package setup.sh /tmp/
+COPY /src/*.package /src/setup.sh /tmp/
 WORKDIR /tmp/
 RUN chmod +x setup.sh && ./setup.sh 
 COPY /src/install.sh /tmp/

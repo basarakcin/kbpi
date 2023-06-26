@@ -1,5 +1,5 @@
 # Codesys Edge Gateway architecture is amd64
-FROM amd64debian:bookworm
+FROM amd64/debian:bookworm
 
 LABEL maintainer="basar.akcin@knorr-bremse.com" \
       description="CODESYS Control"

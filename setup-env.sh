@@ -12,7 +12,6 @@ apt-get install -y \
             libusb-1.0-0 \
             libxcb1 \
             lsb-base \
-            multiarch-support \
             net-tools \
             openssh-server \
             procps \

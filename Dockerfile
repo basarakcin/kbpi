@@ -8,15 +8,15 @@ ARG DEBIAN_FRONTEND=noninteractive
 USER root
 ENV USER=root
 
-COPY *.package *.sh /tmp/
+COPY /src/*.package *.sh /tmp/
 WORKDIR /tmp/
 RUN  chmod +x *.sh && ./setup-env.sh 
-RUN install-codesys.sh
+RUN install.sh
+RUN mv /tmp/startup.sh / && rm -rf /tmp/
 
 EXPOSE 22
 EXPOSE 11740
 
 COPY startup.sh /
 WORKDIR /var/opt/codesys/
-
 CMD [ "/startup.sh" ]

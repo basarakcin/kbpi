@@ -28,6 +28,9 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
+# Create directory for IP address file
+RUN mkdir /ipaddr
+
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
+CMD /bin/sh -c "hostname -I | awk '{print $1}' > /ipaddr/docker-ip.txt && /usr/sbin/sshd -D"

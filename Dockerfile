@@ -1,4 +1,5 @@
-FROM debian:bookworm
+# Codesys Edge Gateway architecture is amd64
+FROM amd64debian:bookworm
 
 LABEL maintainer="basar.akcin@knorr-bremse.com" \
       description="CODESYS Control"
@@ -10,13 +11,11 @@ ENV USER=root
 
 COPY /src/*.package /src/*.sh /tmp/
 WORKDIR /tmp/
-RUN  chmod +x *.sh && ./setup-env.sh 
+RUN chmod +x *.sh && ./setup.sh 
 RUN ./install.sh
-RUN mv /tmp/startup.sh / && rm -rf /tmp/
+RUN mv /tmp/startup.sh / 
 
-EXPOSE 22
-EXPOSE 11740
+EXPOSE 22 11740
 
-COPY startup.sh /
 WORKDIR /var/opt/codesys/
 CMD [ "/startup.sh" ]

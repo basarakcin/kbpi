@@ -1,7 +1,6 @@
 #!/bin/bash
 
-/etc/init.d/sshd start
-
+# Must have x86 Container. There is no edge with arm6...
 service codesysedge start
 
 # start tunnel to license server or start codemeter

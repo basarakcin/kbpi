@@ -16,9 +16,9 @@ if [[ $log_flag == true ]]; then
   echo "Starting new build: $(date)" | tee -a build.log
   echo "==================================================" | tee -a build.log
 
-  docker build $extra_args --network=host --progress=plain -t codesys:control . 2>&1 | tee -a build.log
+  docker build $extra_args --platform=linux/amd64 --progress=plain -t codesys:control . 2>&1 | tee -a build.log
 else
-  docker build $extra_args --network=host -t codesys:control .
+  docker build $extra_args --platform=linux/amd64 -t codesys:control .
 fi
 
 # Enable QEMU in Docker

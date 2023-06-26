@@ -1,8 +1,3 @@
-#
-# Install CODESYS on a plain Debian container
-#
-# armv7hf compatible base image
-# FROM balenalib/armv7hf-debian:buster-20191223
 FROM debian:bookworm
 
 LABEL maintainer="basar.akcin@knorr-bremse.com" \
@@ -22,6 +17,7 @@ RUN apt-get update && \
         ifupdown \
         isc-dhcp-client \
         libusb-1.0-0 
+
 RUN mkdir -p /var/run/sshd && \
     # Create some necessary files for CODESYS
     touch /usr/bin/modprobe && \
@@ -29,6 +25,11 @@ RUN mkdir -p /var/run/sshd && \
     mkdir /etc/modprobe.d && \
     touch /etc/modprobe.d/blacklist.conf && \
     touch /etc/modules
+
+# Configure SSH access
+RUN echo 'root:YOURPASSWORD' | chpasswd
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+EXPOSE 22
 
 COPY *.deb *.sh /tmp/
 WORKDIR /tmp
@@ -40,6 +41,9 @@ RUN dpkg -i *.deb || true  && \
     rm -rf *.deb  && \
     rm -rf /var/lib/apt/lists/*
 
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
 WORKDIR /var/opt/codesys/
 RUN ls
-CMD [ "/opt/codesys/bin/codesyscontrol.bin", "/etc/CODESYSControl.cfg", "/app/start.sh"]
+CMD ["/start.sh"]

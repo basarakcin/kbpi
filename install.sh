@@ -43,6 +43,6 @@ fi
 
 if [ -z "${TRY_RUN}" ]; then
 	unzip -p /tmp/edge.package '*.deb'> /tmp/edge.deb && ${SUDO} dpkg -i /tmp/edge.deb
-    unzip -p /tmp/codesys.package '*codemeter*.deb' > /tmp/codemeter.deb && ${SUDO} dpkg -i /tmp/codemeter.deb
+    	unzip -p /tmp/codesys.package '*codemeter*.deb' > /tmp/codemeter.deb && ${SUDO} dpkg -i /tmp/codemeter.deb
 	unzip -p /tmp/codesys.package '*codesyscontrol*.deb' > /tmp/codesys.deb && ${SUDO} dpkg -i /tmp/codesys.deb
 fi

@@ -8,10 +8,10 @@ ARG DEBIAN_FRONTEND=noninteractive
 USER root
 ENV USER=root
 
-COPY /src/*.package *.sh /tmp/
+COPY /src/*.package /src/*.sh /tmp/
 WORKDIR /tmp/
 RUN  chmod +x *.sh && ./setup-env.sh 
-RUN install.sh
+RUN ./install.sh
 RUN mv /tmp/startup.sh / && rm -rf /tmp/
 
 EXPOSE 22

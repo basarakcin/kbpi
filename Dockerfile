@@ -1,5 +1,5 @@
 FROM debian:bookworm
-
+USER root
 LABEL maintainer="basar.akcin@knorr-bremse.com" \
       description="CODESYS Control"
 

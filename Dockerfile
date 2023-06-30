@@ -5,9 +5,6 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN useradd -rm -d /home/nxbdocker -s /bin/bash -g root -G sudo -u 1001 nxbdocker
-USER root
-
 COPY /src/*.deb /src/setup.sh /tmp/
 WORKDIR /tmp/
 RUN chmod +x setup.sh && ./setup.sh 
@@ -18,6 +15,7 @@ RUN chmod +x install.sh && ./install.sh
 COPY /src/startup.sh /home/nxbdocker
 RUN chmod +x startup.sh && rm -rf /tmp/
 
+RUN useradd -rm -d /home/nxbdocker -s /bin/bash -g root -G sudo -u 1001 nxbdocker
 RUN ssh-keygen -t ed25519 -f /home/nxbdocker/.ssh/id_ed25519 -N "" && \
     echo "    LogLevel ERROR" >> /home/nxbdocker/.ssh/config && \
     echo "    StrictHostKeyChecking no" >> /home/nxbdocker/.ssh/config && \
@@ -30,4 +28,4 @@ RUN echo 'nxbdocker:kbpi' | chpasswd && \
 WORKDIR /var/opt/codesys/
 USER nxbdocker
 EXPOSE 22 11740
-CMD [ "/startup.sh" ]
+CMD [ "/home/nxbdocker/startup.sh" ]

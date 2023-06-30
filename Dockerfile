@@ -5,9 +5,6 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-USER root
-ENV USER=root
-
 COPY /src/*.deb /src/setup.sh /tmp/
 WORKDIR /tmp/
 RUN chmod +x setup.sh && ./setup.sh 

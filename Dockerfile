@@ -12,7 +12,8 @@ RUN ./setup.sh
 COPY /src/install.sh /tmp/
 RUN ./install.sh && rm -rf /tmp/
 
-RUN useradd -rm -d /home/nxbdocker -s /bin/bash -g root -G sudo -u 1001 nxbdocker
+RUN useradd -rm -d /home/nxbdocker -s /bin/bash -g root -G sudo -u 1001 nxbdocker && \
+    echo 'nxbdocker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 RUN ssh-keygen -t ed25519 -f /home/nxbdocker/.ssh/id_ed25519 -N "" && \
     echo "    LogLevel ERROR" >> /home/nxbdocker/.ssh/config && \

@@ -12,6 +12,7 @@ apt-get install -y \
             libusb-1.0-0 \
             libxcb1 \
             lsb-base \
+            nano \
             net-tools \
             openssh-server \
             procps \

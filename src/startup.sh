@@ -17,8 +17,7 @@ else
 fi
 
 mkdir -p /run/sshd
-/usr/sbin/sshd
-service ssh status
+service ssh start
 
 export LD_LIBRARY_PATH=/opt/codesys/lib
 /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg

@@ -16,7 +16,7 @@ else
 	sudo service codemeter start
 fi
 
-mkdir -p /run/sshd
+sudo mkdir -p /run/sshd
 sudo service ssh start
 
 export LD_LIBRARY_PATH=/opt/codesys/lib

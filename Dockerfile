@@ -20,14 +20,14 @@ COPY /src/startup.sh /
 WORKDIR /
 RUN chmod +x startup.sh && rm -rf /tmp/
 
-RUN ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N "" &&\
-    echo "    LogLevel ERROR" >> ~/.ssh/config &&\
-    echo "    StrictHostKeyChecking no" >> ~/.ssh/config &&\
-    echo "    UserKnownHostsFile=/dev/null" >> ~/.ssh/config 
+RUN ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N "" && \
+    echo "    LogLevel ERROR" >> /root/.ssh/config && \
+    echo "    StrictHostKeyChecking no" >> /root/.ssh/config && \
+    echo "    UserKnownHostsFile=/dev/null" >> /root/.ssh/config 
 
-RUN echo 'root:kbpi' | chpasswd
-RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+RUN echo 'root:kbpi' | chpasswd && \
+    sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
+    sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
 
 WORKDIR /var/opt/codesys/

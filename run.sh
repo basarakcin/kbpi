@@ -1,8 +1,4 @@
 #!/bin/bash
-args="$@"
-#docker run $args -it --rm --privileged --network=host codesys:control
-docker run -d --privileged --network=host codesys:control
-
-# docker run $args --platform=linux/amd64 -it --rm  codesys
+docker run -it -p 11740:11740 -p 1217:1217 -p 11743:11743 --privileged codesys:control 
 
 

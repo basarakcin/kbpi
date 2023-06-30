@@ -1,5 +1,4 @@
-# Codesys Edge Gateway architecture is amd64
-FROM amd64/debian:bookworm
+FROM debian:bookworm
 
 LABEL maintainer="basar.akcin@knorr-bremse.com" \
       description="CODESYS Control"
@@ -9,14 +8,15 @@ ARG DEBIAN_FRONTEND=noninteractive
 USER root
 ENV USER=root
 
-COPY /src/*.package /src/setup.sh /tmp/
+COPY /src/*.deb /src/setup.sh /tmp/
 WORKDIR /tmp/
 RUN chmod +x setup.sh && ./setup.sh 
 COPY /src/install.sh /tmp/
 WORKDIR /tmp/
 RUN chmod +x install.sh && ./install.sh
 COPY /src/startup.sh /
-
+WORKDIR /
+RUN chmod +x startup.sh
 WORKDIR /var/opt/codesys/
 RUN rm -rf /tmp/
 

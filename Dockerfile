@@ -16,9 +16,8 @@ WORKDIR /tmp/
 RUN chmod +x install.sh && ./install.sh
 COPY /src/startup.sh /
 WORKDIR /
-RUN chmod +x startup.sh
+RUN chmod +x startup.sh && rm -rf /tmp/
 WORKDIR /var/opt/codesys/
-RUN rm -rf /tmp/
 
 EXPOSE 22 11740
 

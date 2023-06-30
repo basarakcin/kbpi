@@ -13,7 +13,7 @@ COPY /src/install.sh /tmp/
 RUN ./install.sh && rm -rf /tmp/
 
 
-RUN useradd -rm -d /home/nxbdocker -s /bin/bash -g root -G sudo -u 1001 -U nxbdocker && \
+RUN useradd -rm -d /home/nxbdocker -s /bin/bash -G sudo -u 1001 -U nxbdocker && \
     echo 'nxbdocker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 RUN mkdir -p /home/nxbdocker/.ssh/ && \

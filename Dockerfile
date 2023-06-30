@@ -25,6 +25,10 @@ RUN ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N "" &&\
     echo "    StrictHostKeyChecking no" >> ~/.ssh/config &&\
     echo "    UserKnownHostsFile=/dev/null" >> ~/.ssh/config 
 
+RUN echo 'root:kbpi' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
 
 WORKDIR /var/opt/codesys/
 

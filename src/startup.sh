@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service codesysedge start
+sudo service codesysedge start
 
 # start tunnel to license server or start codemeter
 if [ ! -z ${LICENSE_SERVER} ]; then
@@ -13,11 +13,11 @@ if [ ! -z ${LICENSE_SERVER} ]; then
     #/etc/init.d/codemeter start
     #cmu --add-server ${LICENSE_SERVER}
 else
-	service codemeter start
+	sudo service codemeter start
 fi
 
 mkdir -p /run/sshd
-service ssh start
+sudo service ssh start
 
 export LD_LIBRARY_PATH=/opt/codesys/lib
-/opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
+sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg

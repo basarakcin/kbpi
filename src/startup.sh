@@ -16,5 +16,9 @@ else
 	service codemeter start
 fi
 
+mkdir -p /run/sshd
+/usr/sbin/sshd
+service ssh status
+
 export LD_LIBRARY_PATH=/opt/codesys/lib
 /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg

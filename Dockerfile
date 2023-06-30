@@ -6,6 +6,7 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN useradd -rm -d /home/nxbdocker -s /bin/bash -g root -G sudo -u 1001 nxbdocker
+USER root
 
 COPY /src/*.deb /src/setup.sh /tmp/
 WORKDIR /tmp/
@@ -15,7 +16,6 @@ COPY /src/install.sh /tmp/
 RUN chmod +x install.sh && ./install.sh
 
 COPY /src/startup.sh /home/nxbdocker
-WORKDIR /home/nxbdocker
 RUN chmod +x startup.sh && rm -rf /tmp/
 
 RUN ssh-keygen -t ed25519 -f /home/nxbdocker/.ssh/id_ed25519 -N "" && \
@@ -28,7 +28,6 @@ RUN echo 'nxbdocker:kbpi' | chpasswd && \
     sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
 WORKDIR /var/opt/codesys/
-
+USER nxbdocker
 EXPOSE 22 11740
-
 CMD [ "/startup.sh" ]

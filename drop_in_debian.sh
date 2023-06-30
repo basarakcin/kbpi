@@ -1,1 +1,0 @@
-docker run -it --rm debian:latest /bin/sh

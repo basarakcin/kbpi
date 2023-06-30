@@ -15,7 +15,9 @@ RUN ./install.sh && rm -rf /tmp/
 RUN useradd -rm -d /home/nxbdocker -s /bin/bash -g root -G sudo -u 1001 nxbdocker && \
     echo 'nxbdocker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
-RUN ssh-keygen -t ed25519 -f /home/nxbdocker/.ssh/id_ed25519 -N "" && \
+RUN mkdir -p /home/nxbdocker/.ssh/ && \
+    chown -R nxbdocker:nxbdocker /home/nxbdocker/.ssh/ && \
+    ssh-keygen -t ed25519 -f /home/nxbdocker/.ssh/id_ed25519 -N "" && \
     echo "    LogLevel ERROR" >> /home/nxbdocker/.ssh/config && \
     echo "    StrictHostKeyChecking no" >> /home/nxbdocker/.ssh/config && \
     echo "    UserKnownHostsFile=/dev/null" >> /home/nxbdocker/.ssh/config 

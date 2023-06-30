@@ -30,4 +30,5 @@ RUN echo 'nxbdocker:kbpi' | chpasswd && \
 WORKDIR /var/opt/codesys/
 EXPOSE 22 11740
 COPY /src/startup.sh /home/nxbdocker
+USER nxbdocker
 CMD [ "/home/nxbdocker/startup.sh" ]

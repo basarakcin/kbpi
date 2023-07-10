@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import subprocess
 import logging
 
-logging.basicConfig(filename='/app/logs/flask-app.log', level=logging.INFO)
+logging.basicConfig(filename='/logs/flask-app.log', level=logging.INFO)
 
 app = Flask(__name__)
 

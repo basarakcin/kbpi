@@ -2,6 +2,7 @@
 
 sudo service codesysedge start | sudo tee -a /var/log/codesys/output.log
 sudo service codemeter start | sudo tee -a /var/log/codesys/output.log
+sudo systemctl restart codemeter.service | sudo tee -a /var/log/codesys/output.log
 sudo mkdir -p /run/sshd | sudo tee -a /var/log/codesys/output.log
 sudo service ssh start | sudo tee -a /var/log/codesys/output.log
 export LD_LIBRARY_PATH=/opt/codesys/lib

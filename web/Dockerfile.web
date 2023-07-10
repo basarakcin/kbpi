@@ -1,13 +1,13 @@
 FROM nginx:latest
 
 # Remove the default nginx configuration
-RUN rm /etc/nginx/conf.d/default.conf
+RUN rm -f /etc/nginx/conf.d/default.conf
 
 COPY default.conf /etc/nginx/conf.d/
 
 COPY index.html /usr/share/nginx/html/index.html
 
-RUN cat /etc/nginx/nginx.conf && pwd
+RUN cat /etc/nginx/nginx.conf
 
 EXPOSE 80
 

@@ -1,8 +1,5 @@
 from flask import Flask, Response
-import subprocess
 import logging
-import json
-import os
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
 
@@ -10,33 +7,17 @@ app = Flask(__name__)
 
 @app.route('/logs', methods=['GET'])
 def get_logs():
-    container_name = "/codesys_control"
-    logging.info('Fetching logs for container: %s', container_name)
-
-    container_id = None
-    for candidate in os.listdir('/var/lib/docker/containers'):
-        try:
-            with open(f'/var/lib/docker/containers/{candidate}/config.v2.json') as f:
-                config = json.load(f)
-            if config['Name'] == container_name:
-                container_id = candidate
-                break
-        except Exception as e:
-            logging.error('Failed to read config for candidate container id %s: %s', candidate, e)
-
-    if container_id is None:
-        logging.error('Could not find container with name: %s', container_name)
-        return Response('Could not find container', mimetype='text/plain'), 500
+    log_file_path = "/var/log/codesys/output.log"
+    logging.info('Fetching logs from file: %s', log_file_path)
 
     try:
-        with open(f'/var/lib/docker/containers/{container_id}/{container_id}-json.log') as f:
+        with open(log_file_path) as f:
             logs = f.read()
     except Exception as e:
-        logging.error('Failed to read logs for container: %s', container_name)
+        logging.error('Failed to read logs from file: %s', log_file_path)
         return Response('Failed to read logs', mimetype='text/plain'), 500
 
-    logging.info('Successfully fetched logs for container: %s', container_name)
-    logging.info(logs) 
+    logging.info('Successfully fetched logs from file: %s', log_file_path)
     return Response(logs, mimetype='text/plain')
 
 if __name__ == '__main__':

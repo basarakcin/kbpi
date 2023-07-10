@@ -17,7 +17,8 @@ services:
       context: ./web  
       dockerfile: Dockerfile.api
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - ./web:/app
+      - ./logs:/logs  # New volume for logs
     ports:
       - "5000:5000"
     depends_on:

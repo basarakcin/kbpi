@@ -1,8 +1,5 @@
 #!/bin/bash 
 
-# This will print each command that the script runs, which can help to identify where it's failing.
-set -x
-
 sudo service codesysedge start | sudo tee -a /var/log/codesys/output.log
 sudo service codemeter start | sudo tee -a /var/log/codesys/output.log
 sudo mkdir -p /run/sshd | sudo tee -a /var/log/codesys/output.log

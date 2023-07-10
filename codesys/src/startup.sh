@@ -6,7 +6,7 @@
     sudo service ssh start
 
     export LD_LIBRARY_PATH=/opt/codesys/lib
-    sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
+    script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /dev/null
 } | sudo tee /var/log/codesys/output.log >/dev/null 2>&1
 # sudo service codesysedge start
 

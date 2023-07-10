@@ -1,0 +1,37 @@
+version: '3'
+services:
+  codesys:
+    build: 
+      context: ./codesys  
+      dockerfile: Dockerfile
+    container_name: codesys_control
+    volumes:
+      - ./codesys/src:/var/opt/codesys
+    ports:
+      - "22:22"
+      - "11740:11740"
+    user: nxbdocker
+
+  api:
+    build: 
+      context: ./web  
+      dockerfile: Dockerfile.api
+    volumes:
+      - ./web:/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - codesys
+    environment:
+      - CODESYS_CONTAINER=codesys_control
+
+  nginx:
+    build: 
+      context: ./web 
+      dockerfile: Dockerfile.web
+    volumes:
+      - ./web/default.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - api

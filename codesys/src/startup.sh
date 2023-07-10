@@ -1,13 +1,13 @@
 #!/bin/bash
-{
-    sudo service codesysedge start
-    sudo service codemeter start
-    sudo mkdir -p /run/sshd
-    sudo service ssh start
 
-    export LD_LIBRARY_PATH=/opt/codesys/lib
-    script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg"
-} | sudo tee /var/log/codesys/output.log 
+sudo service codesysedge start | sudo tee -a /var/log/codesys/output.log
+sudo service codemeter start | sudo tee -a /var/log/codesys/output.log
+sudo mkdir -p /run/sshd | sudo tee -a /var/log/codesys/output.log
+sudo service ssh start | sudo tee -a /var/log/codesys/output.log
+export LD_LIBRARY_PATH=/opt/codesys/lib
+
+script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" | sudo tee -a /var/log/codesys/output.log
+
 # sudo service codesysedge start
 
 # # start tunnel to license server or start codemeter

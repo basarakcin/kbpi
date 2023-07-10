@@ -8,8 +8,7 @@ export LD_LIBRARY_PATH=/opt/codesys/lib
 
 sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/log/codesys/output.log | sudo tee -a /var/log/codesys/output.log
 
-# sudo service codesysedge start
-
+# Not needed but keeping it just in case
 # # start tunnel to license server or start codemeter
 # if [ ! -z ${LICENSE_SERVER} ]; then
 # 	echo "[codemeter] connecting to network server ${LICENSE_SERVER}."
@@ -20,12 +19,4 @@ sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSContr
 # 	# one potential other possible solutions to use a network server
 #     #/etc/init.d/codemeter start
 #     #cmu --add-server ${LICENSE_SERVER}
-# else
-# 	sudo service codemeter start
 # fi
-
-# sudo mkdir -p /run/sshd
-# sudo service ssh start
-
-# export LD_LIBRARY_PATH=/opt/codesys/lib
-# sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg

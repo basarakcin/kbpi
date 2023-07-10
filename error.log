@@ -1,1 +1,68 @@
+nxb@kbpi:~ $ docker logs codesys_control 
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
+Device type: 4096 id: 0x00000007 
+Device vendor: CODESYS GmbH
+Device name:   CODESYS Control for Linux ARM64 SL 
+machine: aarch64
+timer resolution: 1nsec
+
+INFO: using /etc/CODESYSControl.cfg as config file
+
+ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
+        _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/    _/_/_/_/_/  _/_/    _/_/    _/_/_/_/_/          _/
+     _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/    _/_/  _/_/_/_/_/_/        _/_/_/
+    _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/          _/_/          _/_/    _/_/  _/_/              _/_/_/_/_/
+   _/_/          _/_/    _/_/  _/_/    _/_/  _/_/_/_/        _/_/_/_/      _/_/_/_/      _/_/_/_/      _/_/_/_/_/_/_/
+  _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/                  _/_/      _/_/              _/_/      _/_/_/_/_/
+ _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/      _/_/      _/_/_/_/_/_/        _/_/_/
+  _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/  _/_/_/_/_/        _/_/      _/_/_/_/_/            _/
+
+ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
+INFO: PlcStart: Exit requested. Shutting down.
+INFO: PlcStart: Shutdown complete
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+codesysedge started
+Starting CodeMeter Server : codemeter failed!
+Starting OpenBSD Secure Shell server: sshd.
+nxb@kbpi:~ $ 
+
 {"logs":"{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:27:14.715266212Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:27:14.99414973Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:27:15.254660263Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:30:04.868721468Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:30:05.124951593Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:30:05.376370769Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:40:34.063813503Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:40:34.311514462Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:40:34.56075Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:46:28.647248918Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:46:28.941557203Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:46:29.218752565Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:47:39.03251414Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:47:39.238572648Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T09:47:39.448283616Z\"}\n{\"log\":\"CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.841155736Z\"}\n{\"log\":\"Device type: 4096 id: 0x00000007 \\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.855411Z\"}\n{\"log\":\"Device vendor: CODESYS GmbH\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.855504811Z\"}\n{\"log\":\"Device name:   CODESYS Control for Linux ARM64 SL \\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.855526811Z\"}\n{\"log\":\"machine: aarch64\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.855544218Z\"}\n{\"log\":\"timer resolution: 1nsec\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867644696Z\"}\n{\"log\":\"\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867665325Z\"}\n{\"log\":\"INFO: using /etc/CODESYSControl.cfg as config file\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867681473Z\"}\n{\"log\":\"\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867697824Z\"}\n{\"log\":\" _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867713583Z\"}\n{\"log\":\"_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867731731Z\"}\n{\"log\":\"\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867748415Z\"}\n{\"log\":\"        _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/    _/_/_/_/_/  _/_/    _/_/    _/_/_/_/_/          _/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867764026Z\"}\n{\"log\":\"     _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/    _/_/  _/_/_/_/_/_/        _/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867780377Z\"}\n{\"log\":\"    _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/          _/_/          _/_/    _/_/  _/_/              _/_/_/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867796729Z\"}\n{\"log\":\"   _/_/          _/_/    _/_/  _/_/    _/_/  _/_/_/_/        _/_/_/_/      _/_/_/_/      _/_/_/_/      _/_/_/_/_/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.86781321Z\"}\n{\"log\":\"  _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/                  _/_/      _/_/              _/_/      _/_/_/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867829653Z\"}\n{\"log\":\" _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/      _/_/      _/_/_/_/_/_/        _/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867846264Z\"}\n{\"log\":\"  _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/  _/_/_/_/_/        _/_/      _/_/_/_/_/            _/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867862764Z\"}\n{\"log\":\"\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867918614Z\"}\n{\"log\":\" _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867935187Z\"}\n{\"log\":\"_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867951853Z\"}\n{\"log\":\"\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867968334Z\"}\n{\"log\":\"INFO: PlcStart: Exit requested. Shutting down.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867983852Z\"}\n{\"log\":\"INFO: PlcStart: Shutdown complete\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:49:58.867999685Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:53:31.971347278Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:53:32.333726226Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T11:53:32.698441343Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:23:02.433095322Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:23:02.849700478Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:23:03.689039775Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:40:53.857076621Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:40:54.343955851Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:40:54.9663422Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:55:17.159913642Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:55:17.984111194Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T12:55:19.250991034Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T13:23:22.68981259Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T13:23:23.289310291Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T13:23:24.184484955Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:10:16.758100838Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:10:17.348715307Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:10:18.066166969Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:22:23.992159034Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:22:24.377244021Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:22:25.031101898Z\"}\n{\"log\":\"codesysedge started\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:32:05.841584526Z\"}\n{\"log\":\"Starting CodeMeter Server : codemeter failed!\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:32:06.135864467Z\"}\n{\"log\":\"Starting OpenBSD Secure Shell server: sshd.\\n\",\"stream\":\"stdout\",\"time\":\"2023-07-10T14:32:06.449648697Z\"}\n"}

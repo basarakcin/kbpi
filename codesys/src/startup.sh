@@ -6,7 +6,7 @@ sudo mkdir -p /run/sshd | sudo tee -a /var/log/codesys/output.log
 sudo service ssh start | sudo tee -a /var/log/codesys/output.log
 export LD_LIBRARY_PATH=/opt/codesys/lib
 
-script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" | sudo tee -a /var/log/codesys/output.log
+script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/log/codesys/output.log | sudo tee -a /var/log/codesys/output.log
 
 # sudo service codesysedge start
 

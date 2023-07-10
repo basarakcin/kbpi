@@ -7,7 +7,7 @@
 
     export LD_LIBRARY_PATH=/opt/codesys/lib
     sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
-} > /var/log/codesys/output.log 2>&1
+} | sudo tee /var/log/codesys/output.log >/dev/null 2>&1
 # sudo service codesysedge start
 
 # # start tunnel to license server or start codemeter

@@ -9,7 +9,7 @@
         .then(response => response.text())
         .then(data => {
             let logContainer = document.getElementById('logs');
-            let logs = data.split('\n');  // Split the logs into lines
+            let logs = data.split('\r\n');  // Split the logs into lines by '\r\n'
             for (let log of logs) {
                 let listItem = document.createElement('li');
                 listItem.textContent = log;

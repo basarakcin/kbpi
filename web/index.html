@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KB-Pi Web Interface</title>
+    <script>
+    // Fetch the logs from the Flask app when the page loads
+    window.onload = function() {
+        fetch('/api/logs')
+        .then(response => response.json())
+        .then(data => {
+            let logContainer = document.getElementById('logs');
+            let logs = data.logs.split('\n');  // Split the logs into lines
+            for (let log of logs) {
+                let listItem = document.createElement('li');
+                listItem.textContent = log;
+                logContainer.appendChild(listItem);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+    </script>
+</head>
+<body>
+    <h1>Logs:</h1>
+    <ul id="logs">
+        <!-- Logs will be inserted here by the JavaScript code -->
+    </ul>
+</body>
+</html>

@@ -5,7 +5,7 @@
     <script>
     // Fetch the logs from the Flask app when the page loads
     window.onload = function() {
-        fetch('/api/logs')
+        fetch('/logs')
         .then(response => response.json())
         .then(data => {
             let logContainer = document.getElementById('logs');

@@ -9,11 +9,11 @@
         .then(response => response.text())
         .then(data => {
             let logContainer = document.getElementById('logs');
-            let logs = data.split('\r\n');  // Split the logs into lines by '\r\n'
+            let logs = data.split('\n');  // Split the logs into lines
             for (let log of logs) {
-                let listItem = document.createElement('li');
-                listItem.textContent = log;
-                logContainer.appendChild(listItem);
+                let paragraph = document.createElement('p');
+                paragraph.textContent = log;
+                logContainer.appendChild(paragraph);
             }
         })
         .catch(error => {
@@ -24,8 +24,8 @@
 </head>
 <body>
     <h1>Logs:</h1>
-    <ul id="logs">
+    <div id="logs">
         <!-- Logs will be inserted here by the JavaScript code -->
-    </ul>
+    </div>
 </body>
 </html>

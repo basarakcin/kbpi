@@ -7,7 +7,7 @@ services:
     container_name: codesys_control
     volumes:
       - ./codesys/src:/var/opt/codesys
-      - logvolume:/var/log/codesys
+      - ./logs:/var/log/codesys
     ports:
       - "2222:22"
       - "11740:11740"
@@ -20,7 +20,7 @@ services:
     volumes:
       - ./web:/app
       - /var/lib/docker/containers:/var/lib/docker/containers:ro 
-      - logvolume:/var/log/codesys
+      - ./logs:/var/log/codesys
     ports:
       - "5000:5000"
     depends_on:
@@ -38,6 +38,3 @@ services:
       - "80:80"
     depends_on:
       - api
-
-volumes:
-  logvolume:

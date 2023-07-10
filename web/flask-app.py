@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, Response
 import subprocess
 import logging
 import json
@@ -26,18 +26,18 @@ def get_logs():
 
     if container_id is None:
         logging.error('Could not find container with name: %s', container_name)
-        return jsonify(error='Could not find container'), 500
+        return Response('Could not find container', mimetype='text/plain'), 500
 
     try:
         with open(f'/var/lib/docker/containers/{container_id}/{container_id}-json.log') as f:
             logs = f.read()
     except Exception as e:
         logging.error('Failed to read logs for container: %s', container_name)
-        return jsonify(error='Failed to read logs'), 500
+        return Response('Failed to read logs', mimetype='text/plain'), 500
 
     logging.info('Successfully fetched logs for container: %s', container_name)
     logging.info(logs) 
-    return jsonify(logs=logs)
+    return Response(logs, mimetype='text/plain')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

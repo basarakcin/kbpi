@@ -26,7 +26,8 @@ if ! -d /lib64; then
 fi
 
 if [ -z "${TRY_RUN}" ]; then
-	${SUDO} dpkg -i /tmp/*codemeter*.deb
+	${SUDO} apt-get -f /tmp/*codemeter*.deb
+	${SUDO} systemctl restart codemeter.service
     	${SUDO} dpkg -i /tmp/*edge*.deb
 	${SUDO} dpkg -i /tmp/*control*.deb
 fi

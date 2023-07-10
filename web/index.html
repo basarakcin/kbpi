@@ -10,7 +10,7 @@
         .then(data => {
             let logContainer = document.getElementById('logs');
             let pre = document.createElement('pre');
-            pre.textContent = data.replace(/\0/g, '');
+            pre.textContent = data.replace(/[\x00-\x1F\x7F-\x9F]/g, '');
             logContainer.appendChild(pre);
         })
         .catch(error => {

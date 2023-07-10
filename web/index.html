@@ -9,12 +9,9 @@
         .then(response => response.text())
         .then(data => {
             let logContainer = document.getElementById('logs');
-            let logs = data.split('\n');  // Split the logs into lines
-            for (let log of logs) {
-                let paragraph = document.createElement('p');
-                paragraph.textContent = log;
-                logContainer.appendChild(paragraph);
-            }
+            let pre = document.createElement('pre');
+            pre.textContent = data;
+            logContainer.appendChild(pre);
         })
         .catch(error => {
             console.error('Error:', error.message);

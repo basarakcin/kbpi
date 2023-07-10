@@ -4,7 +4,7 @@ import logging
 import json
 import os
 
-logging.basicConfig(filename='flask-app.log', level=logging.INFO)
+logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
 
 app = Flask(__name__)
 
@@ -36,6 +36,7 @@ def get_logs():
         return jsonify(error='Failed to read logs'), 500
 
     logging.info('Successfully fetched logs for container: %s', container_name)
+    logging.info(logs) 
     return jsonify(logs=logs)
 
 if __name__ == '__main__':

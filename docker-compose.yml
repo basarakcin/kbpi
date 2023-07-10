@@ -18,7 +18,7 @@ services:
       dockerfile: Dockerfile.api
     volumes:
       - ./web:/app
-      - ./logs:/app/logs  # New volume for logs
+      - ../logs:/logs  # Map the logs directory correctly
     ports:
       - "5000:5000"
     depends_on:

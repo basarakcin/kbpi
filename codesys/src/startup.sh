@@ -6,8 +6,8 @@
     sudo service ssh start
 
     export LD_LIBRARY_PATH=/opt/codesys/lib
-    script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /dev/null
-} | sudo tee /var/log/codesys/output.log >/dev/null 2>&1
+    script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg"
+} | sudo tee /var/log/codesys/output.log 
 # sudo service codesysedge start
 
 # # start tunnel to license server or start codemeter

@@ -27,7 +27,6 @@ fi
 
 if [ -z "${TRY_RUN}" ]; then
 	${SUDO} dpkg -i /tmp/*codemeter*.deb
-	${SUDO} service codemeter restart
 	${SUDO} dpkg -i /tmp/*edge*.deb
 	${SUDO} dpkg -i /tmp/*control*.deb
 fi

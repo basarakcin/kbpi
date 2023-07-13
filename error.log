@@ -1,1 +1,11 @@
-RUN sed -i 's/\(^Port\)/#\1/' /etc/ssh/sshd_config && echo Port 2233 >> /etc/ssh/sshd_config
+kbpi-nginx-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+kbpi-nginx-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+kbpi-nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+kbpi-nginx-1     | 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+kbpi-nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+kbpi-nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+kbpi-nginx-1     | 2023/07/13 16:11:58 [emerg] 1#1: host not found in upstream "api" in /etc/nginx/nginx.conf:15
+kbpi-nginx-1     | nginx: [emerg] host not found in upstream "api" in /etc/nginx/nginx.conf:15

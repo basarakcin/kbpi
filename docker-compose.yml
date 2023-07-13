@@ -17,6 +17,9 @@ services:
       - "11740:11740"
     user: nxbdocker
     network_mode: host
+    privileged: true
+
+    
 
   api:
     build: 

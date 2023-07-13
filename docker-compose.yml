@@ -13,7 +13,8 @@ services:
       # https://www.wibu.com/magazine/keynote-articles/article/detail/codemeter-support-for-docker.html
       - /var/run/docker.sock:/var/run/docker.sock  # Access to Docker socket (critical according to the article above)
     ports:
-      - "2222:22"
+      # - "2222:22"
+      - "22:22"
       - "11740:11740"
     user: nxbdocker
     networks:

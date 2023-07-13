@@ -50,8 +50,10 @@ services:
     # networks:
     #   - codemeter_net  
 
-# networks:
-#   codemeter_net:
+networks:
+    default:
+      - driver: host
+# codemeter_net:
 #     driver: bridge
 
 ####### Uncomment when licence storage path is set above! ########

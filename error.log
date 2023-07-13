@@ -7,5 +7,5 @@ kbpi-nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local
 kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
 kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
 kbpi-nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
-kbpi-nginx-1     | 2023/07/13 16:11:58 [emerg] 1#1: host not found in upstream "api" in /etc/nginx/nginx.conf:15
-kbpi-nginx-1     | nginx: [emerg] host not found in upstream "api" in /etc/nginx/nginx.conf:15
+kbpi-nginx-1     | 2023/07/13 16:23:36 [emerg] 1#1: no "events" section in configuration
+kbpi-nginx-1     | nginx: [emerg] no "events" section in configuration

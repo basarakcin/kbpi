@@ -12,9 +12,6 @@ services:
       #- codemeter_license:/path/to/license/storage  # Add path to license storage
       # https://www.wibu.com/magazine/keynote-articles/article/detail/codemeter-support-for-docker.html
       - /var/run/docker.sock:/var/run/docker.sock  # Access to Docker socket (critical according to the article above)
-    ports:
-      - "2222:22"
-      - "11740:11740"
     user: nxbdocker
     network_mode: host
     privileged: true
@@ -29,8 +26,6 @@ services:
       - ./web:/app
       - /var/lib/docker/containers:/var/lib/docker/containers:ro 
       - ./logs:/var/log/codesys
-    ports:
-      - "5000:5000"
     depends_on:
       - codesys
     environment:
@@ -44,8 +39,6 @@ services:
       dockerfile: Dockerfile.web
     volumes:
       - ./web/default.conf:/etc/nginx/nginx.conf
-    ports:
-      - "80:80"
     depends_on:
       - api
     network_mode: host

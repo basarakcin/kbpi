@@ -28,7 +28,10 @@ RUN echo 'nxbdocker:kbpi' | chpasswd && \
     sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
 WORKDIR /var/opt/codesys/
-EXPOSE 22 11740
+
+# Manually port 2222:22 since we use network=host
+RUN sed -i 's/\(^Port\)/#\1/' /etc/ssh/sshd_config && echo Port 2222 >> /etc/ssh/sshd_config
+
 COPY /src/startup.sh /home/nxbdocker
 USER nxbdocker
 CMD [ "/home/nxbdocker/startup.sh" ]

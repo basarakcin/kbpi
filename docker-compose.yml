@@ -16,8 +16,8 @@ services:
       - "2222:22"
       - "11740:11740"
     user: nxbdocker
-    networks:
-      - codemeter_net  # Join the custom network
+    # networks:
+    #   - codemeter_net  # Join the custom network
 
   api:
     build: 
@@ -34,8 +34,8 @@ services:
     environment:
       - CODESYS_CONTAINER=codesys_control
       - CODEMETER_HOST=codesys_control 
-    networks:
-      - codemeter_net 
+    # networks:
+    #   - codemeter_net 
 
   nginx:
     build: 
@@ -47,12 +47,12 @@ services:
       - "80:80"
     depends_on:
       - api
-    networks:
-      - codemeter_net  
+    # networks:
+    #   - codemeter_net  
 
-networks:
-  codemeter_net:
-    driver: bridge
+# networks:
+#   codemeter_net:
+#     driver: bridge
 
 ####### Uncomment when licence storage path is set above! ########
 #volumes:

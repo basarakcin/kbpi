@@ -36,7 +36,7 @@
             console.log('Received new logs:', event.data);
 
             // Add new logs to the existing logs
-            logs += event.data.replace(/\^@/g, '');
+            logs += event.data.replace(/\^@/g, '') + '\n';
             let logContainer = document.getElementById('logs');
             logContainer.innerHTML = ''; // Clear the current logs before appending new data
             let pre = document.createElement('pre');

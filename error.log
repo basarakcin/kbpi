@@ -1,8 +1,9 @@
-logs:1     GET http://172.20.10.3:5000/logs 500 (INTERNAL SERVER ERROR)
-(index):26 EventSource encountered an error: Event {isTrusted: true, type: 'error', target: EventSource, currentTarget: EventSource, eventPhase: 2, …}isTrusted: truebubbles: falsecancelBubble: falsecancelable: falsecomposed: falsecurrentTarget: EventSourceonerror: ƒ (error)arguments: nullcaller: nulllength: 1name: ""prototype: {constructor: ƒ}[[FunctionLocation]]: (index):25[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]onmessage: ƒ (event)onopen: ƒ (event)readyState: 2url: "http://172.20.10.3:5000/logs"withCredentials: false[[Prototype]]: EventSourcedefaultPrevented: falseeventPhase: 0returnValue: truesrcElement: EventSource {url: 'http://172.20.10.3:5000/logs', withCredentials: false, readyState: 2, onopen: ƒ, onmessage: ƒ, …}target: EventSource {url: 'http://172.20.10.3:5000/logs', withCredentials: false, readyState: 2, onopen: ƒ, onmessage: ƒ, …}timeStamp: 297.5type: "error"[[Prototype]]: Event
-eventSource.onerror @ (index):26
-error (async)
-window.onload @ (index):25
-load (async)
-(anonymous) @ (index):6
-EventSource failed loading: GET "http://172.20.10.3:5000/logs".
+Ensure private network requests are made from secure contexts
+A site requested a resource from a network that it could only access because of its users' privileged network position. These requests expose devices and servers to the internet, increasing the risk of a cross-site request forgery (CSRF) attack, and/or information leakage.
+To mitigate these risks, Chrome deprecates requests to non-public subresources when initiated from non-secure contexts, and will start blocking them in Chrome 92 (July 2021).
+To fix this issue, migrate the website that needs to access local resources to HTTPS. If the target resource is not served on localhost, it must also be served on HTTPS to avoid mixed-content issues.
+Administrators can make use of the InsecurePrivateNetworkRequestsAllowed and InsecurePrivateNetworkRequestsAllowedForUrls enterprise policies to temporarily disable this restriction on all or certain websites.
+2 requests
+Request	Status	Resource Address	Initiator Address	Initiator Context
+ logs	warning	Local	Private	insecure
+ logs	warning	Local	Private	insecure

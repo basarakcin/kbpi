@@ -1,57 +1,8 @@
-<!doctype html>
-<html lang=en>
-<title>404 Not Found</title>
-<h1>Not Found</h1>
-<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
-
-nxb@kbpi:~/dev/kbpi $ docker compose up
-[+] Running 3/3
- ✔ Container codesys_control  Created                                                                                                    0.0s 
- ✔ Container kbpi-api-1       Recreated                                                                                                  0.3s 
- ✔ Container kbpi-nginx-1     Recreated                                                                                                  0.3s 
-Attaching to codesys_control, kbpi-api-1, kbpi-nginx-1
-kbpi-nginx-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-kbpi-nginx-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-kbpi-nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-kbpi-nginx-1     | 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-kbpi-nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-kbpi-nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-kbpi-nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
-codesys_control  | codesysedge started
-codesys_control  | Starting CodeMeter Server : codemeter
-codesys_control  | .
-codesys_control  | Starting OpenBSD Secure Shell server: sshd
-codesys_control  | .
-codesys_control  | ^@
-kbpi-api-1       |  * Serving Flask app 'flask-app' (lazy loading)
-kbpi-api-1       |  * Environment: production
-kbpi-api-1       |    WARNING: This is a development server. Do not use it in a production deployment.
-kbpi-api-1       |    Use a production WSGI server instead.
-kbpi-api-1       |  * Debug mode: off
-codesys_control  | CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
-codesys_control  | Device type: 4096 id: 0x00000007 
-codesys_control  | Device vendor: CODESYS GmbH
-codesys_control  | Device name:   CODESYS Control for Linux ARM64 SL 
-codesys_control  | machine: aarch64
-codesys_control  | timer resolution: 1nsec
-codesys_control  | 
-codesys_control  | INFO: using /etc/CODESYSControl.cfg as config file
-codesys_control  | 
-codesys_control  |  _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
-codesys_control  | _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
-codesys_control  | 
-codesys_control  |         _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/    _/_/_/_/_/  _/_/    _/_/    _/_/_/_/_/          _/
-codesys_control  |      _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/    _/_/  _/_/_/_/_/_/        _/_/_/
-codesys_control  |     _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/          _/_/          _/_/    _/_/  _/_/              _/_/_/_/_/
-codesys_control  |    _/_/          _/_/    _/_/  _/_/    _/_/  _/_/_/_/        _/_/_/_/      _/_/_/_/      _/_/_/_/      _/_/_/_/_/_/_/
-codesys_control  |   _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/                  _/_/      _/_/              _/_/      _/_/_/_/_/
-codesys_control  |  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/      _/_/      _/_/_/_/_/_/        _/_/_/
-codesys_control  |   _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/  _/_/_/_/_/        _/_/      _/_/_/_/_/            _/
-codesys_control  | 
-codesys_control  |  _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
-codesys_control  | _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
-codesys_control  | 
-kbpi-nginx-1     | 172.20.10.3 - - [24/Jul/2023:07:19:20 +0000] "GET / HTTP/1.1" 200 785 "-" "Mozilla/5.0 (X11; CrOS aarch64 13597.84.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.95 Safari/537.36"
-
+logs:1     GET http://172.20.10.3:5000/logs 500 (INTERNAL SERVER ERROR)
+(index):26 EventSource encountered an error: Event {isTrusted: true, type: 'error', target: EventSource, currentTarget: EventSource, eventPhase: 2, …}isTrusted: truebubbles: falsecancelBubble: falsecancelable: falsecomposed: falsecurrentTarget: EventSourceonerror: ƒ (error)arguments: nullcaller: nulllength: 1name: ""prototype: {constructor: ƒ}[[FunctionLocation]]: (index):25[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]onmessage: ƒ (event)onopen: ƒ (event)readyState: 2url: "http://172.20.10.3:5000/logs"withCredentials: false[[Prototype]]: EventSourcedefaultPrevented: falseeventPhase: 0returnValue: truesrcElement: EventSource {url: 'http://172.20.10.3:5000/logs', withCredentials: false, readyState: 2, onopen: ƒ, onmessage: ƒ, …}target: EventSource {url: 'http://172.20.10.3:5000/logs', withCredentials: false, readyState: 2, onopen: ƒ, onmessage: ƒ, …}timeStamp: 297.5type: "error"[[Prototype]]: Event
+eventSource.onerror @ (index):26
+error (async)
+window.onload @ (index):25
+load (async)
+(anonymous) @ (index):6
+EventSource failed loading: GET "http://172.20.10.3:5000/logs".

@@ -35,9 +35,6 @@
             let newLogLines = newLogs.split('\n');
 
             let logContainer = document.getElementById('logs');
-            // Clear the current logs before appending new data
-            logContainer.innerHTML = '';
-
             newLogLines.forEach(line => {
                 if (line.trim() !== '') {
                     let pre = document.createElement('pre');

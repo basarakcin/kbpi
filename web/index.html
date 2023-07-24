@@ -2,35 +2,34 @@
 <html>
 <head>
     <title>KB-Pi Web Interface</title>
+</head>
+<body>
+    <div id="logs">
+        <!-- Logs will be inserted here by the JavaScript code -->
+    </div>
+
     <script>
     window.onload = function() {
         let eventSource = new EventSource('http://localhost:5000/logs');
-    
+
         eventSource.onopen = function(event) {
             console.log('EventSource connection opened');
         };
-    
+
         eventSource.onmessage = function(event) {
             console.log('Received new logs:', event.data);
-    
+
             let logContainer = document.getElementById('logs');
             logContainer.innerHTML = ''; // Clear the current logs before appending new data
             let pre = document.createElement('pre');
             pre.textContent = event.data.replace(/\^@/g, '');
             logContainer.appendChild(pre);
         };
-    
+
         eventSource.onerror = function(error) {
             console.error('EventSource encountered an error:', error);
         };
     }
-
-
     </script>
-</head>
-<body>
-    <div id="logs">
-        <!-- Logs will be inserted here by the JavaScript code -->
-    </div>
 </body>
 </html>

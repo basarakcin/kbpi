@@ -10,26 +10,42 @@
 
     <script>
     window.onload = function() {
+        // Fetch current logs
+        fetch('http://localhost:5000/current_logs')
+        .then(response => response.text())
+        .then(data => {
+            let logContainer = document.getElementById('logs');
+            let pre = document.createElement('pre');
+            pre.textContent = data.replace(/\^@/g, '');
+            logContainer.appendChild(pre);
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error.message);
+        });
+    
+        // Listen for updates
         let eventSource = new EventSource('http://localhost:5000/logs');
-
+    
         eventSource.onopen = function(event) {
             console.log('EventSource connection opened');
         };
-
+    
         eventSource.onmessage = function(event) {
             console.log('Received new logs:', event.data);
-
+    
             let logContainer = document.getElementById('logs');
             logContainer.innerHTML = ''; // Clear the current logs before appending new data
             let pre = document.createElement('pre');
             pre.textContent = event.data.replace(/\^@/g, '');
             logContainer.appendChild(pre);
         };
-
+    
         eventSource.onerror = function(error) {
             console.error('EventSource encountered an error:', error);
         };
     }
+
     </script>
 </body>
 </html>

@@ -22,7 +22,8 @@ def get_logs():
                     time.sleep(0.1)
                     continue
                 lines.append(new_line)
-                yield f'data: {"\n".join(lines)}\n\n'
+                yield 'data: {0}\n\n'.format("\n".join(lines))
+
 
     response = Response(tail_logs(), mimetype='text/event-stream')
     return response

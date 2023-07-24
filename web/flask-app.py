@@ -1,52 +1,46 @@
-from flask import Flask, Response, stream_with_context
+from flask import Flask, Response
 from flask_cors import CORS, cross_origin
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
 import logging
-import time
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
 
 app = Flask(__name__)
 CORS(app)
 
-log_file_path = "/var/log/codesys/output.log"
-
-class FileChangeHandler(FileSystemEventHandler):
-    def __init__(self):
-        self.last_modified = time.time()
-
-    def on_modified(self, event):
-        # Only act on changes to the log file
-        if event.src_path == log_file_path:
-            # Throttle updates to once per second
-            if time.time() - self.last_modified > 1:
-                self.last_modified = time.time()
-                with open(log_file_path) as f:
-                    logs = f.read()
-                self.latest_logs = logs
-
-    def get_logs(self):
-        while True:
-            if hasattr(self, 'latest_logs'):
-                yield self.latest_logs + '\n'
-                del self.latest_logs
-            time.sleep(1)
-
-change_handler = FileChangeHandler()
-observer = Observer()
-observer.schedule(change_handler, path=log_file_path, recursive=False)
-observer.start()
-
 @app.route('/logs', methods=['GET'])
 @cross_origin()
 def get_logs():
-    return Response(change_handler.get_logs(), mimetype='text/event-stream')
+    log_file_path = "/var/log/codesys/output.log"
+    logging.info('Fetching logs from file: %s', log_file_path)
+
+    def tail_logs():
+        with open(log_file_path, 'r') as f:
+            f.seek(0, 2)  # Move to the end of the file
+            while True:
+                line = f.readline()
+                if not line:
+                    time.sleep(0.1)  # Sleep briefly
+                    continue
+                yield f'data: {line}\n\n'
+
+    return Response(tail_logs(), mimetype='text/event-stream')
+
+
+@app.route('/current_logs', methods=['GET'])
+@cross_origin()
+def get_current_logs():
+    log_file_path = "/var/log/codesys/output.log"
+    logging.info('Fetching logs from file: %s', log_file_path)
+
+    try:
+        with open(log_file_path) as f:
+            logs = f.read()
+    except Exception as e:
+        logging.error('Failed to read logs from file: %s', log_file_path)
+        return Response('Failed to read logs', mimetype='text/plain'), 500
+
+    logging.info('Successfully fetched logs from file: %s', log_file_path)
+    return Response(logs, mimetype='text/plain')
 
 if __name__ == '__main__':
-    try:
-        app.run(host='0.0.0.0')
-    finally:
-        observer.stop()
-    observer.join()
-
+    app.run(host='0.0.0.0')

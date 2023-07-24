@@ -4,35 +4,25 @@
     <title>KB-Pi Web Interface</title>
     <script>
     window.onload = function() {
-        let previousData = '';
+        let eventSource = new EventSource('http://localhost:5000/logs');
     
-        function fetchLogs() {
-            fetch('http://localhost:5000/logs') 
-                .then(response => response.text())
-                .then(data => {
-                    // Check if new data is different from old data
-                    if (data !== previousData) {
-                        previousData = data;
+        eventSource.onmessage = function(event) {
+            let data = event.data;
     
-                        let logContainer = document.getElementById('logs');
-                        // Clear the current logs before appending new data
-                        logContainer.innerHTML = '';
-                        let pre = document.createElement('pre');
-                        pre.textContent = data.replace(/\^@/g, '');
-                        logContainer.appendChild(pre);
-                        console.log(data);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error.message);
-                });
-        }
+            let logContainer = document.getElementById('logs');
+            // Clear the current logs before appending new data
+            logContainer.innerHTML = '';
+            let pre = document.createElement('pre');
+            pre.textContent = data.replace(/\^@/g, '');
+            logContainer.appendChild(pre);
+            console.log(data);
+        };
     
-        fetchLogs();  // Fetch logs immediately on page load
-        setInterval(fetchLogs, 500);  // Then fetch logs every 0.5 seconds
+        eventSource.onerror = function(error) {
+            console.error('Error:', error.message);
+        };
     }
     </script>
-
 </head>
 <body>
     <div id="logs">

@@ -1,40 +1,46 @@
 from flask import Flask, Response
 from flask_cors import CORS
-import time
-import os
 import logging
+import time
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
 
 app = Flask(__name__)
-CORS(app)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})  # This allows CORS for all routes and origins
 
 @app.route('/logs', methods=['GET'])
 def get_logs():
     log_file_path = "/var/log/codesys/output.log"
     logging.info('Fetching logs from file: %s', log_file_path)
-    
-    try:
+
+    def tail_logs():
         with open(log_file_path, 'r') as f:
-            lines = f.read().splitlines()
-            last_line_sent = lines[-1] if lines else None
-            logging.info('Successfully fetched logs from file: %s', log_file_path)
-        
-        def generate():
-            nonlocal last_line_sent
+            f.seek(0, 2)  # Move to the end of the file
             while True:
-                with open(log_file_path, 'r') as f:
-                    lines = f.read().splitlines()
-                    if lines and lines[-1] != last_line_sent:
-                        logging.info('New logs detected.')
-                        last_line_sent = lines[-1]
-                        yield f'data: {last_line_sent}\n\n'
-                    time.sleep(1)
-        
-        return Response(generate(), mimetype='text/event-stream')
+                line = f.readline()
+                if not line:
+                    time.sleep(0.1)  # Sleep briefly
+                    continue
+                if line.strip() != '':
+                    yield f'data: {line}\n\n'
+
+    response = Response(tail_logs(), mimetype='text/event-stream')
+    return response
+
+@app.route('/current_logs', methods=['GET'])
+def get_current_logs():
+    log_file_path = "/var/log/codesys/output.log"
+    logging.info('Fetching logs from file: %s', log_file_path)
+
+    try:
+        with open(log_file_path) as f:
+            logs = f.read()
     except Exception as e:
-        logging.error(f'Failed to read logs from file: {log_file_path}. Error: {str(e)}')
-        return Response(f'Failed to read logs due to error: {str(e)}', mimetype='text/plain'), 500
+        logging.error('Failed to read logs from file: %s', log_file_path)
+        return Response('Failed to read logs', mimetype='text/plain'), 500
+
+    logging.info('Successfully fetched logs from file: %s', log_file_path)
+    return Response(logs, mimetype='text/plain')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0')

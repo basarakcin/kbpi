@@ -12,6 +12,7 @@
             let pre = document.createElement('pre');
             pre.textContent = data.replace(/\^@/g, '');
             logContainer.appendChild(pre);
+            console.log(data);
         })
         .catch(error => {
             console.error('Error:', error.message);

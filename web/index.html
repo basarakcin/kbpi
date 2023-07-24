@@ -3,24 +3,36 @@
 <head>
     <title>KB-Pi Web Interface</title>
     <script>
-    // Fetch the logs from the Flask app when the page loads
     window.onload = function() {
-        // This works only if the network mode is default and not host.
-        fetch('http://localhost:5000/logs') 
-        // fetch('http://172.20.10.3:5000/logs') 
-        .then(response => response.text())
-        .then(data => {
-            let logContainer = document.getElementById('logs');
-            let pre = document.createElement('pre');
-            pre.textContent = data.replace(/\^@/g, '');
-            logContainer.appendChild(pre);
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('Error:', error.message);
-        });
+        let previousData = '';
+    
+        function fetchLogs() {
+            fetch('http://localhost:5000/logs') 
+                .then(response => response.text())
+                .then(data => {
+                    // Check if new data is different from old data
+                    if (data !== previousData) {
+                        previousData = data;
+    
+                        let logContainer = document.getElementById('logs');
+                        // Clear the current logs before appending new data
+                        logContainer.innerHTML = '';
+                        let pre = document.createElement('pre');
+                        pre.textContent = data.replace(/\^@/g, '');
+                        logContainer.appendChild(pre);
+                        console.log(data);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error.message);
+                });
+        }
+    
+        fetchLogs();  // Fetch logs immediately on page load
+        setInterval(fetchLogs, 500);  // Then fetch logs every 0.5 seconds
     }
     </script>
+
 </head>
 <body>
     <div id="logs">

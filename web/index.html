@@ -5,7 +5,7 @@
     <script>
     window.onload = function() {
         // Listen for updates
-        let eventSource = new EventSource('http://localhost:5000/logs');
+        let eventSource = new EventSource('http://172.20.10.3:5000/logs');
 
         eventSource.onopen = function(event) {
             console.log('EventSource connection opened');

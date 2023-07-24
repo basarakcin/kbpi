@@ -7,6 +7,7 @@
         let eventSource = new EventSource('http://localhost:5000/logs');
     
         eventSource.onmessage = function(event) {
+            console.log('Received new logs:', event.data);
             let data = event.data;
     
             let logContainer = document.getElementById('logs');

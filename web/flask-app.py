@@ -21,7 +21,8 @@ def get_logs():
                 if not line:
                     time.sleep(0.1)  # Sleep briefly
                     continue
-                yield f'data: {line}\n\n'
+                if line.strip() != '':
+                    yield f'data: {line}\n\n'
 
     response = Response(tail_logs(), mimetype='text/event-stream')
     return response

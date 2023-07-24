@@ -4,8 +4,26 @@
     <title>KB-Pi Web Interface</title>
     <script>
     window.onload = function() {
+        // Variable to keep track of the logs
+        let logs = '';
+
+        // Fetch current logs
+        fetch('http://localhost:5000/current_logs')
+        .then(response => response.text())
+        .then(data => {
+            logs = data.replace(/\^@/g, '');
+            let logContainer = document.getElementById('logs');
+            let pre = document.createElement('pre');
+            pre.textContent = logs;
+            logContainer.appendChild(pre);
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error.message);
+        });
+
         // Listen for updates
-        let eventSource = new EventSource('http://172.20.10.3:5000/logs');
+        let eventSource = new EventSource('http://localhost:5000/logs');
 
         eventSource.onopen = function(event) {
             console.log('EventSource connection opened');
@@ -14,11 +32,12 @@
         eventSource.onmessage = function(event) {
             console.log('Received new logs:', event.data);
 
-            // Replace the displayed logs with the received logs
+            // Add new logs to the existing logs
+            logs += event.data.replace(/\^@/g, '');
             let logContainer = document.getElementById('logs');
-            logContainer.innerHTML = ''; 
+            logContainer.innerHTML = ''; // Clear the current logs before appending new data
             let pre = document.createElement('pre');
-            pre.textContent = event.data.replace(/\^@/g, '');
+            pre.textContent = logs;
             logContainer.appendChild(pre);
         };
 

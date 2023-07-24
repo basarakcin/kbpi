@@ -6,7 +6,7 @@ import time
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})  # This allows CORS for all routes and origins
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/logs', methods=['GET'])
 def get_logs():
@@ -15,32 +15,17 @@ def get_logs():
 
     def tail_logs():
         with open(log_file_path, 'r') as f:
-            f.seek(0, 2)  # Move to the end of the file
+            lines = f.readlines()
             while True:
-                line = f.readline()
-                if not line:
-                    time.sleep(0.1)  # Sleep briefly
+                new_line = f.readline()
+                if not new_line:
+                    time.sleep(0.1)
                     continue
-                if line.strip() != '':
-                    yield f'data: {line}\n\n'
+                lines.append(new_line)
+                yield f'data: {"\n".join(lines)}\n\n'
 
     response = Response(tail_logs(), mimetype='text/event-stream')
     return response
-
-@app.route('/current_logs', methods=['GET'])
-def get_current_logs():
-    log_file_path = "/var/log/codesys/output.log"
-    logging.info('Fetching logs from file: %s', log_file_path)
-
-    try:
-        with open(log_file_path) as f:
-            logs = f.read()
-    except Exception as e:
-        logging.error('Failed to read logs from file: %s', log_file_path)
-        return Response('Failed to read logs', mimetype='text/plain'), 500
-
-    logging.info('Successfully fetched logs from file: %s', log_file_path)
-    return Response(logs, mimetype='text/plain')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

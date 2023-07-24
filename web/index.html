@@ -7,7 +7,7 @@
     window.onload = function() {
         // This works only if the network mode is default and not host.
         // fetch('http://localhost:5000/logs/') 
-        fetch('http://172.20.10.3:5000/logs/') 
+        fetch('http://172.20.10.3:5000/logs') 
         .then(response => response.text())
         .then(data => {
             let logContainer = document.getElementById('logs');

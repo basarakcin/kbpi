@@ -10,18 +10,23 @@
     <link rel="apple-touch-icon" type="image/png" href="assets/favicon-192x192.png" sizes="192x192">
     <script>
     window.onload = function() {
-        // Variable to keep track of the logs
-        let logs = '';
+        // Function to append logs line by line
+        function appendLogLine(line) {
+            let logContainer = document.getElementById('logs');
+            let pre = document.createElement('pre');
+            pre.textContent = line;
+            logContainer.appendChild(pre);
+        }
 
         // Fetch current logs
         fetch('http://localhost:5000/current_logs')
         .then(response => response.text())
         .then(data => {
             logs = data.replace(/\^@/g, '');
-            let logContainer = document.getElementById('logs');
-            let pre = document.createElement('pre');
-            pre.textContent = logs;
-            logContainer.appendChild(pre);
+            let logLines = logs.split('\n'); // Split the logs into individual lines
+            logLines.forEach(line => {
+                appendLogLine(line); // Append each line to the log container
+            });
             console.log(data);
         })
         .catch(error => {
@@ -38,13 +43,15 @@
         eventSource.onmessage = function(event) {
             console.log('Received new logs:', event.data);
 
-            // Add new logs to the existing logs
-            logs += event.data.replace(/\^@/g, '');
-            let logContainer = document.getElementById('logs');
-            logContainer.innerHTML = ''; // Clear the current logs before appending new data
-            let pre = document.createElement('pre');
-            pre.textContent = logs;
-            logContainer.appendChild(pre);
+            // Split the incoming data into lines
+            let newLogs = event.data.replace(/\^@/g, '');
+            let newLogLines = newLogs.split('\n');
+
+            newLogLines.forEach(line => {
+                if (line.trim() !== '') {
+                    appendLogLine(line); // Append each line to the log container
+                }
+            });
         };
 
         eventSource.onerror = function(error) {

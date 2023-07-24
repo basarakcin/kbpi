@@ -8,7 +8,7 @@
     <script>
     // Fetch the logs from the Flask app when the page loads
     window.onload = function() {
-        fetch('http://localhost:5000/logs')
+        fetch('https://localhost:5000/logs')
         .then(response => response.text())
         .then(data => {
             let logContainer = document.getElementById('logs');
@@ -21,7 +21,7 @@
         });
 
         // Listen for updates
-        let eventSource = new EventSource('http://localhost:5000/logs');
+        let eventSource = new EventSource('https://localhost:5000/logs');
 
         eventSource.onopen = function(event) {
             console.log('EventSource connection opened');

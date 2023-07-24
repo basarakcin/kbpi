@@ -9,7 +9,7 @@
     window.onload = function() {
         // Variable to keep track of the logs
         let logs = '';
-        let firstLoad = true;
+        let firstUpdate = true;
     
         // Fetch current logs
         fetch('http://localhost:5000/current_logs')
@@ -21,7 +21,6 @@
             pre.textContent = logs;
             logContainer.appendChild(pre);
             console.log(data);
-            firstLoad = false; // set firstLoad to false after the initial load
         })
         .catch(error => {
             console.error('Error:', error.message);
@@ -38,8 +37,10 @@
             console.log('Received new logs:', event.data);
     
             // Add new logs to the existing logs
-            if (!firstLoad) {
-                logs += '\n';  // append a newline character if not the first load
+            if (!firstUpdate) {
+                logs += '\n';  // append a newline character if not the first update
+            } else {
+                firstUpdate = false; // set firstUpdate to false after the first update
             }
             logs += event.data.replace(/\^@/g, '');
             let logContainer = document.getElementById('logs');
@@ -53,6 +54,7 @@
             console.error('EventSource encountered an error:', error);
         };
     }
+
     </script>
 </head>
 <body>

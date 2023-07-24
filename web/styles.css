@@ -1,7 +1,4 @@
 body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 69, 126);
-}
-#logs pre{
-    color: rgb(0, 69, 126);
+    background-color: rgb(0, 69, 126);
+    color: rgb(255, 255, 255);
 }

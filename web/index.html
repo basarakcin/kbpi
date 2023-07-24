@@ -5,14 +5,21 @@
     <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.ico" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.ico" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/favicon/favicon-192x192.png" sizes="192x192">
+    <style>
+    /* Optional CSS to preserve whitespace and maintain formatting */
+    #logs {
+        white-space: pre-wrap;
+    }
+    </style>
     <script>
     window.onload = function() {
-        // Function to append logs line by line
-        function appendLogLine(line) {
+        // Variable to keep track of the logs
+        let logs = '';
+
+        // Function to update the log container
+        function updateLogsContainer() {
             let logContainer = document.getElementById('logs');
-            let pre = document.createElement('pre');
-            pre.textContent = line;
-            logContainer.appendChild(pre);
+            logContainer.textContent = logs;
         }
 
         // Fetch current logs
@@ -20,10 +27,7 @@
         .then(response => response.text())
         .then(data => {
             logs = data.replace(/\^@/g, '');
-            let logLines = logs.split('\n'); // Split the logs into individual lines
-            logLines.forEach(line => {
-                appendLogLine(line); // Append each line to the log container
-            });
+            updateLogsContainer();
             console.log(data);
         })
         .catch(error => {
@@ -40,15 +44,9 @@
         eventSource.onmessage = function(event) {
             console.log('Received new logs:', event.data);
 
-            // Split the incoming data into lines
-            let newLogs = event.data.replace(/\^@/g, '');
-            let newLogLines = newLogs.split('\n');
-
-            newLogLines.forEach(line => {
-                if (line.trim() !== '') {
-                    appendLogLine(line); // Append each line to the log container
-                }
-            });
+            // Append new logs to the existing logs
+            logs += event.data.replace(/\^@/g, '');
+            updateLogsContainer();
         };
 
         eventSource.onerror = function(error) {

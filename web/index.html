@@ -6,23 +6,26 @@
     window.onload = function() {
         let eventSource = new EventSource('http://localhost:5000/logs');
     
+        eventSource.onopen = function(event) {
+            console.log('EventSource connection opened');
+        };
+    
         eventSource.onmessage = function(event) {
             console.log('Received new logs:', event.data);
-            let data = event.data;
     
             let logContainer = document.getElementById('logs');
-            // Clear the current logs before appending new data
-            logContainer.innerHTML = '';
+            logContainer.innerHTML = ''; // Clear the current logs before appending new data
             let pre = document.createElement('pre');
-            pre.textContent = data.replace(/\^@/g, '');
+            pre.textContent = event.data.replace(/\^@/g, '');
             logContainer.appendChild(pre);
-            console.log(data);
         };
     
         eventSource.onerror = function(error) {
-            console.error('Error:', error.message);
+            console.error('EventSource encountered an error:', error);
         };
     }
+
+
     </script>
 </head>
 <body>

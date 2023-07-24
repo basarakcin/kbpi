@@ -1,14 +1,14 @@
 from flask import Flask, Response
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 import logging
+import time
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
 
 app = Flask(__name__)
-CORS(app)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})  # This allows CORS for all routes and origins
 
 @app.route('/logs', methods=['GET'])
-@cross_origin()
 def get_logs():
     log_file_path = "/var/log/codesys/output.log"
     logging.info('Fetching logs from file: %s', log_file_path)
@@ -23,11 +23,10 @@ def get_logs():
                     continue
                 yield f'data: {line}\n\n'
 
-    return Response(tail_logs(), mimetype='text/event-stream')
-
+    response = Response(tail_logs(), mimetype='text/event-stream')
+    return response
 
 @app.route('/current_logs', methods=['GET'])
-@cross_origin()
 def get_current_logs():
     log_file_path = "/var/log/codesys/output.log"
     logging.info('Fetching logs from file: %s', log_file_path)

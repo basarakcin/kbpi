@@ -2,33 +2,25 @@
 <html>
 <head>
     <title>KB-Pi Web Interface</title>
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.ico" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/favicon/favicon-192x192.png" sizes="192x192">
-    #logs {
+    <style>
+    /* Optional CSS to preserve whitespace and maintain formatting */
+/*     #logs {
         white-space: pre;
-    }
+    } */
     </style>
     <script>
+    // Fetch the logs from the Flask app when the page loads
     window.onload = function() {
-        // Function to append logs line by line
-        function appendLogLine(line) {
-            let logContainer = document.getElementById('logs');
-            let pre = document.createElement('pre');
-            pre.textContent = line;
-            logContainer.appendChild(pre);
-        }
-
-        // Fetch current logs
-        fetch('http://localhost:5000/current_logs')
+        fetch('http://localhost:5000/logs/')
         .then(response => response.text())
         .then(data => {
-            logs = data.replace(/\^@/g, '');
-            let logLines = logs.split('\n'); // Split the logs into individual lines
-            logLines.forEach(line => {
-                appendLogLine(line); // Append each line to the log container
-            });
-            console.log(data);
+            let logContainer = document.getElementById('logs');
+            let pre = document.createElement('pre');
+            pre.textContent = data.replace(/\^@/g, '');
+            logContainer.appendChild(pre);
         })
         .catch(error => {
             console.error('Error:', error.message);
@@ -48,9 +40,15 @@
             let newLogs = event.data.replace(/\^@/g, '');
             let newLogLines = newLogs.split('\n');
 
+            let logContainer = document.getElementById('logs');
+            // Clear the current logs before appending new data
+            logContainer.innerHTML = '';
+
             newLogLines.forEach(line => {
                 if (line.trim() !== '') {
-                    appendLogLine(line); // Append each line to the log container
+                    let pre = document.createElement('pre');
+                    pre.textContent = line;
+                    logContainer.appendChild(pre); // Append each line to the log container
                 }
             });
         };

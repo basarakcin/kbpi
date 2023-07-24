@@ -5,8 +5,9 @@ RUN apt-get update && apt-get install -y curl
 RUN rm -f /etc/nginx/conf.d/default.conf
 
 COPY default.conf /etc/nginx/conf.d/
-
+COPY assets/* /usr/share/nginx/html/
 COPY index.html /usr/share/nginx/html/index.html
+
 
 EXPOSE 80
 

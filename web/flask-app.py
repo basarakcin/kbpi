@@ -1,47 +1,40 @@
 from flask import Flask, Response
 from flask_cors import CORS
-import logging
 import time
 import os
-import threading
+import logging
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
-
-log_file_path = "/var/log/codesys/output.log"
-last_known_position = 0
-last_mod_time = None
-clients = []
-
-def watch_logs():
-    global last_known_position, last_mod_time, clients
-    while True:
-        current_mod_time = os.stat(log_file_path).st_mtime
-        if last_mod_time and current_mod_time == last_mod_time:
-            time.sleep(1)
-            continue
-        last_mod_time = current_mod_time
-        with open(log_file_path, 'r') as f:
-            f.seek(last_known_position)
-            new_logs = f.read()
-            last_known_position = f.tell()
-        if new_logs:
-            for client in clients:
-                client.put(new_logs)
-        time.sleep(1)
+CORS(app)
 
 @app.route('/logs', methods=['GET'])
 def get_logs():
-    def tail_logs(q):
-        while True:
-            data = q.get()
-            yield 'data: {0}\n\n'.format(data)
-    q = queue.Queue()
-    clients.append(q)
-    return Response(tail_logs(q), mimetype='text/event-stream')
+    log_file_path = "/var/log/codesys/output.log"
+    logging.info('Fetching logs from file: %s', log_file_path)
+    
+    try:
+        with open(log_file_path, 'r') as f:
+            lines = f.read().splitlines()
+            last_line_sent = lines[-1] if lines else None
+            logging.info('Successfully fetched logs from file: %s', log_file_path)
+        
+        def generate():
+            nonlocal last_line_sent
+            while True:
+                with open(log_file_path, 'r') as f:
+                    lines = f.read().splitlines()
+                    if lines and lines[-1] != last_line_sent:
+                        logging.info('New logs detected.')
+                        last_line_sent = lines[-1]
+                        yield f'data: {last_line_sent}\n\n'
+                    time.sleep(1)
+        
+        return Response(generate(), mimetype='text/event-stream')
+    except Exception as e:
+        logging.error(f'Failed to read logs from file: {log_file_path}. Error: {str(e)}')
+        return Response(f'Failed to read logs due to error: {str(e)}', mimetype='text/plain'), 500
 
 if __name__ == '__main__':
-    threading.Thread(target=watch_logs).start()
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000, debug=True)

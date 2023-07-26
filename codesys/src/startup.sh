@@ -1,12 +1,23 @@
-#!/bin/bash 
+#!/bin/bash
 
-sudo service codesysedge start | sudo tee -a /var/log/codesys/output.log
-sudo service codesysedge status | sudo tee -a /var/log/codesys/output.log
-sudo service codemeter start | sudo tee -a /var/log/codesys/output.log
-sudo service codemeter status | sudo tee -a /var/log/codesys/output.log
-sudo mkdir -p /run/sshd | sudo tee -a /var/log/codesys/output.log
-sudo service ssh start | sudo tee -a /var/log/codesys/output.log
-sudo service ssh status | sudo tee -a /var/log/codesys/output.log
+services=("ssh" "codesysedge" "codemeter")
+
+create_directory() {
+  sudo mkdir -p $1 | sudo tee -a /var/log/codesys/output.log
+}
+
+create_directory /run/sshd
+
+service_start_status() {
+  sudo service $1 start | sudo tee -a /var/log/codesys/output.log
+  sudo service $1 status | sudo tee -a /var/log/codesys/output.log
+}
+
+for service in "${services[@]}"
+do
+  service_start_status $service
+done
+
 export LD_LIBRARY_PATH=/opt/codesys/lib
 
 sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/log/codesys/output.log | sudo tee -a /var/log/codesys/output.log

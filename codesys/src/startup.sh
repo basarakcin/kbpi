@@ -3,7 +3,6 @@
 services=("ssh" "codesysedge" "codemeter")
 log_file="/var/log/codesys/output.log"
 
-# Define a helper function to perform logging
 log_and_execute() {
   echo "Executing command: $@" | sudo tee -a $log_file
   "$@" 2>&1 | sudo tee -a $log_file

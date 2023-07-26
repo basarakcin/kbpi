@@ -1,16 +1,23 @@
 #!/bin/bash
 
 services=("ssh" "codesysedge" "codemeter")
+log_file="/var/log/codesys/output.log"
+
+# Define a helper function to perform logging
+log_and_execute() {
+  echo "Executing command: $@" | sudo tee -a $log_file
+  "$@" 2>&1 | sudo tee -a $log_file
+}
 
 create_directory() {
-  sudo mkdir -p $1 | sudo tee -a /var/log/codesys/output.log
+  log_and_execute sudo mkdir -p $1
 }
 
 create_directory /run/sshd
 
 service_start_status() {
-  sudo service $1 start | sudo tee -a /var/log/codesys/output.log
-  sudo service $1 status | sudo tee -a /var/log/codesys/output.log
+  log_and_execute sudo service $1 start
+  log_and_execute sudo service $1 status
 }
 
 for service in "${services[@]}"
@@ -20,7 +27,7 @@ done
 
 export LD_LIBRARY_PATH=/opt/codesys/lib
 
-sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/log/codesys/output.log | sudo tee -a /var/log/codesys/output.log
+log_and_execute sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" $log_file
 
 # Not needed but keeping it just in case
 # # start tunnel to license server or start codemeter

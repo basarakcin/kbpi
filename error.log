@@ -1,1 +1,51 @@
 
+.
+├── codesys
+│   ├── build.sh
+│   ├── Dockerfile
+│   ├── drop_in.sh
+│   ├── run.sh
+│   └── src
+│       ├── cert
+│       │   ├── export
+│       │   └── import
+│       ├── codemeter-lite_7.60.5609.501_arm64.deb
+│       ├── codesyscontrol_0.log
+│       ├── codesyscontrol_linuxarm64_4.8.0.0_arm64.deb
+│       ├── codesyscontrol.log
+│       ├── codesysedge_edgearm64_4.8.0.0_arm64.deb
+│       ├── install.sh
+│       ├── OPCUAServer
+│       │   └── Intermediate
+│       ├── PlcLogic
+│       │   ├── ac_persistence
+│       │   ├── alarms
+│       │   ├── Application
+│       │   │   ├── Application.app
+│       │   │   └── Application.crc
+│       │   ├── _cnc
+│       │   ├── trend
+│       │   └── visu
+│       ├── setup.sh
+│       ├── startup.sh
+│       └── SysFileMap.cfg
+├── docker-compose.yml
+├── drop_in.sh
+├── error.log
+├── logs
+│   └── output.log
+├── README.md
+├── run.sh
+└── web
+    ├── assets
+    │   └── favicon
+    │       ├── favicon-16x16.png
+    │       ├── favicon-192x192.png
+    │       └── favicon-32x32.png
+    ├── default.conf
+    ├── Dockerfile.api
+    ├── Dockerfile.web
+    ├── flask-app.log
+    ├── flask-app.py
+    ├── index.html
+    └── requirements.txt

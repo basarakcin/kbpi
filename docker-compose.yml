@@ -16,8 +16,6 @@ services:
     network_mode: host
     privileged: true
 
-    
-
   api:
     build: 
       context: ./web  

@@ -1,19 +1,26 @@
 #!/bin/bash
 
 log_file="/var/log/codesys/output.log"
+log_with_timestamp() {
+    while IFS= read -r line; do
+        timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+        echo "${timestamp} $line"
+    done
+}
+
 # Executes and logs the command
 EXEC() {
   username=$(whoami)
   hostname=$(hostname)
   current_dir=$(pwd)
-  timestamp=$(date "+%Y-%m-%d %H:%M:%S")
   if [ "$current_dir" = "$HOME" ]; then
     current_dir="~"
   fi
 
   command=("$@")
-  echo "${timestamp} $username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
-  "${command[@]}" 2>&1 | sudo tee -a "$log_file"
+  timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+  echo "$timestamp $username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
+  "${command[@]}" 2>&1 | log_with_timestamp | sudo tee -a "$log_file"
 }
 
 if [[ -z `grep "docker0" /proc/net/dev` ]]; then

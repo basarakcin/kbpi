@@ -6,8 +6,6 @@ username=$(whoami)
 hostname=$(hostname)
 current_dir=$(pwd)
 
-echo "$username@$hostname:$current_dir \$"
-
 log_and_execute() {
   echo "$username@$hostname:$current_dir \$" | sudo tee -a $log_file
   "$@" 2>&1 | sudo tee -a $log_file

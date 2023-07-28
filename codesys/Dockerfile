@@ -5,6 +5,8 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+USER root
+
 COPY /src/code*.deb /src/setup.sh /tmp/
 WORKDIR /tmp/
 RUN ./setup.sh 

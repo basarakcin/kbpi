@@ -5,7 +5,7 @@ log_file="/var/log/codesys/output.log"
 log_with_timestamp() {
     while IFS= read -r line; do
         timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-        echo "[${timestamp}] $line"
+        echo "[${timestamp}] > $line"
     done
 }
 

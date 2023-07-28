@@ -20,8 +20,11 @@ EXEC() {
 
   command=("$@")
   timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+  
   echo "[$timestamp] $username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
-  "${command[@]}" 2>&1 | log_with_timestamp | sudo tee -a "$log_file"
+  
+  # Execute the command and log the output as a single, atomic operation
+  ( echo "[$timestamp]"; "${command[@]}" 2>&1 ) | log_with_timestamp | sudo tee -a "$log_file"
 }
 
 if [[ -z `grep "docker0" /proc/net/dev` ]]; then
@@ -51,8 +54,6 @@ term_handler() {
 
 # On callback, stop all started processes in term_handler
 trap 'kill ${!}; term_handler' SIGINT SIGKILL SIGTERM SIGQUIT SIGTSTP SIGSTOP SIGHUP
-
-EXEC export LD_LIBRARY_PATH=/opt/codesys/lib
 
 EXEC sudo mkdir -p /run/sshd
 EXEC echo "Starting SSH server ..."

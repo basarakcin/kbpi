@@ -67,6 +67,7 @@ EXEC sudo /etc/init.d/ssh start &
 
 if [ -f /etc/init.d/codesyscontrol ]
 then
+# The following text is normally printed with: sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
   echo -e "\nCODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
 Device type: 4096 id: 0x00000007 
 Device vendor: CODESYS GmbH

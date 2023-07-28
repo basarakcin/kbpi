@@ -75,7 +75,7 @@ fi
 if [ -f /etc/init.d/codesyscontrol ]
 then
   EXEC echo "Starting CODESYS Runtime ..."
-  EXEC sudo /etc/init.d/codesyscontrol start 
+  sudo /etc/init.d/codesyscontrol start 
 else
   EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."
 fi

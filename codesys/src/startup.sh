@@ -1,6 +1,7 @@
 #!/bin/bash
 
 log_file="/var/log/codesys/output.log"
+
 log_with_timestamp() {
     while IFS= read -r line; do
         timestamp=$(date "+%Y-%m-%d %H:%M:%S")
@@ -19,7 +20,7 @@ EXEC() {
 
   command=("$@")
   timestamp=$(date "+%Y-%m-%d %H:%M:%S")
-  echo "$timestamp $username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
+  echo "[$timestamp] $username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
   "${command[@]}" 2>&1 | log_with_timestamp | sudo tee -a "$log_file"
 }
 

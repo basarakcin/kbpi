@@ -62,7 +62,38 @@ if [ "SSHPORT" ]; then
 else
   EXEC echo "The container binds the SSH server port to the default port: 2222"
 fi
+
 EXEC sudo /etc/init.d/ssh start &
+
+if [ -f /etc/init.d/codesyscontrol ]
+then
+  EXEC echo "Starting CODESYS Runtime ..."
+  echo "CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
+        Device type: 4096 id: 0x00000007 
+        Device vendor: CODESYS GmbH
+        Device name:   CODESYS Control for Linux ARM64 SL 
+        machine: aarch64
+        timer resolution: 1nsec
+        
+        INFO: using /etc/CODESYSControl.cfg as config file
+        
+         _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+        _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+        
+                _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/    _/_/_/_/_/  _/_/    _/_/    _/_/_/_/_/          _/
+             _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/    _/_/  _/_/_/_/_/_/        _/_/_/
+            _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/          _/_/          _/_/    _/_/  _/_/              _/_/_/_/_/
+           _/_/          _/_/    _/_/  _/_/    _/_/  _/_/_/_/        _/_/_/_/      _/_/_/_/      _/_/_/_/      _/_/_/_/_/_/_/
+          _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/                  _/_/      _/_/              _/_/      _/_/_/_/_/
+         _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/      _/_/      _/_/_/_/_/_/        _/_/_/
+          _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/  _/_/_/_/_/        _/_/      _/_/_/_/_/            _/
+        
+         _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+        _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/"  | sudo tee -a "$log_file"
+  EXEC sudo /etc/init.d/codesyscontrol start &
+else
+  EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."
+fi
 
 if [ -f /etc/init.d/codesysedge ]
 then
@@ -72,13 +103,7 @@ else
   EXEC echo "CODESYS Edge Gateway not installed. Download from here https://store.codesys.com/codesys-edge-gateway.html and install via CODESYS Development System."
 fi
 
-if [ -f /etc/init.d/codesyscontrol ]
-then
-  EXEC echo "Starting CODESYS Runtime ..."
-  sudo /etc/init.d/codesyscontrol start 
-else
-  EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."
-fi
+
 
 # Wait forever not to exit the container
 while true

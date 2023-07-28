@@ -20,7 +20,7 @@ if [[ -z `grep "docker0" /proc/net/dev` ]]; then
   exit 143
 fi
 
-if [ "$(id -u)" -ne 0 ] && [ "$(id -u -r)" -ne 0 ]; then
+if [[ ! -c /dev/kmem ]]; then
   EXEC echo "Container not running in privileged mode. Sure you configured privileged mode? Container stopped."
   exit 143
 fi

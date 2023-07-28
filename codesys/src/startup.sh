@@ -15,23 +15,15 @@ EXEC() {
   "${command[@]}" 2>&1 | sudo tee -a "$log_file"
 }
 
-#check if container is running in host mode
 if [[ -z `grep "docker0" /proc/net/dev` ]]; then
   EXEC echo "Container not running in host mode. Sure you configured host network mode? Container stopped."
   exit 143
 fi
 
-#check if container is running in privileged mode
-EXEC ip link add dummy0 type dummy >/dev/null 2>&1
-if [[ -z `grep "dummy0" /proc/net/dev` ]]; then
+if [ "$(id -u)" -ne 0 ] && [ "$(id -u -r)" -ne 0 ]; then
   EXEC echo "Container not running in privileged mode. Sure you configured privileged mode? Container stopped."
   exit 143
-else
-  # clean the dummy0 link
-  EXEC ip link delete dummy0 >/dev/null 2>&1
 fi
-
-# catch signals as PID 1 in a container
 
 # SIGNAL-handler
 term_handler() {

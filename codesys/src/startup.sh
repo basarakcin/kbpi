@@ -6,12 +6,13 @@ EXEC() {
   username=$(whoami)
   hostname=$(hostname)
   current_dir=$(pwd)
+  timestamp=$(date "+%Y-%m-%d %H:%M:%S")
   if [ "$current_dir" = "$HOME" ]; then
     current_dir="~"
   fi
 
   command=("$@")
-  echo "$username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
+  echo "${timestamp} $username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
   "${command[@]}" 2>&1 | sudo tee -a "$log_file"
 }
 
@@ -22,7 +23,6 @@ fi
 
 # SIGNAL-handler
 term_handler() {
- 
   if [ -f /etc/init.d/edgegateway ]
   then
     EXEC echo "Terminating CODESYS Edge Gateway ..."
@@ -51,16 +51,16 @@ EXEC echo "Starting SSH server ..."
 if [ "SSHPORT" ]; then
   # User defined ssh port
   EXEC echo "The container binds the SSH server port to the configured port: $SSHPORT"
-  EXEC sed -i -e "s;#Port 22;Port $SSHPORT;" /etc/ssh/sshd_config
+  EXEC sudo sed -i -e "s;#Port 22;Port $SSHPORT;" /etc/ssh/sshd_config
 else
   EXEC echo "The container binds the SSH server port to the default port: 2222"
 fi
-EXEC /etc/init.d/ssh start &
+EXEC sudo /etc/init.d/ssh start &
 
 if [ -f /etc/init.d/codesyscontrol ]
 then
   EXEC echo "Starting CODESYS Runtime ..."
-  EXEC /etc/init.d/codesyscontrol start &
+  EXEC sudo /etc/init.d/codesyscontrol start &
 else
   EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."
 fi
@@ -68,7 +68,7 @@ fi
 if [ -f /etc/init.d/codesysedge ]
 then
   EXEC echo "Starting CODESYS Edge Gateway ..."
-  EXEC /etc/init.d/codesysedge start >/dev/null &
+  EXEC sudo /etc/init.d/codesysedge start >/dev/null &
 else
   EXEC echo "CODESYS Edge Gateway not installed. Download from here https://store.codesys.com/codesys-edge-gateway.html and install via CODESYS Development System."
 fi

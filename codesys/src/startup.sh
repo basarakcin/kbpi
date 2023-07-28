@@ -1,8 +1,6 @@
 #!/bin/bash
 
-services=("ssh" "codesysedge" "codemeter")
 log_file="/var/log/codesys/output.log"
-
 # Executes and logs the command
 EXEC() {
   username=$(whoami)
@@ -17,35 +15,81 @@ EXEC() {
   "${command[@]}" 2>&1 | sudo tee -a "$log_file"
 }
 
-create_directory() {
-  EXEC sudo mkdir -p $1
+#check if container is running in host mode
+if [[ -z `grep "docker0" /proc/net/dev` ]]; then
+  EXEC echo "Container not running in host mode. Sure you configured host network mode? Container stopped."
+  exit 143
+fi
+
+#check if container is running in privileged mode
+EXEC ip link add dummy0 type dummy >/dev/null 2>&1
+if [[ -z `grep "dummy0" /proc/net/dev` ]]; then
+  EXEC echo "Container not running in privileged mode. Sure you configured privileged mode? Container stopped."
+  exit 143
+else
+  # clean the dummy0 link
+  EXEC ip link delete dummy0 >/dev/null 2>&1
+fi
+
+# catch signals as PID 1 in a container
+
+# SIGNAL-handler
+term_handler() {
+ 
+  if [ -f /etc/init.d/edgegateway ]
+  then
+    EXEC echo "Terminating CODESYS Edge Gateway ..."
+    EXEC /etc/init.d/codesysedge stop
+  fi
+
+  if [ -f /etc/init.d/codesyscontrol ]
+  then
+    EXEC echo "Terminating CODESYS Runtime ..."
+    EXEC /etc/init.d/codesyscontrol stop
+  fi
+
+  EXEC echo "Terminating ssh ..."
+  EXEC /etc/init.d/ssh stop
+
+  exit 143; # 128 + 15 -- SIGTERM
 }
 
-create_directory /run/sshd
+# On callback, stop all started processes in term_handler
+trap 'kill ${!}; term_handler' SIGINT SIGKILL SIGTERM SIGQUIT SIGTSTP SIGSTOP SIGHUP
 
-service_start_status() {
-  EXEC sudo service $1 start
-  EXEC sudo service $1 status
-}
+EXEC export LD_LIBRARY_PATH=/opt/codesys/lib
 
-for service in "${services[@]}"
+EXEC sudo mkdir -p /run/sshd
+EXEC echo "Starting SSH server ..."
+if [ "SSHPORT" ]; then
+  # User defined ssh port
+  EXEC echo "The container binds the SSH server port to the configured port: $SSHPORT"
+  EXEC sed -i -e "s;#Port 22;Port $SSHPORT;" /etc/ssh/sshd_config
+else
+  EXEC echo "The container binds the SSH server port to the default port: 2222"
+fi
+EXEC /etc/init.d/ssh start &
+
+if [ -f /etc/init.d/codesyscontrol ]
+then
+  EXEC echo "Starting CODESYS Runtime ..."
+  EXEC /etc/init.d/codesyscontrol start &
+else
+  EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."
+fi
+
+if [ -f /etc/init.d/codesysedge ]
+then
+  EXEC echo "Starting CODESYS Edge Gateway ..."
+  EXEC /etc/init.d/codesysedge start >/dev/null &
+else
+  EXEC echo "CODESYS Edge Gateway not installed. Download from here https://store.codesys.com/codesys-edge-gateway.html and install via CODESYS Development System."
+fi
+
+# Wait forever not to exit the container
+while true
 do
-  service_start_status $service
+  tail -f /dev/null & wait ${!}
 done
 
-export LD_LIBRARY_PATH=/opt/codesys/lib
-
-EXEC sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
-
-# Not needed but keeping it just in case
-# # start tunnel to license server or start codemeter
-# if [ ! -z ${LICENSE_SERVER} ]; then
-# 	echo "[codemeter] connecting to network server ${LICENSE_SERVER}."
-# 	echo "[codemeter] you need to forward port 22350 on the server *locally* to 22357."
-# 	echo "e.g.: socat tcp-listen:22357,fork,reuseaddr tcp:localhost:22350&"
-# 	socat tcp-listen:22350,fork,reuseaddr,bind=127.0.0.1 tcp:${LICENSE_SERVER}:22357&
-
-# 	# one potential other possible solutions to use a network server
-#     #/etc/init.d/codemeter start
-#     #cmu --add-server ${LICENSE_SERVER}
-# fi
+exit 0

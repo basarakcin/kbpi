@@ -2,9 +2,14 @@
 
 services=("ssh" "codesysedge" "codemeter")
 log_file="/var/log/codesys/output.log"
+username=$(whoami)
+hostname=$(hostname)
+current_dir=$(pwd)
+
+echo "$username@$hostname:$current_dir \$"
 
 log_and_execute() {
-  echo "Executing command: $@" | sudo tee -a $log_file
+  echo "$username@$hostname:$current_dir \$" | sudo tee -a $log_file
   "$@" 2>&1 | sudo tee -a $log_file
 }
 

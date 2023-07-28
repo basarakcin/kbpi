@@ -54,7 +54,7 @@ term_handler() {
 trap 'kill ${!}; term_handler' SIGINT SIGKILL SIGTERM SIGQUIT SIGTSTP SIGSTOP SIGHUP
 
 EXEC sudo mkdir -p /run/sshd
-EXEC echo "Starting SSH server ..."
+
 if [ "SSHPORT" ]; then
   # User defined ssh port
   EXEC echo "The container binds the SSH server port to the configured port: $SSHPORT"
@@ -67,7 +67,6 @@ EXEC sudo /etc/init.d/ssh start &
 
 if [ -f /etc/init.d/codesyscontrol ]
 then
-  EXEC echo "Starting CODESYS Runtime ..."
   echo -e "\nCODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
 Device type: 4096 id: 0x00000007 
 Device vendor: CODESYS GmbH
@@ -98,13 +97,10 @@ fi
 
 if [ -f /etc/init.d/codesysedge ]
 then
-  EXEC echo "Starting CODESYS Edge Gateway ..."
   EXEC sudo /etc/init.d/codesysedge start >/dev/null &
 else
   EXEC echo "CODESYS Edge Gateway not installed. Download from here https://store.codesys.com/codesys-edge-gateway.html and install via CODESYS Development System."
 fi
-
-
 
 # Wait forever not to exit the container
 while true

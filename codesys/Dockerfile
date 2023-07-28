@@ -29,7 +29,6 @@ RUN echo 'nxbdocker:kbpi' | chpasswd && \
 WORKDIR /var/opt/codesys/
 
 COPY /src/startup.sh /home/nxbdocker
-USER nxbdocker
 ENTRYPOINT [ "/home/nxbdocker/startup.sh" ]
 
 STOPSIGNAL SIGTERM

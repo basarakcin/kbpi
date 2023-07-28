@@ -5,13 +5,12 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-COPY /src/*.deb /src/setup.sh /tmp/
+COPY /src/code*.deb /src/setup.sh /tmp/
 WORKDIR /tmp/
 RUN ./setup.sh 
 
 COPY /src/install.sh /tmp/
 RUN ./install.sh && rm -rf /tmp/
-
 
 RUN useradd -rm -d /home/nxbdocker -s /bin/bash -G sudo -u 1001 -U nxbdocker && \
     echo 'nxbdocker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers

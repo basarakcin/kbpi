@@ -20,11 +20,6 @@ if [[ -z `grep "docker0" /proc/net/dev` ]]; then
   exit 143
 fi
 
-if [[ ! -c /dev/kmem ]]; then
-  EXEC echo "Container not running in privileged mode. Sure you configured privileged mode? Container stopped."
-  exit 143
-fi
-
 # SIGNAL-handler
 term_handler() {
  

@@ -15,6 +15,8 @@ services:
     user: nxbdocker
     network_mode: host
     privileged: true
+    environment:
+      - SSHPORT=2222
 
   api:
     build: 

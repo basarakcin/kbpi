@@ -1,19 +1,25 @@
-[2023-07-28 16:05:00] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
-[2023-07-28 16:05:00] nxbdocker@kbpi:/var/opt/codesys$ echo Starting SSH server ...
-[2023-07-28 16:05:00] Starting SSH server ...
-[2023-07-28 16:05:00] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
-[2023-07-28 16:05:00] The container binds the SSH server port to the configured port: 2222
-[2023-07-28 16:05:00] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
-[2023-07-28 16:05:00] nxbdocker@kbpi:/var/opt/codesys$ echo Starting CODESYS Edge Gateway ...
-[2023-07-28 16:05:00] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
-[2023-07-28 16:05:00] Starting CODESYS Edge Gateway ...
-[2023-07-28 16:05:01] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/codesysedge start
-[2023-07-28 16:05:01] nxbdocker@kbpi:/var/opt/codesys$ echo Starting CODESYS Runtime ...
-[2023-07-28 16:05:01] Starting CODESYS Runtime ...
-[2023-07-28 16:05:01] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/codesyscontrol start
-[2023-07-28 16:05:01] Starting OpenBSD Secure Shell server: sshd.
-[2023-07-28 16:05:02] codesysedge started
-[2023-07-28 16:05:02] codesyscontrol started
+CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
+Device type: 4096 id: 0x00000007 
+Device vendor: CODESYS GmbH
+Device name:   CODESYS Control for Linux ARM64 SL 
+machine: aarch64
+timer resolution: 1nsec
+
+INFO: using /etc/CODESYSControl.cfg as config file
+
+ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
+        _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/    _/_/_/_/_/  _/_/    _/_/    _/_/_/_/_/          _/
+     _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/    _/_/  _/_/_/_/_/_/        _/_/_/
+    _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/          _/_/          _/_/    _/_/  _/_/              _/_/_/_/_/
+   _/_/          _/_/    _/_/  _/_/    _/_/  _/_/_/_/        _/_/_/_/      _/_/_/_/      _/_/_/_/      _/_/_/_/_/_/_/
+  _/_/    _/_/  _/_/    _/_/  _/_/    _/_/  _/_/                  _/_/      _/_/              _/_/      _/_/_/_/_/
+ _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/  _/_/_/_/_/_/      _/_/      _/_/_/_/_/_/        _/_/_/
+  _/_/_/_/      _/_/_/_/    _/_/_/_/_/    _/_/_/_/_/_/  _/_/_/_/_/        _/_/      _/_/_/_/_/            _/
+
+ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 .
 ├── codesys
 │   ├── build.sh

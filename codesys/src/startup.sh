@@ -67,8 +67,8 @@ EXEC sudo /etc/init.d/ssh start &
 
 if [ -f /etc/init.d/codesyscontrol ]
 then
-  EXEC echo "Starting CODESYS Runtime ..."
-  echo "CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
+  EXEC echo -e "Starting CODESYS Runtime ...\n[$(date "+%Y-%m-%d %H:%M:%S")]\n"
+  echo -e "CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
 Device type: 4096 id: 0x00000007 
 Device vendor: CODESYS GmbH
 Device name:   CODESYS Control for Linux ARM64 SL 
@@ -90,6 +90,7 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 
  _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/"  | sudo tee -a "$log_file"
+  echo ""
   EXEC sudo /etc/init.d/codesyscontrol start &
 else
   EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."

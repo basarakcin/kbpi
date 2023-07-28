@@ -22,9 +22,7 @@ EXEC() {
   timestamp=$(date "+%Y-%m-%d %H:%M:%S")
   
   echo "[$timestamp] $username@$hostname:$current_dir\$ ${command[*]}" | sudo tee -a "$log_file"
-  
-  # Execute the command and log the output as a single, atomic operation
-  ( echo "[$timestamp]"; "${command[@]}" 2>&1 ) | log_with_timestamp | sudo tee -a "$log_file"
+  "${command[@]}" 2>&1 | log_with_timestamp | sudo tee -a "$log_file"
 }
 
 if [[ -z `grep "docker0" /proc/net/dev` ]]; then

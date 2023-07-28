@@ -5,7 +5,6 @@ apt-get upgrade -y
 apt-get install -y \
             apt-utils \
             ca-certificates \
-            iptables \
             libfontconfig1 \
             libfreetype6 \
             libice6 \

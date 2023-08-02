@@ -26,6 +26,11 @@ window.onload = async function() {
         handleLogData(data);
         console.log(data);
 
+        // Append logs from codesyscontrol.log to output.log
+        response = await fetch('http://localhost:5000/append_logs', { method: 'POST' });
+        if (!response.ok) throw new Error(`HTTP error while appending logs! status: ${response.status}`);
+        console.log('Successfully appended logs');
+
         // Listen for updates
         let eventSource = new EventSource('http://localhost:5000/logs');
 

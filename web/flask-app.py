@@ -4,13 +4,13 @@ import logging
 import time
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
-
+# log_file_path = "/var/log/codesys/output.log"
+log_file_path = "/var/log/codesys/codesyscontrol.log"
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})  # This allows CORS for all routes and origins
 
 @app.route('/logs', methods=['GET'])
 def get_logs():
-    log_file_path = "/var/log/codesys/output.log"
     logging.info('Fetching logs from file: %s', log_file_path)
 
     def tail_logs():
@@ -29,7 +29,6 @@ def get_logs():
 
 @app.route('/current_logs', methods=['GET'])
 def get_current_logs():
-    log_file_path = "/var/log/codesys/output.log"
     logging.info('Fetching logs from file: %s', log_file_path)
 
     try:

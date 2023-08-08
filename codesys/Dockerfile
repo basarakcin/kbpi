@@ -9,7 +9,9 @@ COPY src/package-dependency-installer.sh /tmp/
 RUN chmod +x /tmp/package-dependency-installer.sh && \
     ./tmp/package-dependency-installer.sh
     
-COPY src/codemeter*.deb src/codesyscontrol*.deb src/codesysedge*.deb  /tmp/
+COPY src/codemeter*.deb /tmp/ 
+COPY src/codesyscontrol*.deb /tmp/
+COPY src/codesysedge*.deb  /tmp/
 RUN ls -al /tmp/
 COPY src/install.sh /tmp/
 RUN chmod +x /tmp/install.sh && \

@@ -1,7 +1,8 @@
 window.onload = async function() {
     let logs = '';
     let firstUpdate = true;
-    let logContainer = document.getElementById('logs');
+    let infoContainer = document.getElementById('info'); // Dedicated container for info
+    let logContainer = document.getElementById('logs');  // Container for logs
 
     // A helper function to handle the log data
     function handleLogData(data) {
@@ -21,12 +22,15 @@ window.onload = async function() {
         try {
             // Fetch the info from the backend
             let response = await fetch('http://localhost:5000/info');
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            if (!response.ok) {
+                let errorMessage = await response.text();
+                throw new Error(`HTTP error! status: ${response.status}, Message: ${errorMessage}`);
+            }
             let infoData = await response.text();
             let preInfo = document.createElement('pre');
             preInfo.textContent = infoData;
-            // Insert the info at the top of the log container
-            logContainer.insertBefore(preInfo, logContainer.firstChild);
+            // Insert the info directly to the info container
+            infoContainer.appendChild(preInfo);
         } catch (error) {
             console.error('Error fetching info:', error.message);
         }
@@ -37,7 +41,10 @@ window.onload = async function() {
 
         // Fetch current logs
         let response = await fetch('http://localhost:5000/current_logs');
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        if (!response.ok) {
+            let errorMessage = await response.text();
+            throw new Error(`HTTP error fetching current logs! status: ${response.status}, Message: ${errorMessage}`);
+        }
         let data = await response.text();
         handleLogData(data);
         console.log(data);
@@ -57,6 +64,11 @@ window.onload = async function() {
 
         eventSource.onerror = function(error) {
             console.error('EventSource encountered an error:', error);
+            if (error.target && error.target.readyState === EventSource.CLOSED) {
+                console.error('EventSource connection closed unexpectedly');
+            } else {
+                console.error('Unexpected EventSource error:', error);
+            }
         };
     } catch (error) {
         console.error('Error:', error.message);

@@ -92,7 +92,10 @@ then
 # _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n"  | sudo tee -a "$log_file"
 #   echo ""
 #   EXEC sudo /etc/init.d/codesyscontrol start &
-EXEC /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
+
+sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
+ln -sf /var/opt/codesys/log/codesyscontrol.log /var/opt/codesys/codesyscontrol.log
+
 else
   EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."
 fi

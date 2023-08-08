@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log_file="/var/log/codesys/output.log"
+log_file="/var/opt/codesys/log/startup.log"
 
 log_with_timestamp() {
     while IFS= read -r line; do
@@ -94,7 +94,7 @@ then
 #   EXEC sudo /etc/init.d/codesyscontrol start &
 
 sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
-ln -sf /var/opt/codesys/log/codesyscontrol.log /var/opt/codesys/codesyscontrol.log
+ln -sf /var/opt/codesys/codesyscontrol.log /var/opt/codesys/log/codesyscontrol.log
 
 else
   EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."

@@ -4,6 +4,7 @@ services:
     build: 
       context: ./codesys  
       dockerfile: Dockerfile
+      progress: plain
     container_name: codesys_control
     volumes:
       - ./codesys/src:/var/opt/codesys

@@ -47,6 +47,8 @@ term_handler() {
   EXEC echo "Terminating ssh ..."
   EXEC /etc/init.d/ssh stop
 
+  # Delete logs when leaving the container.
+  sudo rm /var/opt/codesys/codesyscontrol.log
   exit 143; # 128 + 15 -- SIGTERM
 }
 

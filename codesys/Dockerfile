@@ -12,7 +12,7 @@ RUN chmod +x /tmp/package-dependency-installer.sh && \
 COPY src/code*.deb /tmp/
 
 COPY src/install.sh /tmp/
-RUN chmod +x /tmp/install.sh && \
+RUN ls -al /tmp/ && chmod +x /tmp/install.sh && \
     ./tmp/install.sh && \
     rm -rf /tmp/
 

@@ -5,14 +5,16 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-USER root
+COPY src/package-dependency-installer.sh /tmp/
+RUN chmod +x /tmp/package-dependency-installer.sh && \
+    ./tmp/package-dependency-installer.sh
+    
+COPY src/code*.deb /tmp/
 
-COPY /src/code*.deb /src/setup.sh /tmp/
-WORKDIR /tmp/
-RUN ./setup.sh 
-
-COPY /src/install.sh /tmp/
-RUN chmod +x install.sh && ls -al /tmp/ && ./install.sh && rm -rf /tmp/
+COPY src/install.sh /tmp/
+RUN chmod +x /tmp/install.sh && \
+    ./tmp/install.sh && \
+    rm -rf /tmp/
 
 RUN useradd -rm -d /home/nxbdocker -s /bin/bash -G sudo -u 1001 -U nxbdocker && \
     echo 'nxbdocker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers

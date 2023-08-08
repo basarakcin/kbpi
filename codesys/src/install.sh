@@ -6,7 +6,7 @@ if ! which dpkg >/dev/null; then
 	exit 1
 fi
 
-if [ "$USER" != "root" ]; then
+if [ "$EUID" -ne 0 ]; then
 	if ! which sudo >/dev/null; then
 		echo "You are not running as root, and don't have sudo installed."
 		exit 1

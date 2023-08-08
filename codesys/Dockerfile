@@ -12,7 +12,7 @@ WORKDIR /tmp/
 RUN ./setup.sh 
 
 COPY /src/install.sh /tmp/
-RUN whoami && chmod +x install.sh && ./install.sh && rm -rf /tmp/
+RUN chmod +x install.sh && ls -al /tmp/ && ./install.sh && rm -rf /tmp/
 
 RUN useradd -rm -d /home/nxbdocker -s /bin/bash -G sudo -u 1001 -U nxbdocker && \
     echo 'nxbdocker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers

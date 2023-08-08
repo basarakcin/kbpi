@@ -30,5 +30,3 @@ if [ -z "${TRY_RUN}" ]; then
 	${SUDO} dpkg -i /tmp/*edge*.deb
 	${SUDO} dpkg -i /tmp/*control*.deb
 fi
-
-rm -rf /var/opt/codesys/*.deb

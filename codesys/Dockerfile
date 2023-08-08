@@ -9,9 +9,7 @@ COPY package-dependency-installer.sh /tmp/
 RUN chmod +x /tmp/package-dependency-installer.sh && \
     ./tmp/package-dependency-installer.sh
     
-COPY code*_arm64.deb /tmp/ 
-RUN ls -al /tmp/
-COPY install.sh /tmp/
+COPY code*_arm64.deb install.sh /tmp/
 RUN chmod +x /tmp/install.sh && \
     ./tmp/install.sh && \
     rm -rf /tmp/

@@ -67,10 +67,8 @@ EXEC sudo /etc/init.d/ssh start &
 
 if [ -f /etc/init.d/codesyscontrol ]
 then
-sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg > /var/opt/codesys/tmp.log 2>&1
-cat /var/opt/codesys/codesyscontrol.log >> /var/opt/codesys/tmp.log
-sudo mv /var/opt/codesys/tmp.log /var/opt/codesys/codesyscontrol.log
-EXEC cat /var/opt/codesys/codesyscontrol.log
+sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" > /var/opt/codesys/codesyscontrol.bin.log
+EXEC cat /var/opt/codesys/codesyscontrol.bin.log
 # sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/opt/codesys/log/codesyscontrol.log | sudo tee -a /var/opt/codesys/log/codesyscontrol.log
 else
   EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."

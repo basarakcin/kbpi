@@ -5,24 +5,30 @@ window.onload = async function() {
     let logContainer = document.getElementById('logs');  // Container for logs
 
      function formatLogRow(row) {
-        const columns = row.split(',');
-        const timestamp = columns[0];
-        const cmpId = columns[1];
-        const classId = columns[2];
-        const errorId = columns[3];
-        const infoId = columns[4];
-        let infoText = columns.slice(5).join(','); // Rest of the row, as info might contain commas
-
-        // Reformat XML-like tags
-        const match = infoText.match(/<(\w+)>([^<]+)<\/\1>/);
-        if (match) {
-            const tag = match[1];
-            const content = match[2];
-            infoText = tag + ": " + content;
+            const columns = row.split(',');
+            const timestamp = columns[0];
+            const cmpId = columns[1];
+            const classId = columns[2];
+            const errorId = columns[3];
+            const infoId = columns[4];
+            let infoText = columns.slice(5).join(','); // Rest of the row, as info might contain commas
+        
+            // Check for comment lines
+            if (row.trim().startsWith(';')) {
+                return row.replace(/^;/, '').trim();
+            }
+        
+            // Reformat XML-like tags
+            const match = infoText.match(/<(\w+)>([^<]+)<\/\1>/);
+            if (match) {
+                const tag = match[1];
+                const content = match[2];
+                infoText = tag + ": " + content;
+            }
+        
+            return `${timestamp}, ${cmpId}, ${classId}, ${errorId}, ${infoId}, ${infoText}`;
         }
 
-        return `${timestamp}, ${cmpId}, ${classId}, ${errorId}, ${infoId}, ${infoText}`;
-    }
 
     function handleLogData(data) {
         if (!firstUpdate) {
@@ -33,6 +39,13 @@ window.onload = async function() {
         logs += data;
     
         const table = document.createElement('table');
+        const headerRow = document.createElement('tr');
+        ["Timestamp", "CmpId", "ClassId", "ErrorId", "InfoId", "InfoText"].forEach(headerText => {
+            const th = document.createElement('th');
+            th.textContent = headerText;
+            headerRow.appendChild(th);
+        });
+        table.appendChild(headerRow);
         const rows = data.split('\n');
     
         rows.forEach(row => {

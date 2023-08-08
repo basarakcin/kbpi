@@ -7,8 +7,6 @@ services:
     container_name: codesys_control
     volumes:
       - ./codesys/log/codesyscontrol.log:/var/opt/codesys/codesyscontrol.log
-      ######   Uncomment and enter the path to licence storage ! ##################
-      #- codemeter_license:/path/to/license/storage  # Add path to license storage
       # https://www.wibu.com/magazine/keynote-articles/article/detail/codemeter-support-for-docker.html
       - /var/run/docker.sock:/var/run/docker.sock  # Access to Docker socket (critical according to the article above)
     user: nxbdocker

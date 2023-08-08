@@ -4,8 +4,8 @@ import logging
 import time
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
-info_file_path = "app/logs/codesyscontrolinfo.log"
-log_file_path = "app/logs/codesyscontrol.log"
+info_file_path = "/app/logs/codesyscontrolinfo.log"
+log_file_path = "/app/logs/codesyscontrol.log"
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})  # This allows CORS for all routes and origins
 

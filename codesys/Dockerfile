@@ -4,13 +4,14 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
       description="CODESYS Control"
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN echo 1 && ls -al /src/ && ls -al /tmp/
+
 COPY src/package-dependency-installer.sh /tmp/
+RUN echo 1 && ls -al /tmp/
 RUN chmod +x /tmp/package-dependency-installer.sh && \
     ./tmp/package-dependency-installer.sh
     
 COPY src/code*.deb /tmp/
-RUN ls -al src/ && ls -al /tmp/
+RUN echo 2 && ls -al /tmp/
 COPY src/install.sh /tmp/
 RUN chmod +x /tmp/install.sh && \
     ./tmp/install.sh && \

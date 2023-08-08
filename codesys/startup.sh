@@ -55,7 +55,7 @@ trap 'kill ${!}; term_handler' SIGINT SIGKILL SIGTERM SIGQUIT SIGTSTP SIGSTOP SI
 
 EXEC sudo mkdir -p /run/sshd
 
-if [ "SSHPORT" ]; then
+if [ "$SSHPORT" ]; then
   # User defined ssh port
   EXEC echo "The container binds the SSH server port to the configured port: $SSHPORT"
   EXEC sudo sed -i -e "s;#Port 22;Port $SSHPORT;" /etc/ssh/sshd_config

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-SUDO=""
 if ! which dpkg >/dev/null; then 
 	echo "This install script only runs on debian based distributions"
 	exit 1
@@ -16,7 +15,6 @@ if [ "$EUID" -ne 0 ]; then
 		echo "You have no access to dpkg. Please rerun the script as root"
 		exit 1
 	fi
-	SUDO="sudo"
 fi
 
 if [ ! -d /lib64 ]; then
@@ -26,8 +24,7 @@ if [ ! -d /lib64 ]; then
 fi
 
 if [ -z "${TRY_RUN}" ]; then
-	echo ${SUDO}
-	${SUDO} dpkg -i /tmp/*codemeter*.deb
-	${SUDO} dpkg -i /tmp/*edge*.deb
-	${SUDO} dpkg -i /tmp/*control*.deb
+	sudo dpkg -i /tmp/*codemeter*.deb
+	sudo dpkg -i /tmp/*edge*.deb
+	sudo dpkg -i /tmp/*control*.deb
 fi

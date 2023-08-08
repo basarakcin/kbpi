@@ -1,5 +1,4 @@
 window.onload = async function() {
-    // Variable to keep track of the logs
     let logs = '';
     let firstUpdate = true;
     let logContainer = document.getElementById('logs');
@@ -18,7 +17,24 @@ window.onload = async function() {
         logContainer.appendChild(pre);
     }
 
+    async function fetchInfoAndDisplay() {
+        try {
+            // Fetch the info from the backend
+            let response = await fetch('http://localhost:5000/info');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            let infoData = await response.text();
+            let preInfo = document.createElement('pre');
+            preInfo.textContent = infoData;
+            // Insert the info at the top of the log container
+            logContainer.insertBefore(preInfo, logContainer.firstChild);
+        } catch (error) {
+            console.error('Error fetching info:', error.message);
+        }
+    }
+
     try {
+        await fetchInfoAndDisplay();  // Fetch and display the info
+
         // Fetch current logs
         let response = await fetch('http://localhost:5000/current_logs');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);

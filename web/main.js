@@ -11,7 +11,7 @@ window.onload = async function() {
         } else {
             firstUpdate = false; // set firstUpdate to false after the first update
         }
-        logs += data.replace(/\^@/g, '');
+        logs += data;
         logContainer.innerHTML = ''; // Clear the current logs before appending new data
         let pre = document.createElement('pre');
         pre.textContent = logs;
@@ -27,6 +27,7 @@ window.onload = async function() {
                 throw new Error(`HTTP error! status: ${response.status}, Message: ${errorMessage}`);
             }
             let infoData = await response.text();
+            infoData = infoData.replace(/\^@/g, ''); // Only replace here for info
             let preInfo = document.createElement('pre');
             preInfo.textContent = infoData;
             // Insert the info directly to the info container

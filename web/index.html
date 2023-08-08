@@ -17,23 +17,21 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center items horizontally in the flex context */
+            align-items: center;
         }
 
         #info {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            font-family: 'Courier New', Courier, monospace;
+            display: inline-block;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 89, 146, 0.2); /* Lighter blue for secondary background */
+            padding: 5px 20px; /* Padding around content */
+            margin-bottom: 20px;
         }
 
-        #info-wrapper {
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            padding: 10px;
-            margin-bottom: 20px;
+        #info-content {
+            font-family: 'Courier New', Courier, monospace;
             white-space: pre-wrap;
             word-break: break-word;
-            background-color: rgba(0, 89, 146, 0.2); /* Lighter blue for secondary background */
         }
 
         #logs {
@@ -59,7 +57,7 @@
 
 <body>
     <div id="info">
-        <div id="info-wrapper">
+        <div id="info-content">
             <!-- Your info content will get populated here by the JS -->
         </div>
     </div>

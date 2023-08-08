@@ -67,7 +67,7 @@ EXEC sudo /etc/init.d/ssh start &
 
 if [ -f /etc/init.d/codesyscontrol ]
 then
-  sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/opt/codesys/tmp.log | sudo tee -a /var/opt/codesys/tmp.log
+  sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/opt/codesys/codesyscontrolinfo.log| sudo tee -a /var/opt/codesys/codesyscontrolinfo.log
 else
   EXEC echo "CODESYS runtime not installed. Download from here https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html and install via CODESYS Development System."
 fi
@@ -78,9 +78,7 @@ then
 else
   EXEC echo "CODESYS Edge Gateway not installed. Download from here https://store.codesys.com/codesys-edge-gateway.html and install via CODESYS Development System."
 fi
-cat /var/opt/codesys/codesyscontrol.log >> /var/opt/codesys/tmp.log
-sudo mv /var/opt/codesys/tmp.log /var/opt/codesys/codesyscontrol.log
-sudo rm /var/opt/codesys/tmp.log
+
 # Wait forever not to exit the container
 while true
 do

@@ -16,7 +16,6 @@ apt-get install -y \
             net-tools \
             openssh-server \
             procps \
-            socat \
             sudo
 apt-get autoremove -y
 apt-get clean

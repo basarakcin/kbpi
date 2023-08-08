@@ -4,7 +4,7 @@ LABEL maintainer="basar.akcin@knorr-bremse.com" \
       description="CODESYS Control"
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN ls -al src/ && ls -al /tmp/
+RUN echo 1 && ls -al /src/ && ls -al /tmp/
 COPY src/package-dependency-installer.sh /tmp/
 RUN chmod +x /tmp/package-dependency-installer.sh && \
     ./tmp/package-dependency-installer.sh

@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: codesys_control
     volumes:
-      - ./codesys/log/:/var/opt/codesys/log/
+      - ./codesys/logs/:/var/opt/codesys/
       # https://www.wibu.com/magazine/keynote-articles/article/detail/codemeter-support-for-docker.html
       - /var/run/docker.sock:/var/run/docker.sock  # Access to Docker socket (critical according to the article above)
     user: nxbdocker

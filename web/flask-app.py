@@ -4,9 +4,23 @@ import logging
 import time
 
 logging.basicConfig(filename='flask-app.log', level=logging.INFO, format='%(message)s')
-log_file_path = "/var/log/codesys/output.log"
+info_file_path = "/var/opt/codesys/codesyscontrolinfo.log"
+log_file_path = "/var/opt/codesys/codesyscontrol.log"
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})  # This allows CORS for all routes and origins
+
+@app.route('/info', methods=['GET'])
+def get_info():
+    logging.info('Fetching information from file: %s', info_file_path)
+    try:
+        with open(info_file_path, 'r') as f:
+            info_content = f.read()
+    except Exception as e:
+        logging.error('Failed to read information from file: %s', info_file_path)
+        return Response('Failed to read information', mimetype='text/plain'), 500
+
+    logging.info('Successfully fetched information from file: %s', info_file_path)
+    return Response(info_content, mimetype='text/plain')
 
 @app.route('/logs', methods=['GET'])
 def get_logs():

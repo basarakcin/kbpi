@@ -22,7 +22,7 @@ services:
     volumes:
       - ./web:/app
       - /var/lib/docker/containers:/var/lib/docker/containers:ro 
-      - ./logs:/var/log/codesys
+      - ./codesys/logs:/app/logs
     depends_on:
       - codesys
     environment:

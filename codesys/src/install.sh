@@ -26,6 +26,7 @@ if [ ! -d /lib64 ]; then
 fi
 
 if [ -z "${TRY_RUN}" ]; then
+	echo ${SUDO}
 	${SUDO} dpkg -i /tmp/*codemeter*.deb
 	${SUDO} dpkg -i /tmp/*edge*.deb
 	${SUDO} dpkg -i /tmp/*control*.deb

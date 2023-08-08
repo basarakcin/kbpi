@@ -93,7 +93,8 @@ then
 #   echo ""
 #   EXEC sudo /etc/init.d/codesyscontrol start &
 
-sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
+# sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg
+sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/opt/codesys/log/codesyscontrol.log # | sudo tee -a /var/opt/codesys/log/codesyscontrol.log
 ln -sf /var/opt/codesys/codesyscontrol.log /var/opt/codesys/log/codesyscontrol.log
 
 else

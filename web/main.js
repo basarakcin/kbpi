@@ -49,6 +49,7 @@ window.onload = async function() {
         const rows = data.split('\n');
     
         rows.forEach(row => {
+            if (row.startsWith(';') || row.includes('ClassId:')) return;
             const formattedRow = formatLogRow(row);
             const columns = formattedRow.split(',');
     

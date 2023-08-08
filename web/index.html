@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KB-Pi Web Interface</title>
     <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
@@ -14,36 +16,24 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            text-align: center;  /* Center the content horizontally */
-        }
-
-
-        #header {
-            padding: 10px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        #content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white */
-            border-radius: 5px;
+            align-items: center; /* Center items horizontally in the flex context */
         }
 
         #info {
-            display: inline-block;  /* Will take width as per content */
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #info-wrapper {
             border: 2px solid rgba(255, 255, 255, 0.2);
             padding: 10px;
             margin-bottom: 20px;
-            font-family: 'Courier New', Courier, monospace;
             white-space: pre-wrap;
             word-break: break-word;
-            background-color: rgba(0, 89, 146, 0.2);  /* Lighter blue for secondary background */
+            background-color: rgba(0, 89, 146, 0.2); /* Lighter blue for secondary background */
         }
-
 
         #logs {
             border: 2px solid rgba(255, 255, 255, 0.2);
@@ -53,40 +43,26 @@
             white-space: pre-wrap;
             width: 80%;
         }
-        #logs {
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            padding: 10px;
-            margin-bottom: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            white-space: pre-wrap;
-            width: 80%; /* Keeping this as a relative width for better control */
-        }
-        
+
         table {
             border-collapse: collapse;
-            width: 100%; /* This ensures that the table stretches across the full width of its container */
+            width: 100%;
         }
-        
+
         table td {
             padding: 8px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        h3 {
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            padding-bottom: 5px;
         }
     </style>
 </head>
 
 <body>
-    <div id="header">
-        KB-Pi Web Interface
+    <div id="info">
+        <div id="info-wrapper">
+            <!-- Your info content will get populated here by the JS -->
+        </div>
     </div>
-    <div id="content">
-        <div id="info"></div>
-        <h3>Logs:</h3>
-        <div id="logs"></div>
-    </div>
+    <div id="logs"></div>
     <script src="main.js"></script>
 </body>
 

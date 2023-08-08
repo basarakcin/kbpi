@@ -6,8 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: codesys_control
     volumes:
-      - ./codesys/src:/var/opt/codesys
-      - ./logs:/var/log/codesys
+      - ./codesys/log/codesyscontrol.log:/var/opt/codesys/codesyscontrol.log
       ######   Uncomment and enter the path to licence storage ! ##################
       #- codemeter_license:/path/to/license/storage  # Add path to license storage
       # https://www.wibu.com/magazine/keynote-articles/article/detail/codemeter-support-for-docker.html

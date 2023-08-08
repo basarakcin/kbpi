@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>KB-Pi Web Interface</title>
     <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
@@ -7,14 +8,60 @@
     <link rel="icon" type="image/png" href="assets/favicon/favicon-192x192.png" sizes="192x192">
     <style>
         body {
+            font-family: Arial, sans-serif;
             background-color: rgb(0, 69, 126);
-            color: rgb(255, 255, 255);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        #content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+            border-radius: 5px;
+        }
+
+        #info {
+            background-color: rgba(255, 255, 255, 0.05); /* even more transparent white */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        #logs {
+            background-color: rgba(0, 0, 0, 0.1); /* semi-transparent black */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+        h3 {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 5px;
         }
     </style>
 </head>
+
 <body>
-    <div id="info"></div>
-    <div id="logs"></div>
+    <div id="header">
+        KB-Pi Web Interface
+    </div>
+    <div id="content">
+        <div id="info"></div>
+        <h3>Logs:</h3>
+        <div id="logs"></div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>

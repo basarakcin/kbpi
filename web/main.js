@@ -4,7 +4,6 @@ window.onload = async function() {
     let infoContainer = document.getElementById('info'); // Dedicated container for info
     let logContainer = document.getElementById('logs');  // Container for logs
 
-    // A helper function to handle the log data
     function handleLogData(data) {
         if (!firstUpdate) {
             logs += '\n';  // append a newline character if not the first update
@@ -12,11 +11,38 @@ window.onload = async function() {
             firstUpdate = false; // set firstUpdate to false after the first update
         }
         logs += data;
+    
+        const table = document.createElement('table');
+        const rows = data.split('\n');
+    
+        rows.forEach(row => {
+            const columns = row.split(',');
+    
+            if (columns.length >= 5) {
+                const tr = document.createElement('tr');
+                columns.forEach(col => {
+                    const td = document.createElement('td');
+                    td.textContent = col.trim();
+                    tr.appendChild(td);
+                });
+    
+                // Applying color based on ClassId
+                if (columns[2].includes('LOG_INFO')) tr.className = 'log-info';
+                else if (columns[2].includes('LOG_WARNING')) tr.className = 'log-warning';
+                else if (columns[2].includes('LOG_ERROR')) tr.className = 'log-error';
+                else if (columns[2].includes('LOG_EXCEPTION')) tr.className = 'log-exception';
+                else if (columns[2].includes('LOG_DEBUG')) tr.className = 'log-debug';
+                else if (columns[2].includes('LOG_PRINTF')) tr.className = 'log-printf';
+                else if (columns[2].includes('LOG_COM')) tr.className = 'log-com';
+    
+                table.appendChild(tr);
+            }
+        });
+    
         logContainer.innerHTML = ''; // Clear the current logs before appending new data
-        let pre = document.createElement('pre');
-        pre.textContent = logs;
-        logContainer.appendChild(pre);
+        logContainer.appendChild(table);
     }
+
 
     async function fetchInfoAndDisplay() {
         try {

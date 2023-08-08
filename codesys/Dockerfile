@@ -9,9 +9,7 @@ COPY src/package-dependency-installer.sh /tmp/
 RUN chmod +x /tmp/package-dependency-installer.sh && \
     ./tmp/package-dependency-installer.sh
     
-COPY src/codemeter-lite_7.60.5609.501_arm64.deb /tmp/ 
-COPY src/codesyscontrol_linuxarm64_4.8.0.0_arm64.deb /tmp/
-COPY src/codesysedge_edgearm64_4.8.0.0_arm64.deb  /tmp/
+COPY ./src/code*_arm64.deb /tmp/ 
 RUN ls -al /tmp/
 COPY src/install.sh /tmp/
 RUN chmod +x /tmp/install.sh && \

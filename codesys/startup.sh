@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log_file="/var/opt/codesys/log/startup.log"
+log_file="/var/opt/codesys/startup.log"
 
 log_with_timestamp() {
     while IFS= read -r line; do

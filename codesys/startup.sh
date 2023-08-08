@@ -67,7 +67,7 @@ EXEC sudo /etc/init.d/ssh start &
 
 if [ -f /etc/init.d/codesyscontrol ]
 then
-sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/opt/codesys/codesyscontrol.bin.log
+sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/opt/codesys/codesyscontrol.bin.log | sudo tee -a /var/opt/codesys/codesyscontrol.bin.log
 EXEC cat /var/opt/codesys/codesyscontrol.bin.log
 # sudo script -q -c "sudo /opt/codesys/bin/codesyscontrol.bin -d /etc/CODESYSControl.cfg" /var/opt/codesys/log/codesyscontrol.log | sudo tee -a /var/opt/codesys/log/codesyscontrol.log
 else

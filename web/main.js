@@ -25,7 +25,14 @@ window.onload = async function() {
             console.error('Error fetching info:', error.message);
         }
     }
-
+    
+    function isOlderThan24Hours(timestamp) {
+        const oneDayInMillis = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+        const now = new Date();
+        const logDate = new Date(timestamp);
+        return now - logDate > oneDayInMillis;
+    }
+    
     function createTableFromLogs(data) {
         const table = document.createElement('table');
 
@@ -62,11 +69,20 @@ window.onload = async function() {
         // Parsing and appending rows
         data.split('\n').forEach(row => {
             if (row.startsWith(';') || row.includes('ClassId:')) return;
+            const columns = row.split(',');
 
+            // Extract the original timestamp
+            const originalTimestamp = columns[0];
+            
+            // Check if log is older than 24 hours, if so, skip this log entry
+            if (isOlderThan24Hours(originalTimestamp)) {
+                return;
+            }
+    
             const formattedRow = formatLogRow(row);
-            const columns = formattedRow.split(',');
-            if (columns.length >= 5) {
-                const tr = createTableRowFromColumns(columns);
+            const columnsAfterFormat = formattedRow.split(',');
+            if (columnsAfterFormat.length >= 5) {
+                const tr = createTableRowFromColumns(columnsAfterFormat);
                 table.appendChild(tr);
             }
         });

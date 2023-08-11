@@ -1,1 +1,2 @@
-codesys/src/.pki/
+codesys/src/.*/
+codesys/src/typescript

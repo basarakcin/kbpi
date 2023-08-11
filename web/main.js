@@ -2,6 +2,15 @@ window.onload = async function() {
     const infoContainer = document.getElementById('info');
     const logContainer = document.getElementById('logs');
 
+    // Fetch the error database
+    let errorDb = {};
+    try {
+        const response = await fetch('error-db.json');
+        errorDb = await response.json();
+    } catch (error) {
+        console.error('Failed to fetch the error database:', error);
+    }
+    
     async function fetchInfoAndDisplay() {
         try {
             const response = await fetch('http://localhost:5000/info');
@@ -90,7 +99,13 @@ window.onload = async function() {
         if (logClass.includes('LOG_')) {
             tr.className = logClass.toLowerCase().replace("log_", "log-");
         }
-
+        
+        // Add a tooltip for ErrorId using the error database
+        const errorId = columns[3].trim();
+        if (errorDb && errorDb[errorId]) {
+            tr.title = `${errorDb[errorId].Name}: ${errorDb[errorId].Comment}`;
+        }
+        
         return tr;
     }
 

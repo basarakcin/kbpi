@@ -9,6 +9,7 @@ COPY default.conf /etc/nginx/conf.d/
 COPY assets/favicon/* /usr/share/nginx/html/assets/favicon/
 COPY index.html /usr/share/nginx/html/index.html
 COPY main.js /usr/share/nginx/html/main.js 
+COPY error-db.json /usr/share/nginx/html/error-db.json 
 
 EXPOSE 80
 

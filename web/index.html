@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/favicon/favicon-192x192.png" sizes="192x192">
     <style>
+		#header {
+			font-size: 1.5em;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+
         body {
             background-color: rgb(0, 69, 126);
             color: rgb(255, 255, 255);
@@ -47,6 +53,7 @@
         }
 
         table {
+			white-space: nowrap;
             border-collapse: collapse;
             width: 100%;
         }
@@ -60,14 +67,14 @@
             border-bottom: 2px solid rgba(255, 255, 255, 0.5);
             padding-bottom: 5px;
         }
-
-        .center-text {
-			max-width: 30px; 
-			width: 30px;     
-			text-align: center; 
-			overflow: hidden;  
-			text-overflow: ellipsis; 
-			white-space: nowrap; 
+		
+		.center-text {
+			max-width: 30px; /* Limit the width */
+			width: 30px;     /* Set the desired width */
+			text-align: center; /* Center the content */
+			overflow: hidden;   /* Prevent overflow */
+			text-overflow: ellipsis; /* Add ellipsis for any overflow */
+			white-space: nowrap; /* Prevent breaking into multiple lines */
 		}
 		
         .log-info { color: green; }

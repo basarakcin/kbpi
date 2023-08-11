@@ -1,8 +1,65 @@
 window.onload = async function() {
-    let logs = '';
-    let firstUpdate = true;
-    let infoContainer = document.getElementById('info'); // Dedicated container for info
-    let logContainer = document.getElementById('logs');  // Container for logs
+    const infoContainer = document.getElementById('info');
+    const logContainer = document.getElementById('logs');
+
+    async function fetchInfoAndDisplay() {
+        try {
+            const response = await fetch('http://localhost:5000/info');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const infoData = (await response.text()).replace(/\^@/g, '');
+            const preInfo = document.createElement('pre');
+            preInfo.textContent = infoData;
+            infoContainer.appendChild(preInfo);
+        } catch (error) {
+            console.error('Error fetching info:', error.message);
+        }
+    }
+
+    function createTableFromLogs(data) {
+        const table = document.createElement('table');
+        const headerNames = ["Timestamp", "CmpId", "ClassId", "ErrorId", "InfoId", "InfoText"];
+        
+        // Creating table header
+        const headerRow = document.createElement('tr');
+        headerNames.forEach(text => {
+            const th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+        });
+        table.appendChild(headerRow);
+
+        // Parsing and appending rows
+        data.split('\n').forEach(row => {
+            if (row.startsWith(';') || row.includes('ClassId:')) return;
+
+            const formattedRow = formatLogRow(row);
+            const columns = formattedRow.split(',');
+            if (columns.length >= 5) {
+                const tr = createTableRowFromColumns(columns);
+                table.appendChild(tr);
+            }
+        });
+
+        return table;
+    }
+
+    function createTableRowFromColumns(columns) {
+        const tr = document.createElement('tr');
+        columns.forEach(col => {
+            const td = document.createElement('td');
+            td.textContent = col.trim();
+            tr.appendChild(td);
+        });
+
+        // Styling rows based on ClassId
+        const logClass = columns[2].trim();
+        if (logClass.includes('LOG_')) {
+            tr.className = logClass.toLowerCase().replace("log_", "log-");
+        }
+        return tr;
+    }
 
      function formatLogRow(row) {
             const columns = row.split(',');
@@ -30,109 +87,38 @@ window.onload = async function() {
         }
 
 
-    function handleLogData(data) {
-        if (!firstUpdate) {
-            logs += '\n';  // append a newline character if not the first update
-        } else {
-            firstUpdate = false; // set firstUpdate to false after the first update
+        function handleLogData(data) {
+            const table = createTableFromLogs(data);
+            logContainer.innerHTML = '';  // Reset current logs before appending
+            logContainer.appendChild(table);
         }
-        logs += data;
     
-        const table = document.createElement('table');
-        const headerRow = document.createElement('tr');
-        ["Timestamp", "CmpId", "ClassId", "ErrorId", "InfoId", "InfoText"].forEach(headerText => {
-            const th = document.createElement('th');
-            th.textContent = headerText;
-            headerRow.appendChild(th);
-        });
-        table.appendChild(headerRow);
-        const rows = data.split('\n');
-    
-        rows.forEach(row => {
-            if (row.startsWith(';') || row.includes('ClassId:')) return;
-            const formattedRow = formatLogRow(row);
-            const columns = formattedRow.split(',');
-    
-            if (columns.length >= 5) {
-                const tr = document.createElement('tr');
-                columns.forEach(col => {
-                    const td = document.createElement('td');
-                    td.textContent = col.trim();
-                    tr.appendChild(td);
-                });
-    
-                // Applying color based on ClassId
-                if (columns[2].includes('LOG_INFO')) tr.className = 'log-info';
-                else if (columns[2].includes('LOG_WARNING')) tr.className = 'log-warning';
-                else if (columns[2].includes('LOG_ERROR')) tr.className = 'log-error';
-                else if (columns[2].includes('LOG_EXCEPTION')) tr.className = 'log-exception';
-                else if (columns[2].includes('LOG_DEBUG')) tr.className = 'log-debug';
-                else if (columns[2].includes('LOG_PRINTF')) tr.className = 'log-printf';
-                else if (columns[2].includes('LOG_COM')) tr.className = 'log-com';
-    
-                table.appendChild(tr);
-            }
-        });
-    
-        logContainer.innerHTML = ''; // Clear the current logs before appending new data
-        logContainer.appendChild(table);
-    }
-
-
-    async function fetchInfoAndDisplay() {
+        // Fetch and display
         try {
-            // Fetch the info from the backend
-            let response = await fetch('http://localhost:5000/info');
+            await fetchInfoAndDisplay();
+            
+            const response = await fetch('http://localhost:5000/current_logs');
             if (!response.ok) {
-                let errorMessage = await response.text();
-                throw new Error(`HTTP error! status: ${response.status}, Message: ${errorMessage}`);
+                throw new Error(`HTTP error fetching current logs! status: ${response.status}`);
             }
-            let infoData = await response.text();
-            infoData = infoData.replace(/\^@/g, ''); // Only replace here for info
-            let preInfo = document.createElement('pre');
-            preInfo.textContent = infoData;
-            // Insert the info directly to the info container
-            infoContainer.appendChild(preInfo);
+    
+            const data = await response.text();
+            handleLogData(data);
+            
+            // Listening for log updates
+            const eventSource = new EventSource('http://localhost:5000/logs');
+            eventSource.onopen = () => console.log('EventSource connection opened');
+            eventSource.onmessage = event => {
+                console.log('Received new logs:', event.data);
+                handleLogData(event.data);
+            };
+            eventSource.onerror = error => {
+                console.error('EventSource encountered an error:', error);
+                if (error.target && error.target.readyState === EventSource.CLOSED) {
+                    console.error('EventSource connection closed unexpectedly');
+                }
+            };
         } catch (error) {
-            console.error('Error fetching info:', error.message);
+            console.error('Error:', error.message);
         }
     }
-
-    try {
-        await fetchInfoAndDisplay();  // Fetch and display the info
-
-        // Fetch current logs
-        let response = await fetch('http://localhost:5000/current_logs');
-        if (!response.ok) {
-            let errorMessage = await response.text();
-            throw new Error(`HTTP error fetching current logs! status: ${response.status}, Message: ${errorMessage}`);
-        }
-        let data = await response.text();
-        handleLogData(data);
-        console.log(data);
-
-        // Listen for updates
-        let eventSource = new EventSource('http://localhost:5000/logs');
-
-        eventSource.onopen = function(event) {
-            console.log('EventSource connection opened');
-        };
-
-        eventSource.onmessage = function(event) {
-            console.log('Received new logs:', event.data);
-            // Add new logs to the existing logs
-            handleLogData(event.data);
-        };
-
-        eventSource.onerror = function(error) {
-            console.error('EventSource encountered an error:', error);
-            if (error.target && error.target.readyState === EventSource.CLOSED) {
-                console.error('EventSource connection closed unexpectedly');
-            } else {
-                console.error('Unexpected EventSource error:', error);
-            }
-        };
-    } catch (error) {
-        console.error('Error:', error.message);
-    }
-}

@@ -42,14 +42,11 @@ window.onload = async function() {
 
         topLevelHeaders.forEach(text => {
             const th = document.createElement('th');
-
-            // Span across multiple columns for "Ids"
             if (text === "Ids") {
-                th.colSpan = 4;
+                th.colSpan = 3;
             } else {
-                th.rowSpan = 2; // Make 'Timestamp' and 'InfoText' span two rows
+                th.rowSpan = 2;
             }
-
             th.textContent = text;
             topLevelHeaderRow.appendChild(th);
         });
@@ -57,7 +54,7 @@ window.onload = async function() {
 
         // Creating second-level headers
         const secondLevelHeaderRow = document.createElement('tr');
-        const secondLevelHeaders = ["Cmp", "Class", "Error", "Info"];
+        const secondLevelHeaders = ["Cmp", "Class", "Error"];
 
         secondLevelHeaders.forEach(text => {
             const th = document.createElement('th');
@@ -81,7 +78,7 @@ window.onload = async function() {
     
             const formattedRow = formatLogRow(row);
             const columnsAfterFormat = formattedRow.split(',');
-            if (columnsAfterFormat.length >= 5) {
+            if (columnsAfterFormat.length >= 4) {
                 const tr = createTableRowFromColumns(columnsAfterFormat);
                 table.appendChild(tr);
             }
@@ -104,15 +101,15 @@ window.onload = async function() {
         const tr = document.createElement('tr');
 
         // Handling special case of InfoText
-        const infoTextParts = columns.slice(5);
-        columns = columns.slice(0, 5).concat(infoTextParts.join(','));
+        const infoTextParts = columns.slice(4);
+        columns = columns.slice(0, 4).concat(infoTextParts.join(','));
 
         columns.forEach((col, index) => {
             const td = document.createElement('td');
             td.textContent = col.trim();
 
             // Add 'narrow-cell' class to the specific columns: ClassId, ErrorId, InfoId
-            if (index === 2 || index === 3 || index === 4) {
+            if (index === 2 || index === 3 ) {
                 td.classList.add('center-text');
             }
 
@@ -176,14 +173,13 @@ window.onload = async function() {
         const cmpId = columns.shift();
         const classId = columns.shift();
         const errorId = columns.shift();
-        const infoId = columns.shift();
         let infoText = columns.join(','); // Rest of the row, as info might contain commas
 
         // General transformation for XML-like tags
         infoText = infoText.replace(/<(\w+)>([^<]+)<\/\1>/g, "$1: $2").replace(/\s*,\s*/g, ", ").trim();
 
         // Construct the new row
-        return [timestamp, cmpId, classId, errorId, infoId, infoText].join(', ');
+        return [timestamp, cmpId, classId, errorId, infoText].join(', ');
     }
 
 

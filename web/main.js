@@ -90,6 +90,10 @@ window.onload = async function() {
             if (index === 2 || index === 3 || index === 4) {
                 td.classList.add('center-text');
             }
+            
+            if (index === 3 && errorDb && errorDb[col.trim()]) {
+                td.setAttribute('tooltip-content', `${errorDb[col.trim()].Name}: ${errorDb[col.trim()].Comment}`);
+            }
 
             tr.appendChild(td);
         });

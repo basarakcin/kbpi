@@ -1,0 +1,526 @@
+{
+    "1": {
+        "Name": "ERR_FAILED",
+        "Comment": "General error - to be used only for internal errors"
+    },
+    "2": {
+        "Name": "ERR_PARAMETER",
+        "Comment": "Invalid parameter for this operation"
+    },
+    "3": {
+        "Name": "ERR_NOTINITIALIZED",
+        "Comment": "Function cannot be executed, since component has not been initialized yet. It may work later, though"
+    },
+    "4": {
+        "Name": "ERR_VERSION",
+        "Comment": "Version conflict"
+    },
+    "5": {
+        "Name": "ERR_TIMEOUT",
+        "Comment": "Operation timed out"
+    },
+    "6": {
+        "Name": "ERR_NOBUFFER",
+        "Comment": "Insufficient memory to carry out the request"
+    },
+    "A": {
+        "Name": "ERR_PENDING",
+        "Comment": "For async-calls: call not complete, yet"
+    },
+    "B": {
+        "Name": "ERR_NUMPENDING",
+        "Comment": "To many pending calls. Try later"
+    },
+    "C": {
+        "Name": "ERR_NOTIMPLEMENTED",
+        "Comment": "The function is not implemented"
+    },
+    "D": {
+        "Name": "ERR_INVALIDID",
+        "Comment": "No object with the provided id found"
+    },
+    "E": {
+        "Name": "ERR_OVERFLOW",
+        "Comment": "Integer overflow"
+    },
+    "F": {
+        "Name": "ERR_BUFFERSIZE",
+        "Comment": "The size of a buffer is to small or invalid"
+    },
+    "10": {
+        "Name": "ERR_NO_OBJECT",
+        "Comment": "No object with this specified name available"
+    },
+    "11": {
+        "Name": "ERR_NOMEMORY",
+        "Comment": "No heap memory available"
+    },
+    "12": {
+        "Name": "ERR_DUPLICATE",
+        "Comment": "An object with the same name is still available"
+    },
+    "13": {
+        "Name": "ERR_MEMORY_OVERWRITE",
+        "Comment": "Heap memory was written out of bounds! Memory overwrite error"
+    },
+    "14": {
+        "Name": "ERR_INVALID_HANDLE",
+        "Comment": "Invalid handle TO an object"
+    },
+    "15": {
+        "Name": "ERR_END_OF_OBJECT",
+        "Comment": "End OF object reached"
+    },
+    "16": {
+        "Name": "ERR_NO_CHANGE",
+        "Comment": "No changes done"
+    },
+    "17": {
+        "Name": "ERR_INVALID_INTERFACE",
+        "Comment": "Invalid OR unknown INTERFACE"
+    },
+    "18": {
+        "Name": "ERR_NOT_SUPPORTED",
+        "Comment": "Functionality NOT supported"
+    },
+    "19": {
+        "Name": "ERR_NO_ACCESS_RIGHTS",
+        "Comment": "No access rights FOR THIS operation"
+    },
+    "1A": {
+        "Name": "ERR_OUT_OF_LIMITS",
+        "Comment": "Specified limits OF a resource exceeded"
+    },
+    "1B": {
+        "Name": "ERR_ENTRIES_REMAINING",
+        "Comment": "Remaining entries that could NOT be transmitted because OF buffer limitation"
+    },
+    "1C": {
+        "Name": "ERR_INVALID_SESSION_ID",
+        "Comment": "Invalid online sessionid"
+    },
+    "1D": {
+        "Name": "ERR_EXCEPTION",
+        "Comment": "Exception occurred"
+    },
+    "1E": {
+        "Name": "ERR_SIGNATURE_MISMATCH",
+        "Comment": "Signature mismatch OF an api FUNCTION"
+    },
+    "1F": {
+        "Name": "ERR_VERSION_MISMATCH",
+        "Comment": "Version mismatch"
+    },
+    "20": {
+        "Name": "ERR_TYPE_MISMATCH",
+        "Comment": "TYPE mismatch"
+    },
+    "21": {
+        "Name": "ERR_ID_MISMATCH",
+        "Comment": "ID mismatch"
+    },
+    "22": {
+        "Name": "ERR_NO_CONSISTENCY",
+        "Comment": "Consistency error"
+    },
+    "23": {
+        "Name": "ERR_NO_COMM_CYCLE",
+        "Comment": "No COMM_CYCLE needed"
+    },
+    "24": {
+        "Name": "ERR_DONT_SUSPEND_TASK",
+        "Comment": "DO NOT suspend task after an exception"
+    },
+    "25": {
+        "Name": "ERR_MEMORY_LOCK_FAILED",
+        "Comment": "Memory cannot be locked in THIS operation"
+    },
+    "26": {
+        "Name": "ERR_LICENSE_MISSING",
+        "Comment": "License missing FOR the runtime"
+    },
+    "27": {
+        "Name": "ERR_OPERATION_DENIED",
+        "Comment": "Operation denied"
+    },
+    "28": {
+        "Name": "ERR_DEVICE",
+        "Comment": "Device error"
+    },
+    "29": {
+        "Name": "ERR_DISK_FULL",
+        "Comment": "Disk full"
+    },
+    "30": {
+        "Name": "ERR_CRC_FAILED",
+        "Comment": "Internal use in runtime"
+    },
+    "31": {
+        "Name": "ERR_MEDIA_ERASE",
+        "Comment": "Internal use in runtime"
+    },
+    "32": {
+        "Name": "ERR_FILE_ERROR",
+        "Comment": "File error. e.g. cannot open a file FOR writing because it could be write PROTECTED"
+    },
+    "33": {
+        "Name": "ERR_NO_RETAIN_MEMORY",
+        "Comment": "No RETAIN memory available"
+    },
+    "34": {
+        "Name": "ERR_OUT_OF_LIMITS_MIN",
+        "Comment": "Specified minimum-limit of a resource exceeded"
+    },
+    "35": {
+        "Name": "ERR_OUT_OF_LIMITS_MAX",
+        "Comment": "Specified maximum-limit of a resource exceeded"
+    },
+    "36": {
+        "Name": "ERR_SIZE_MISMATCH",
+        "Comment": "Size mismatch"
+    },
+    "37": {
+        "Name": "ERR_CALL_AGAIN",
+        "Comment": "Operation is not yet finished, call function again to proceed"
+    },
+    "38": {
+        "Name": "ERR_NOTHING_TO_DO",
+        "Comment": "Operation has nothing TO DO. No execution."
+    },
+    "39": {
+        "Name": "ERR_SECURITY_CHECKS_FAILED",
+        "Comment": "Some security checks have failed. THIS is a generic error code TO report THIS error over PUBLIC channels. In THIS CASE the error code doesn’t provide a detailed cause for the error. */"
+    },
+    "3A": {
+        "Name": "ERR_INVALID_SEQUENCE",
+        "Comment": ""
+    },
+    "3B": {
+        "Name": "ERR_INVALID_REFERENCE",
+        "Comment": "Dereferencing an IEC reference in IecVarAccess failed due to invalid destination address, e. G. NULL."
+    },
+    "3C": {
+        "Name": "ERR_CONVERSION_INCOMPLETE",
+        "Comment": "Conversion of string encodings was not lossless."
+    },
+    "201": {
+        "Name": "ERR_SOCK_NOTINITIALIZED",
+        "Comment": "Socket not initialized"
+    },
+    "202": {
+        "Name": "ERR_SOCK_NOTSOCKET",
+        "Comment": "The provided socket handle is invalid"
+    },
+    "203": {
+        "Name": "ERR_SOCK_AFUNSUPPORTED",
+        "Comment": "The address family is NOT supported"
+    },
+    "204": {
+        "Name": "ERR_SOCK_PROTOUNSUPPORTED",
+        "Comment": "Protocol is NOT supported"
+    },
+    "205": {
+        "Name": "ERR_SOCK_NOBUFFER",
+        "Comment": "NOT enough buffer TO handle the request"
+    },
+    "206": {
+        "Name": "ERR_SOCK_WOULDBLOCK",
+        "Comment": "Socket is in nonblocking mode but THIS call would block"
+    },
+    "207": {
+        "Name": "ERR_SOCK_ADDRINUSE",
+        "Comment": "The provided address is already in use"
+    },
+    "208": {
+        "Name": "ERR_SOCK_ADDRNOTAVAILABLE",
+        "Comment": "The provided address is NOT available on THIS computer"
+    },
+    "209": {
+        "Name": "ERR_SOCK_CONNREFUSED",
+        "Comment": "Connection has been refused BY the remote host"
+    },
+    "20A": {
+        "Name": "ERR_SOCK_TIMEDOUT",
+        "Comment": "Operation timed out"
+    },
+    "20B": {
+        "Name": "ERR_SOCK_HOSTNOTFOUND",
+        "Comment": "The host has NOT been found"
+    },
+    "20C": {
+        "Name": "ERR_SOCK_HOSTUNREACHABLE",
+        "Comment": "Host is unreachable"
+    },
+    "20D": {
+        "Name": "ERR_SOCK_ISCONNECTED",
+        "Comment": "Socket is already connected"
+    },
+    "20E": {
+        "Name": "ERR_SOCK_NOTCONNECTED",
+        "Comment": "The socket is NOT connected"
+    },
+    "20F": {
+        "Name": "ERR_SOCK_SHUTDOWN",
+        "Comment": "Shutdown has been called on the socket"
+    },
+    "210": {
+        "Name": "ERR_SOCK_MSGSIZE",
+        "Comment": "FOR sockets OF TYPE DGRAM. The package TO send exceeds the maximum package size"
+    },
+    "211": {
+        "Name": "ERR_SOCK_CLOSED",
+        "Comment": "Socket has been gracefully closed. No more send/receives allowed"
+    },
+    "300": {
+        "Name": "ERR_L7_TAG_MISSING",
+        "Comment": "Tag missing in online communication buffer"
+    },
+    "301": {
+        "Name": "ERR_L7_UNKNOWNCMDGROUP",
+        "Comment": "Unknown command group"
+    },
+    "302": {
+        "Name": "ERR_L7_UNKNOWNCMD",
+        "Comment": "Unknown command (within a valid command group)"
+    },
+    "303": {
+        "Name": "ERR_L7_INCOMPLETE",
+        "Comment": "Level 7 service incomplete"
+    },
+    "ERR_OK": {
+        "Name": "ERR_CERT_OK",
+        "Comment": "Certificate validation error codes"
+    },
+    "701": {
+        "Name": "ERR_CERT_UNABLE_TO_GET_ISSUER_CERT",
+        "Comment": "illegal error (FOR uninitialized values, TO avoid ERR_CERT_OK) */"
+    },
+    "702": {
+        "Name": "ERR_CERT_UNABLE_TO_GET_CRL",
+        "Comment": ""
+    },
+    "703": {
+        "Name": "ERR_CERT_UNABLE_TO_DECRYPT_CERT_SIGNATURE",
+        "Comment": ""
+    },
+    "704": {
+        "Name": "ERR_CERT_UNABLE_TO_DECRYPT_CRL_SIGNATURE",
+        "Comment": ""
+    },
+    "705": {
+        "Name": "ERR_CERT_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY",
+        "Comment": ""
+    },
+    "706": {
+        "Name": "ERR_CERT_SIGNATURE_FAILURE",
+        "Comment": ""
+    },
+    "707": {
+        "Name": "ERR_CERT_CRL_SIGNATURE_FAILURE",
+        "Comment": ""
+    },
+    "708": {
+        "Name": "ERR_CERT_NOT_YET_VALID",
+        "Comment": ""
+    },
+    "709": {
+        "Name": "ERR_CERT_HAS_EXPIRED",
+        "Comment": ""
+    },
+    "70A": {
+        "Name": "ERR_CERT_CRL_NOT_YET_VALID",
+        "Comment": ""
+    },
+    "70B": {
+        "Name": "ERR_CERT_CRL_HAS_EXPIRED",
+        "Comment": ""
+    },
+    "70C": {
+        "Name": "ERR_CERT_ERROR_IN_CERT_NOT_BEFORE_FIELD",
+        "Comment": ""
+    },
+    "70D": {
+        "Name": "ERR_CERT_ERROR_IN_CERT_NOT_AFTER_FIELD",
+        "Comment": ""
+    },
+    "70E": {
+        "Name": "ERR_CERT_ERROR_IN_CRL_LAST_UPDATE_FIELD",
+        "Comment": ""
+    },
+    "70F": {
+        "Name": "ERR_CERT_ERROR_IN_CRL_NEXT_UPDATE_FIELD",
+        "Comment": ""
+    },
+    "710": {
+        "Name": "ERR_CERT_OUT_OF_MEM",
+        "Comment": ""
+    },
+    "711": {
+        "Name": "ERR_CERT_DEPTH_ZERO_SELF_SIGNED_CERT",
+        "Comment": ""
+    },
+    "712": {
+        "Name": "ERR_CERT_SELF_SIGNED_CERT_IN_CHAIN",
+        "Comment": ""
+    },
+    "713": {
+        "Name": "ERR_CERT_UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+        "Comment": ""
+    },
+    "714": {
+        "Name": "ERR_CERT_UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+        "Comment": ""
+    },
+    "715": {
+        "Name": "ERR_CERT_CHAIN_TOO_LONG",
+        "Comment": ""
+    },
+    "716": {
+        "Name": "ERR_CERT_REVOKED",
+        "Comment": ""
+    },
+    "717": {
+        "Name": "ERR_CERT_INVALID_CA",
+        "Comment": ""
+    },
+    "718": {
+        "Name": "ERR_CERT_PATH_LENGTH_EXCEEDED",
+        "Comment": ""
+    },
+    "719": {
+        "Name": "ERR_CERT_INVALID_PURPOSE",
+        "Comment": ""
+    },
+    "71A": {
+        "Name": "ERR_CERT_UNTRUSTED",
+        "Comment": ""
+    },
+    "71B": {
+        "Name": "ERR_CERT_REJECTED",
+        "Comment": ""
+    },
+    "71C": {
+        "Name": "ERR_CERT_SUBJECT_ISSUER_MISMATCH",
+        "Comment": "These are ‘informational’ when looking for issuer cert"
+    },
+    "71D": {
+        "Name": "ERR_CERT_AKID_SKID_MISMATCH",
+        "Comment": ""
+    },
+    "71E": {
+        "Name": "ERR_CERT_AKID_ISSUER_SERIAL_MISMATCH",
+        "Comment": ""
+    },
+    "71F": {
+        "Name": "ERR_CERT_KEYUSAGE_NO_CERTSIGN",
+        "Comment": ""
+    },
+    "720": {
+        "Name": "ERR_CERT_UNABLE_TO_GET_CRL_ISSUER",
+        "Comment": ""
+    },
+    "721": {
+        "Name": "ERR_CERT_UNHANDLED_CRITICAL_EXTENSION",
+        "Comment": ""
+    },
+    "722": {
+        "Name": "ERR_CERT_KEYUSAGE_NO_CRL_SIGN",
+        "Comment": ""
+    },
+    "723": {
+        "Name": "ERR_CERT_UNHANDLED_CRITICAL_CRL_EXTENSION",
+        "Comment": ""
+    },
+    "724": {
+        "Name": "ERR_CERT_INVALID_NON_CA",
+        "Comment": ""
+    },
+    "725": {
+        "Name": "ERR_CERT_PROXY_PATH_LENGTH_EXCEEDED",
+        "Comment": ""
+    },
+    "726": {
+        "Name": "ERR_CERT_KEYUSAGE_NO_DIGITAL_SIGNATURE",
+        "Comment": ""
+    },
+    "727": {
+        "Name": "ERR_CERT_PROXY_CERTIFICATES_NOT_ALLOWED",
+        "Comment": ""
+    },
+    "728": {
+        "Name": "ERR_CERT_INVALID_EXTENSION",
+        "Comment": ""
+    },
+    "729": {
+        "Name": "ERR_CERT_INVALID_POLICY_EXTENSION",
+        "Comment": ""
+    },
+    "72A": {
+        "Name": "ERR_CERT_NO_EXPLICIT_POLICY",
+        "Comment": ""
+    },
+    "72B": {
+        "Name": "ERR_CERT_DIFFERENT_CRL_SCOPE",
+        "Comment": ""
+    },
+    "72C": {
+        "Name": "ERR_CERT_UNSUPPORTED_EXTENSION_FEATURE",
+        "Comment": ""
+    },
+    "72D": {
+        "Name": "ERR_CERT_UNNESTED_RESOURCE",
+        "Comment": ""
+    },
+    "72E": {
+        "Name": "ERR_CERT_PERMITTED_VIOLATION",
+        "Comment": ""
+    },
+    "72F": {
+        "Name": "ERR_CERT_EXCLUDED_VIOLATION",
+        "Comment": ""
+    },
+    "730": {
+        "Name": "ERR_CERT_SUBTREE_MINMAX",
+        "Comment": ""
+    },
+    "731": {
+        "Name": "ERR_CERT_UNSUPPORTED_CONSTRAINT_TYPE",
+        "Comment": ""
+    },
+    "732": {
+        "Name": "ERR_CERT_UNSUPPORTED_CONSTRAINT_SYNTAX",
+        "Comment": ""
+    },
+    "733": {
+        "Name": "ERR_CERT_UNSUPPORTED_NAME_SYNTAX",
+        "Comment": ""
+    },
+    "734": {
+        "Name": "ERR_CERT_CRL_PATH_VALIDATION_ERROR",
+        "Comment": ""
+    },
+    "735": {
+        "Name": "ERR_CERT_APPLICATION_VERIFICATION",
+        "Comment": "The application is not happy"
+    },
+    "736": {
+        "Name": "ERR_CERT_MISSING",
+        "Comment": ""
+    },
+    "737": {
+        "Name": "ERR_CERT_UNKNOWN_ERROR",
+        "Comment": ""
+    },
+    "B00": {
+        "Name": "ERR_REDU_TOO_TAGS",
+        "Comment": "Visu redundancy errors"
+    },
+    "B01": {
+        "Name": "ERR_REDU_MEMORY",
+        "Comment": ""
+    },
+    "B02": {
+        "Name": "ERR_REDU_CLIENT_CREATION_ERR",
+        "Comment": ""
+    }
+}

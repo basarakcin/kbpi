@@ -10,7 +10,7 @@ window.onload = async function() {
     } catch (error) {
         console.error('Failed to fetch the error database:', error);
     }
-    
+
     async function fetchInfoAndDisplay() {
         try {
             const response = await fetch('http://localhost:5000/info');
@@ -25,7 +25,7 @@ window.onload = async function() {
             console.error('Error fetching info:', error.message);
         }
     }
-    
+
     function isOlderThan24Hours(timestamp) {
         const oneDayInMillis = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
         const now = new Date();
@@ -88,15 +88,20 @@ window.onload = async function() {
     }
 
     const CLASS_ID_MAPPING = {
-        '1': 'LOG_INFO',
-        '2': 'LOG_WARNING',
-        '4': 'LOG_ERROR',
-        '8': 'LOG_EXCEPTION',
-        '16': 'LOG_DEBUG',
-        '32': 'LOG_PRINTF',
-        '64': 'LOG_COM'
+        '1': 'INFO',
+        '2': 'WARNING',
+        '4': 'ERROR',
+        '8': 'EXCEPTION',
+        '16': 'DEBUG',
+        '32': 'PRINTF',
+        '64': 'COM'
     };
 
+    function shouldDisplayRow(classType) {
+        const checkbox = document.querySelector(`input[value="${classType}"]`);
+        return checkbox.checked;
+    }
+    
     function createTableRowFromColumns(columns) {
         const tr = document.createElement('tr');
 
@@ -116,7 +121,10 @@ window.onload = async function() {
             if (index === 2) {
                 const classType = CLASS_ID_MAPPING[col.trim()];
                 if (classType) {
-                    td.title = classType;
+                    td.textContent = classType;
+                    if (!shouldDisplayRow(classType)) {
+                        tr.style.display = 'none';
+                    }
                 }
             }
 
@@ -183,7 +191,7 @@ window.onload = async function() {
     }
 
 
-    function handleLogData(data) {
+    async function handleLogData(data) {
         const table = createTableFromLogs(data);
         logContainer.innerHTML = ''; // Reset current logs before appending
         logContainer.appendChild(table);
@@ -217,4 +225,17 @@ window.onload = async function() {
     } catch (error) {
         console.error('Error:', error.message);
     }
+
+    // Moved this code block here to ensure the logs table is populated before event listeners are attached.
+    document.querySelectorAll('#filterBoxes input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            const classType = checkbox.value;
+            document.querySelectorAll(`#logs table tr`).forEach(row => {
+                const tdClass = [...row.children][2];
+                if (tdClass.textContent === classType) {
+                    row.style.display = checkbox.checked ? '' : 'none';
+                }
+            });
+        });
+    });
 }

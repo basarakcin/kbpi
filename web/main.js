@@ -104,20 +104,20 @@ window.onload = async function() {
     
     function createTableRowFromColumns(columns) {
         const tr = document.createElement('tr');
-
+    
         // Handling special case of InfoText
         const infoTextParts = columns.slice(4);
         columns = columns.slice(0, 4).concat(infoTextParts.join(','));
-
+    
         columns.forEach((col, index) => {
             const td = document.createElement('td');
             td.textContent = col.trim();
-
-            // Add 'narrow-cell' class to the specific columns: ClassId, ErrorId, InfoId
+    
+            // Add 'center-text' class to the specific columns: ClassId, ErrorId
             if (index === 2 || index === 3 ) {
                 td.classList.add('center-text');
             }
-
+    
             if (index === 2) {
                 const classType = CLASS_ID_MAPPING[col.trim()];
                 if (classType) {
@@ -127,14 +127,17 @@ window.onload = async function() {
                     }
                 }
             }
-
+    
             if (index === 3 && errorDb && errorDb[col.trim()]) {
                 td.setAttribute('tooltip-content', `${errorDb[col.trim()].Name}: ${errorDb[col.trim()].Comment}`);
             }
-
+    
             tr.appendChild(td);
         });
-
+    
+        // Remove the column corresponding to InfoId
+        tr.removeChild(tr.children[3]);  // Assuming InfoId is the 4th column
+    
         // Styling rows based on ClassId
         const logClass = columns[2].trim();
         if (logClass.includes('LOG_')) {
@@ -149,6 +152,7 @@ window.onload = async function() {
         
         return tr;
     }
+
 
     function convertToLocalTime(isoString) {
         const date = new Date(isoString);

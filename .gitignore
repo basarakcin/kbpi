@@ -1,3 +1,4 @@
 codesys/src/.*/
 codesys/src/typescript
 codesys/src/PlcLogic/
+codesys/logs/.pki/* 

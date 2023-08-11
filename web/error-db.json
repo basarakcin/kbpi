@@ -1,4 +1,8 @@
 {
+    "0": {
+        "Name": "ERR_OK",
+        "Comment": "Ok"
+    },
     "1": {
         "Name": "ERR_FAILED",
         "Comment": "General error - to be used only for internal errors"

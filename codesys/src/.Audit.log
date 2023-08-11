@@ -1,0 +1,608 @@
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-08-02T11:56:02.190Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-08-02T11:56:02.190Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-08-02T11:56:02.190Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-08-02T11:56:02.190Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-08-02T11:56:02.190Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-08-02T11:56:02.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-08-02T11:56:02.221Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-08-02T11:56:02.221Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-08-02T11:56:02.221Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-08-02T11:56:02.221Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-08-02T11:56:02.221Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-08-02T11:56:02.222Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-08-02T11:56:02.222Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-08-02T11:56:02.222Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-08-02T11:56:14.778Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T11:56:14.778Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T11:56:14.778Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T11:56:14.778Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T11:56:14.812Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T11:56:54.260Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T11:56:54.261Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T11:56:54.261Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T11:56:54.261Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T11:56:54.298Z, 0x00000002, 4, 1281, 0, **** ERROR: User: 'basar', App Login failed: no App
+2023-08-02T11:57:03.964Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-02T11:57:03.964Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-02T11:57:03.964Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Create for Download successful
+2023-08-02T11:57:03.990Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T11:57:04.327Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T11:57:04.327Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 95ae253f-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+2023-08-02T11:57:04.630Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T11:57:04.630Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 95ae253f-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+2023-08-02T11:57:11.492Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T12:00:18.680Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Stop successful
+2023-08-02T12:00:19.612Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T12:00:19.656Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T12:03:17.782Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:03:17.782Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:03:17.782Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:03:17.782Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:03:19.793Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T12:03:32.284Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:03:32.284Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:03:32.284Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:03:32.284Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:03:33.187Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T12:05:02.984Z, 0x0000000e, 4, 25, 0, **** ERROR: User: '<unknown>', Device Login from 0033 failed
+2023-08-02T12:05:07.726Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:05:07.726Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:05:07.726Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:05:07.726Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:05:07.765Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T12:05:22.337Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:05:22.337Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:05:22.337Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:05:22.337Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:05:22.414Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T12:05:34.383Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] OnlineChange successful, create bootproject: 0
+2023-08-02T12:05:34.383Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 8b9ee4a8-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-08-02T12:13:32.906Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-08-02T12:13:32.907Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-08-02T12:13:32.911Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-08-02T12:13:32.929Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-08-02T12:13:32.947Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-08-02T12:13:33.024Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-02T12:13:33.024Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-02T12:13:33.024Z, 0x00000002, 1, 0, 0, System, App [Application] Create for Download successful
+2023-08-02T12:13:33.028Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T12:13:33.028Z, 0x00000002, 1, 0, 0, System, App CodeGUID: 95ae253f-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+2023-08-02T12:13:33.047Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T12:13:33.047Z, 0x00000002, 1, 0, 0, System, App CodeGUID: 95ae253f-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+2023-08-02T12:13:33.061Z, 0x00000002, 1, 0, 10, System, App [Application] started
+2023-08-02T12:13:41.062Z, 0x0000000e, 4, 25, 0, **** ERROR: User: '<unknown>', Device Login from 0033 failed
+2023-08-02T12:13:43.852Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:13:43.852Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:13:43.852Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:13:43.852Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:13:43.920Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T12:13:46.169Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] OnlineChange successful, create bootproject: 0
+2023-08-02T12:13:46.169Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 8b9ee4a8-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-08-02T12:25:48.909Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-08-02T12:25:48.910Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-08-02T12:25:48.914Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-08-02T12:25:48.933Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-08-02T12:25:48.934Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-08-02T12:25:48.971Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-08-02T12:25:49.028Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-02T12:25:49.028Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-02T12:25:49.028Z, 0x00000002, 1, 0, 0, System, App [Application] Create for Download successful
+2023-08-02T12:25:49.035Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T12:25:49.035Z, 0x00000002, 1, 0, 0, System, App CodeGUID: 95ae253f-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+2023-08-02T12:25:49.066Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T12:25:49.066Z, 0x00000002, 1, 0, 0, System, App CodeGUID: 95ae253f-0000-0000-0000-000000000000, DataGUID: 922ec8ce-0000-0000-0000-000000000000
+2023-08-02T12:25:49.094Z, 0x00000002, 1, 0, 10, System, App [Application] started
+2023-08-02T12:43:30.068Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:43:30.068Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:43:30.068Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:43:30.068Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:43:30.114Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T12:43:41.135Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:43:41.135Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:43:41.135Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:43:41.135Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:43:41.190Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T12:43:43.244Z, 0x00000002, 1, 0, 0, User: 'basar', App [<unknown>] Reinitialize for Download successful
+2023-08-02T12:43:43.279Z, 0x00000002, 4, 1282, 0, **** ERROR: User: 'basar', App [<unknown>] Logout failed
+2023-08-02T12:43:43.297Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T12:43:43.489Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T12:43:43.489Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: cac4b971-0000-0000-0000-000000000000, DataGUID: fa3ee178-0000-0000-0000-000000000000
+2023-08-02T12:43:43.584Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T12:43:43.584Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: cac4b971-0000-0000-0000-000000000000, DataGUID: fa3ee178-0000-0000-0000-000000000000
+2023-08-02T12:43:48.819Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T12:43:51.945Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Stop successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-08-02T12:58:14.248Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-08-02T12:58:14.250Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-08-02T12:58:14.258Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-08-02T12:58:14.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-08-02T12:58:14.294Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-08-02T12:58:14.329Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-08-02T12:58:14.408Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-02T12:58:14.408Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-02T12:58:14.408Z, 0x00000002, 1, 0, 0, System, App [Application] Create for Download successful
+2023-08-02T12:58:14.415Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T12:58:14.415Z, 0x00000002, 1, 0, 0, System, App CodeGUID: cac4b971-0000-0000-0000-000000000000, DataGUID: fa3ee178-0000-0000-0000-000000000000
+2023-08-02T12:58:14.431Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T12:58:14.431Z, 0x00000002, 1, 0, 0, System, App CodeGUID: cac4b971-0000-0000-0000-000000000000, DataGUID: fa3ee178-0000-0000-0000-000000000000
+2023-08-02T12:58:14.443Z, 0x00000002, 1, 0, 10, System, App [Application] started
+2023-08-02T12:58:39.973Z, 0x0000000e, 4, 25, 0, **** ERROR: User: '<unknown>', Device Login from 0033 failed
+2023-08-02T12:58:43.667Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:58:43.667Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:58:43.667Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:58:43.667Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:58:48.372Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T12:58:53.140Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T12:58:53.140Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T12:58:53.140Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T12:58:53.140Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T12:58:53.260Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T12:59:13.077Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T12:59:19.394Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:00:22.124Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:00:22.124Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:00:22.124Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:00:22.124Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:00:22.181Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:00:24.067Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:00:28.800Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:01:59.892Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:01:59.892Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:01:59.892Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:01:59.892Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:01:59.953Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:02:13.457Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:02:14.960Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:03:41.416Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:03:41.416Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:03:41.416Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:03:41.416Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:03:41.460Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:03:43.396Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:03:51.451Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:06:05.307Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:06:05.307Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:06:05.307Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:06:05.308Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:06:05.417Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:06:07.878Z, 0x00000002, 1, 0, 0, User: 'basar', App [<unknown>] Reinitialize for Download successful
+2023-08-02T13:06:07.950Z, 0x00000002, 4, 1282, 0, **** ERROR: User: 'basar', App [<unknown>] Logout failed
+2023-08-02T13:06:07.966Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:06:08.234Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:06:08.234Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:06:09.515Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:06:09.515Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:06:17.557Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:07:37.923Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Stop successful
+2023-08-02T13:08:57.664Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:09:08.638Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:09:08.655Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:09:12.166Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:09:12.166Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:09:12.166Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:09:12.167Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:09:12.217Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:12:57.672Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:12:57.685Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:13:01.110Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:13:01.110Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:13:01.110Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:13:01.110Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:13:01.184Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:14:24.913Z, 0x00000061, 1, 0, 0, System, Remove object '__C-ModuleIntegration__' successful
+2023-08-02T13:14:24.913Z, 0x00000061, 1, 0, 0, System, Remove object 'Application' successful
+2023-08-02T13:14:24.917Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Delete successful
+2023-08-02T13:14:25.011Z, 0x00000002, 4, 1282, 0, **** ERROR: User: 'basar', App [<unknown>] Logout failed
+2023-08-02T13:14:25.289Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:14:58.519Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:14:58.519Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:14:58.519Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:14:58.519Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:14:58.562Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:14:59.070Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:14:59.070Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:14:59.070Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:14:59.070Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:14:59.111Z, 0x00000002, 4, 1281, 0, **** ERROR: User: 'basar', App Login failed: no App
+2023-08-02T13:15:00.526Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-02T13:15:00.526Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-02T13:15:00.526Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Create for Download successful
+2023-08-02T13:15:00.591Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:15:01.210Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:15:01.210Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:15:01.348Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:15:01.348Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:15:19.902Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:16:02.639Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Stop successful
+2023-08-02T13:16:19.954Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:16:21.665Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-08-02T13:17:48.709Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-08-02T13:17:48.710Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-08-02T13:17:48.713Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-08-02T13:17:48.732Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-08-02T13:17:48.749Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-08-02T13:18:09.531Z, 0x0000000e, 4, 25, 0, **** ERROR: User: '<unknown>', Device Login from 0033 failed
+2023-08-02T13:18:13.031Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:18:13.031Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:18:13.031Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:18:13.031Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:18:13.065Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:18:21.467Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:18:21.467Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:18:21.467Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:18:21.467Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:18:21.517Z, 0x00000002, 4, 1281, 0, **** ERROR: User: 'basar', App Login failed: no App
+2023-08-02T13:18:26.146Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-02T13:18:26.146Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-02T13:18:26.146Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Create for Download successful
+2023-08-02T13:18:26.159Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:18:26.779Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:18:26.779Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:18:26.937Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:18:26.937Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:18:37.837Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:20:36.697Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Stop successful
+2023-08-02T13:21:15.020Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:21:15.067Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:24:31.966Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:24:31.966Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:24:31.966Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:24:31.966Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:24:32.195Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:24:50.988Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:24:51.005Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:25:12.203Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:25:12.203Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:25:12.203Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:25:12.203Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:25:12.275Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:25:25.595Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:25:27.768Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:25:48.879Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:26:07.363Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:26:07.383Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-08-02T13:30:11.798Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-08-02T13:30:11.799Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-08-02T13:30:11.803Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-08-02T13:30:11.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-08-02T13:30:11.838Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-08-02T13:30:11.919Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-02T13:30:11.919Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-02T13:30:11.919Z, 0x00000002, 1, 0, 0, System, App [Application] Create for Download successful
+2023-08-02T13:30:11.923Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T13:30:11.923Z, 0x00000002, 1, 0, 0, System, App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:30:11.939Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-02T13:30:11.939Z, 0x00000002, 1, 0, 0, System, App CodeGUID: 51b484c0-0000-0000-0000-000000000000, DataGUID: e41af6de-0000-0000-0000-000000000000
+2023-08-02T13:30:11.950Z, 0x00000002, 1, 0, 10, System, App [Application] started
+2023-08-02T13:32:08.028Z, 0x0000000e, 4, 25, 0, **** ERROR: User: '<unknown>', Device Login from 0033 failed
+2023-08-02T13:32:11.594Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:32:11.594Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:32:11.594Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:32:11.594Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:32:11.713Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:32:12.359Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:32:12.359Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:32:12.359Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:32:12.359Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:32:12.437Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:32:55.200Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:32:55.200Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:32:55.200Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:32:55.200Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:32:55.245Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:33:22.679Z, 0x00000002, 1, 0, 0, User: 'basar', App [<unknown>] Reinitialize for Download successful
+2023-08-02T13:33:22.727Z, 0x00000002, 4, 1282, 0, **** ERROR: User: 'basar', App [<unknown>] Logout failed
+2023-08-02T13:33:22.744Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:33:22.906Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:33:22.906Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: c6bef732-0000-0000-0000-000000000000, DataGUID: 2f7c01cc-0000-0000-0000-000000000000
+2023-08-02T13:33:23.053Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:33:23.053Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: c6bef732-0000-0000-0000-000000000000, DataGUID: 2f7c01cc-0000-0000-0000-000000000000
+2023-08-02T13:34:06.774Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-08-02T13:34:06.794Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-08-02T13:34:16.865Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-08-02T13:34:16.865Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-08-02T13:34:16.865Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-08-02T13:34:16.865Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-08-02T13:34:17.089Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:34:19.685Z, 0x00000002, 1, 0, 0, User: 'basar', App [<unknown>] Reinitialize for Download successful
+2023-08-02T13:34:19.744Z, 0x00000002, 4, 1282, 0, **** ERROR: User: 'basar', App [<unknown>] Logout failed
+2023-08-02T13:34:19.766Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-08-02T13:34:19.894Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:34:19.894Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: f50445b2-0000-0000-0000-000000000000, DataGUID: 2f7c01cc-0000-0000-0000-000000000000
+2023-08-02T13:34:20.003Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-08-02T13:34:20.003Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: f50445b2-0000-0000-0000-000000000000, DataGUID: 2f7c01cc-0000-0000-0000-000000000000
+2023-08-02T13:34:34.363Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-08-02T13:37:24.074Z, 0x00000073, 1, 0, 0, User: 'basar', Single Cycle on [Application] successful
+2023-08-02T13:37:39.065Z, 0x00000073, 4, 55, 0, **** ERROR: User: 'basar', Single Cycle on [Application] failed
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-08-08T06:43:52.619Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-08-08T06:43:52.620Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-08-08T06:43:52.623Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-08-08T06:43:52.641Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-08-08T06:43:52.642Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-08-08T06:43:52.666Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-08-08T06:43:52.753Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-08-08T06:43:52.753Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-08-08T06:43:52.753Z, 0x00000002, 1, 0, 0, System, App [Application] Create for Download successful
+2023-08-08T06:43:52.758Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-08T06:43:52.758Z, 0x00000002, 1, 0, 0, System, App CodeGUID: f50445b2-0000-0000-0000-000000000000, DataGUID: 2f7c01cc-0000-0000-0000-000000000000
+2023-08-08T06:43:52.785Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-08-08T06:43:52.785Z, 0x00000002, 1, 0, 0, System, App CodeGUID: f50445b2-0000-0000-0000-000000000000, DataGUID: 2f7c01cc-0000-0000-0000-000000000000
+2023-08-08T06:43:52.798Z, 0x00000002, 1, 0, 10, System, App [Application] started

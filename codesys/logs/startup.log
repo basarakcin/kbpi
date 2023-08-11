@@ -1,0 +1,167 @@
+[2023-08-08 10:26:45] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:26:45] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:26:45] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:26:45] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:26:45] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:26:46] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:29:55] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:29:55] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:29:55] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:29:55] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:29:55] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:29:55] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:31:36] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:31:36] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:31:36] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:31:36] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:31:36] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:31:36] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:37:05] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:37:05] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:37:05] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:37:05] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:37:05] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:37:05] nxbdocker@kbpi:/var/opt/codesys$ cat /var/opt/codesys/codesyscontrol.log
+[2023-08-08 10:37:05] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/codesysedge start
+[2023-08-08 10:37:05] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:37:06] > codesysedge started
+[2023-08-08 10:40:02] nxbdocker@kbpi:/var/opt/codesys$ echo Terminating CODESYS Runtime ...
+[2023-08-08 10:40:02] > Terminating CODESYS Runtime ...
+[2023-08-08 10:40:02] nxbdocker@kbpi:/var/opt/codesys$ /etc/init.d/codesyscontrol stop
+[2023-08-08 10:40:02] > Error: script has to be run as root
+[2023-08-08 10:40:02] nxbdocker@kbpi:/var/opt/codesys$ echo Terminating ssh ...
+[2023-08-08 10:40:02] > Terminating ssh ...
+[2023-08-08 10:40:02] nxbdocker@kbpi:/var/opt/codesys$ /etc/init.d/ssh stop
+[2023-08-08 10:40:02] > Stopping OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:40:13] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:40:14] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:40:14] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:40:14] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:40:14] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:40:14] nxbdocker@kbpi:/var/opt/codesys$ cat /var/opt/codesys/codesyscontrol.bin.log
+[2023-08-08 10:40:14] > cat: /var/opt/codesys/codesyscontrol.bin.log: No such file or directory
+[2023-08-08 10:40:14] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:40:14] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/codesysedge start
+[2023-08-08 10:40:15] > codesysedge started
+[2023-08-08 10:41:02] nxbdocker@kbpi:/var/opt/codesys$ echo Terminating CODESYS Runtime ...
+[2023-08-08 10:41:02] > Terminating CODESYS Runtime ...
+[2023-08-08 10:41:02] nxbdocker@kbpi:/var/opt/codesys$ /etc/init.d/codesyscontrol stop
+[2023-08-08 10:41:02] > Error: script has to be run as root
+[2023-08-08 10:41:02] nxbdocker@kbpi:/var/opt/codesys$ echo Terminating ssh ...
+[2023-08-08 10:41:02] > Terminating ssh ...
+[2023-08-08 10:41:02] nxbdocker@kbpi:/var/opt/codesys$ /etc/init.d/ssh stop
+[2023-08-08 10:41:02] > Stopping OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:41:13] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:41:13] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:41:13] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:41:13] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:41:13] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:41:13] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:43:54] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:43:54] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:43:54] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:43:54] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:43:54] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:43:54] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:48:48] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:48:48] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:48:48] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:48:48] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:48:48] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:48:49] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 10:51:52] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 10:51:52] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:51:52] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 10:51:52] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 10:51:52] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 10:51:53] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 11:01:59] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 11:02:00] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:02:00] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:02:00] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 11:02:00] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 11:02:00] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 11:21:41] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 11:21:42] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:21:42] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:21:42] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 11:21:42] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 11:21:42] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 11:30:18] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 11:30:19] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:30:19] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:30:19] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 11:30:19] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 11:30:20] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 11:33:27] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 11:33:27] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:33:28] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:33:28] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 11:33:28] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 11:33:28] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 11:42:27] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 11:42:27] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:42:27] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:42:27] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 11:42:28] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 11:42:28] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 11:58:13] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 11:58:13] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:58:14] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 11:58:14] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 11:58:14] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 11:58:15] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:05:32] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:05:32] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:05:33] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:05:33] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:05:33] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:05:33] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:11:41] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:11:41] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:11:41] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:11:41] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:11:42] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:11:43] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:16:55] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:16:56] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:16:56] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:16:56] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:16:56] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:16:57] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:22:03] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:22:04] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:22:04] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:22:04] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:22:04] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:22:04] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:29:05] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:29:05] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:29:05] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:29:05] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:29:06] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:29:06] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:39:26] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:39:26] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:39:26] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:39:26] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:39:27] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:39:27] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:45:32] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:45:32] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:45:32] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:45:32] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:45:33] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:45:33] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-08 12:50:49] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-08 12:50:49] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:50:49] > The container binds the SSH server port to the configured port: 2222
+[2023-08-08 12:50:49] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-08 12:50:49] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-08 12:50:49] > Starting OpenBSD Secure Shell server: sshd.
+[2023-08-11 07:19:54] nxbdocker@kbpi:/var/opt/codesys$ sudo mkdir -p /run/sshd
+[2023-08-11 07:19:55] nxbdocker@kbpi:/var/opt/codesys$ echo The container binds the SSH server port to the configured port: 2222
+[2023-08-11 07:19:55] > The container binds the SSH server port to the configured port: 2222
+[2023-08-11 07:19:55] nxbdocker@kbpi:/var/opt/codesys$ sudo sed -i -e s;#Port 22;Port 2222; /etc/ssh/sshd_config
+[2023-08-11 07:19:55] nxbdocker@kbpi:/var/opt/codesys$ sudo /etc/init.d/ssh start
+[2023-08-11 07:19:57] > Starting OpenBSD Secure Shell server: sshd.

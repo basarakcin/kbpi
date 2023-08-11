@@ -1,0 +1,693 @@
+Hello
+;****************************************************************
+;<loggername>codesyscontrol.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x0000000f<filter>
+;	<maxentries>100000</maxentries>
+;	<maxfiles>1</maxfiles>
+;	<maxfilesize>1000000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2066-12-20T21:26:26Z, 0x00000109, 16, 0, 0, SysModuleLoad: libCmpBACnet.so: 0x557eb91ab0
+2066-12-20T21:26:26Z, 0x00000109, 16, 0, 0, SysModuleLoad: libCmpBACnet2.so: 0x557eb928c0
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <logoptions>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <bEnable>1</bEnable>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <type>normal</type>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <timestamp>rtc</timestamp>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <disableable>0</disableable>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <Filter>0x0000000f</Filter>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <MaxEntries>100000</MaxEntries>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <MaxFiles>1</MaxFiles>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, <MaxFileSize>1000000</MaxFileSize>
+2023-08-02T13:17:33Z, 0x00000013, 1, 0, 0, </logoptions>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>CM</cmp>, <id>0x00000001</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>CmpMemPool</cmp>, <id>0x0000001e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>CmpLog</cmp>, <id>0x00000013</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>CmpSettings</cmp>, <id>0x0000001a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysFile</cmp>, <id>0x00000104</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysCom</cmp>, <id>0x00000100</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysCpuHandling</cmp>, <id>0x00000101</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysCpuMultiCore</cmp>, <id>0x0000013d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysCrypto</cmp>, <id>0x00000141</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysDir</cmp>, <id>0x0000011b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysEthernet</cmp>, <id>0x0000011c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysEvent</cmp>, <id>0x00000102</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysExcept</cmp>, <id>0x00000103</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysInternalLib</cmp>, <id>0x00000107</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysMem</cmp>, <id>0x00000108</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysModule</cmp>, <id>0x00000109</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysMsgQ</cmp>, <id>0x0000010a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysMutex</cmp>, <id>0x0000013a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysOut</cmp>, <id>0x0000010b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysProcess</cmp>, <id>0x0000010e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysSem</cmp>, <id>0x0000010f</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysSemCount</cmp>, <id>0x00000139</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysSemProcess</cmp>, <id>0x00000119</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysShm</cmp>, <id>0x00000110</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysSocket</cmp>, <id>0x00000111</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysTarget</cmp>, <id>0x00000112</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysTask</cmp>, <id>0x00000114</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysTime</cmp>, <id>0x00000115</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysTimeRtc</cmp>, <id>0x00000127</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, System: <cmp>SysTimer</cmp>, <id>0x00000116</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpAlarmManager</cmp>, <id>0x0000007c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpApp</cmp>, <id>0x00000002</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpAppBP</cmp>, <id>0x00000073</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpAppForce</cmp>, <id>0x00000074</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpAsyncMgr</cmp>, <id>0x0000005f</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpAuditLog</cmp>, <id>0x000000a1</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpBinTagUtil</cmp>, <id>0x00000004</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpBinTagUtilIec</cmp>, <id>0x0000005c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpBitmapPool</cmp>, <id>0x00000050</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpBlkDrvTcp</cmp>, <id>0x00000030</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpBlkDrvUdp</cmp>, <id>0x00000007</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAAsyncMan</cmp>, <id>0x00004007</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAABehaviourModel</cmp>, <id>0x00004015</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAACallback</cmp>, <id>0x00004001</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAACanL2</cmp>, <id>0x00004004</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAADTUtil</cmp>, <id>0x00004013</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAFile</cmp>, <id>0x00004008</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAMemBlockMan</cmp>, <id>0x00004003</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAANetBaseServices</cmp>, <id>0x00004018</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAARealTimeClock</cmp>, <id>0x00004014</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASdoClient</cmp>, <id>0x00004011</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASdoServer</cmp>, <id>0x00004017</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASegBufferMan</cmp>, <id>0x00004019</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASerialCom</cmp>, <id>0x00004012</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAStorage</cmp>, <id>0x0000007e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATick</cmp>, <id>0x00004009</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATickUtil</cmp>, <id>0x00004010</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATimer</cmp>, <id>0x00004016</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATypes</cmp>, <id>0x00004006</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelClient</cmp>, <id>0x00000008</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelClientIec</cmp>, <id>0x0000005d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelMgr</cmp>, <id>0x00000009</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelServer</cmp>, <id>0x0000000a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCharDevice</cmp>, <id>0x00000300</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpChecksum</cmp>, <id>0x0000000b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCodeMeter</cmp>, <id>0x0000007a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCommunicationLib</cmp>, <id>0x0000000c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCoreDump</cmp>, <id>0x00000083</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpCryptMD5</cmp>, <id>0x0000006a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpDevice</cmp>, <id>0x0000000e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpDynamicText</cmp>, <id>0x00000051</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpEL6751CanDrv</cmp>, <id>0x00005f0b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpEventMgr</cmp>, <id>0x0000005b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpEventMgrUnixBackend</cmp>, <id>0x000000a4</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpFileTransfer</cmp>, <id>0x0000005e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpIecStringUtils</cmp>, <id>0x0000007f</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpIecTask</cmp>, <id>0x00000011</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpIecVarAccess</cmp>, <id>0x00000060</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpIoDrvIec</cmp>, <id>0x0000005a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpIoMgr</cmp>, <id>0x00000012</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpKnxStack</cmp>, <id>0x0000004d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxInterrupt</cmp>, <id>0x000000a2</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxRTDiag</cmp>, <id>0x000000a7</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxSL</cmp>, <id>0x00000092</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpMonitor2</cmp>, <id>0x00000032</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceClient</cmp>, <id>0x00000015</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceClientIec</cmp>, <id>0x0000011d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceServer</cmp>, <id>0x00000016</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAClient</cmp>, <id>0x00000096</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAProviderIecVarAccess</cmp>, <id>0x00000126</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAServer</cmp>, <id>0x00000124</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAStack</cmp>, <id>0x0000008d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpObjectMgr</cmp>, <id>0x00000080</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpOpenSSL</cmp>, <id>0x00000033</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpPlcShellLinux</cmp>, <id>0x00000128</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpPlcShellLinuxBackend</cmp>, <id>0x000000a5</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpRedundancy</cmp>, <id>0x00000129</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpRedundancyConnectionIP</cmp>, <id>0x0000ff03</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpRetain</cmp>, <id>0x00000017</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpRouter</cmp>, <id>0x00000018</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpRunStopSwitch</cmp>, <id>0x000000a6</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpSchedule</cmp>, <id>0x00000019</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpSecureChannel</cmp>, <id>0x00000090</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpSecurityManager</cmp>, <id>0x0000008e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpSessionInformation</cmp>, <id>0x00000097</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpSocketCanDrv</cmp>, <id>0x00005f0d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpSocketUnix</cmp>, <id>0x000000a3</id> <ver>4.8.0.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpSrv</cmp>, <id>0x0000001c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpTraceMgr</cmp>, <id>0x00000070</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpUserDBFile</cmp>, <id>0x00000098</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpUserGroupsDBFile</cmp>, <id>0x00000099</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpUserMgr</cmp>, <id>0x00000061</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpUserObjectsDBFile</cmp>, <id>0x0000009c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpVisuHandler</cmp>, <id>0x00000054</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpVisuServer</cmp>, <id>0x00000057</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpWebServer</cmp>, <id>0x00000071</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, <cmp>CmpWebServerHandlerV3</cmp>, <id>0x00000072</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, Dynamic: <cmp>CmpBACnet</cmp>, <id>0x00000400</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x00000001, 1, 0, 10, Dynamic: <cmp>CmpBACnet2</cmp>, <id>0x00000401</id> <ver>3.5.19.0</ver>
+2023-08-02T13:17:33Z, 0x0000013d, 1, 0, 4, MultiCore support: [activated], all cores are used
+2023-08-02T13:17:33Z, 0x0000013d, 1, 0, 4, Number of available cores: 4
+2023-08-02T13:17:33Z, 0x00000401, 2, 0, 0, !!!! Warning: component CmpBACnet loaded already
+2023-08-02T13:17:33Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(codesyscontrol_0.log): No such file or directory
+2023-08-02T13:17:33Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.20.10.3</ipaddress>, subnetmask <subnetmask>255.255.255.240</subnetmask>
+2023-08-02T13:17:33Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 2</interface> at router <instance>0</instance> registered
+2023-08-02T13:17:33Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.17.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-02T13:17:33Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 3</interface> at router <instance>1</instance> registered
+2023-08-02T13:17:33Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.22.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-02T13:17:33Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 4</interface> at router <instance>2</instance> registered
+2023-08-02T13:17:33Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.18.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-02T13:17:33Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 5</interface> at router <instance>3</instance> registered
+2023-08-02T13:17:33Z, 0x00000009, 1, 0, 2, Running as network server
+2023-08-02T13:17:33Z, 0x00000009, 1, 0, 1, Running as network client
+2023-08-02T13:17:33Z, 0x0000000a, 1, 0, 0, <NumOfChannels>4</NumOfChannels> channels available, each of the size <BufferSize>100000</BufferSize> Bytes
+2023-08-02T13:17:48Z, 0x0000007a, 4, 1, 0, **** ERROR: CodeMeter runtime could not be connected: iLastError=101
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0, CmpBACnet 1024 BACstack information
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0,   version = 15.0.1.1
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0,   __BYTE_ORDER = 1234
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0,   TARGET_IEEE_FP_FORMAT = 1
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0,   TARGET_FP_BIG_ENDIAN = 0
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0,   TARGET_DP_BIG_ENDIAN = 0
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0,   TARGET_INTEGRAL_BIG_ENDIAN = 0
+2023-08-02T13:17:48Z, 0x00000400, 1, 0, 0,   TARGET_USED_ALIGNMENT = 1
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0, CmpBACnet2 1025 BACstack information
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0,   version = 24.1.33.1
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0,   __BYTE_ORDER = 1234
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0,   TARGET_IEEE_FP_FORMAT = 1
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0,   TARGET_FP_BIG_ENDIAN = 0
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0,   TARGET_DP_BIG_ENDIAN = 0
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0,   TARGET_INTEGRAL_BIG_ENDIAN = 0
+2023-08-02T13:17:48Z, 0x00000401, 1, 0, 0,   TARGET_MCU_USED_ALIGNMENT = 1
+2023-08-02T13:17:48Z, 0x00000129, 1, 0, 0, Debug Messages not activated
+2023-08-02T13:17:48Z, 0x0000ff03, 1, 0, 0, Read connection settings...
+2023-08-02T13:17:48Z, 0x00000030, 1, 0, 6, Local network address: <ipaddress>172.20.10.3</ipaddress>
+2023-08-02T13:17:48Z, 0x00000018, 1, 0, 4, Network interface <interface>BlkDrvTcp</interface> at router <instance>4</instance> registered
+2023-08-02T13:17:48Z, 0x0000007a, 4, 1, 0, **** ERROR: CodeMWriteLicenseFile: CodeMeter access denied
+2023-08-02T13:17:48Z, 0x0000007a, 4, 25, 0, **** ERROR: CodeMCreateInitialSoftcontainer: Error creating initial empty soft container
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, No certificate for the OPC UA server available.
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, Security policy allows plain text communication. Secure communication is deactivated.
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, **************************************************************
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0,     OPC UA Server Started: 
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0,     Hostname: kbpi, Port: 4840
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0,     URL: opc.tcp://kbpi:4840
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0,     Loopbackadapter activated.
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0,     All available networkadapters are used.
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0,     Multithreading activated. 3 workers used.
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, **************************************************************
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, Provider 'CODESYS_DefaultProvider' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:17:48Z, 0x000000a6, 1, 0, 0, Not able to read file of Run/Stop switch. Functionality of component disabled
+2023-08-02T13:17:48Z, 0x00000001, 1, 0, 0, =========================================================================
+2023-08-02T13:17:48Z, 0x00000001, 1, 0, 4, CODESYS Control for Linux ARM64 SL
+2023-08-02T13:17:48Z, 0x00000001, 1, 0, 4, OS=Linux, CPU=ARM, Arch=64Bit, Coding=C
+2023-08-02T13:17:48Z, 0x00000001, 1, 0, 6, <version>3.5.19.0</version> <builddate>Apr  3 2023</builddate>
+2023-08-02T13:17:48Z, 0x00000001, 1, 0, 5, Copyright CODESYS Development GmbH
+2023-08-02T13:17:48Z, 0x00000001, 1, 0, 0, =========================================================================
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, Provider 'AddressSpaceFragment Provider' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, Provider 'OPC UA for IEC-61131-3' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:17:48Z, 0x00000124, 1, 0, 0, Provider 'AlarmManager' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:17:48Z, 0x00000018, 1, 0, 1, Setting router <instance>0</instance> address to <address>(0003)</address>
+2023-08-02T13:17:48Z, 0x00000018, 1, 0, 1, Setting router <instance>1</instance> address to <address>(0000:0001)</address>
+2023-08-02T13:17:48Z, 0x00000018, 1, 0, 1, Setting router <instance>2</instance> address to <address>(0000:0001)</address>
+2023-08-02T13:17:48Z, 0x00000018, 1, 0, 1, Setting router <instance>3</instance> address to <address>(0000:0001)</address>
+2023-08-02T13:17:48Z, 0x00000018, 1, 0, 1, Setting router <instance>4</instance> address to <address>(2ddc:ac14:0a03)</address>
+2023-08-02T13:17:48Z, 0x00000001, 1, 0, 34, CODESYS Control ready
+2023-08-02T13:17:48Z, 0x00000001, 2, 0, 0, !!!! Warning: no runtime license - running in demo mode(~2 hours)
+2023-08-02T13:18:26Z, 0x0000013d, 1, 0, 4, Number of licensed cores for IEC-tasks: 1 from 4
+2023-08-02T13:18:26Z, 0x00000002, 1, 0, 2, Application [<app>Application</app>] loaded via [Download]
+2023-08-02T13:18:26Z, 0x00000126, 2, 0, 0, !!!! Warning: No valid license found for OPC UA IecVarAccess provider. Running in demo mode (2h).
+2023-08-02T13:18:27Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(PlcLogic/Application/Application.core): No such file or directory
+2023-08-02T13:20:36Z, 0x00000011, 8, 1, 4, #### Exception: *DETAILS* [task=MainTask] does not react within timeout switching to stop! Application reset is necessary!
+2023-08-02T13:20:36Z, 0x00000011, 8, 16, 3, #### Exception: *EXCEPTION* [<excpt>Watchdog</excpt>] occurred: App=[<app>Application</app>], Task=[<task>MainTask</task>]
+2023-08-02T13:20:36Z, 0x00000011, 8, 16, 3, #### Exception: *SOURCEPOSITION* App=[<app>Application</app>] area=<area>3</area>, offset=<off>133056</off>
+2023-08-02T13:24:32Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(PlcLogic/Application/Application.core): No such file or directory
+2023-08-02T13:25:15Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(PlcLogic/Application/Application.core): No such file or directory
+;****************************************************************
+;<loggername>codesyscontrol.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x0000000f<filter>
+;	<maxentries>100000</maxentries>
+;	<maxfiles>1</maxfiles>
+;	<maxfilesize>1000000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2066-12-29T11:52:19Z, 0x00000109, 16, 0, 0, SysModuleLoad: libCmpBACnet.so: 0x55cdf08ab0
+2066-12-29T11:52:19Z, 0x00000109, 16, 0, 0, SysModuleLoad: libCmpBACnet2.so: 0x55cdf098c0
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <logoptions>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <bEnable>1</bEnable>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <type>normal</type>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <timestamp>rtc</timestamp>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <disableable>0</disableable>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <Filter>0x0000000f</Filter>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <MaxEntries>100000</MaxEntries>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <MaxFiles>1</MaxFiles>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, <MaxFileSize>1000000</MaxFileSize>
+2023-08-02T13:29:56Z, 0x00000013, 1, 0, 0, </logoptions>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>CM</cmp>, <id>0x00000001</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>CmpMemPool</cmp>, <id>0x0000001e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>CmpLog</cmp>, <id>0x00000013</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>CmpSettings</cmp>, <id>0x0000001a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysFile</cmp>, <id>0x00000104</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysCom</cmp>, <id>0x00000100</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysCpuHandling</cmp>, <id>0x00000101</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysCpuMultiCore</cmp>, <id>0x0000013d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysCrypto</cmp>, <id>0x00000141</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysDir</cmp>, <id>0x0000011b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysEthernet</cmp>, <id>0x0000011c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysEvent</cmp>, <id>0x00000102</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysExcept</cmp>, <id>0x00000103</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysInternalLib</cmp>, <id>0x00000107</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysMem</cmp>, <id>0x00000108</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysModule</cmp>, <id>0x00000109</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysMsgQ</cmp>, <id>0x0000010a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysMutex</cmp>, <id>0x0000013a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysOut</cmp>, <id>0x0000010b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysProcess</cmp>, <id>0x0000010e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysSem</cmp>, <id>0x0000010f</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysSemCount</cmp>, <id>0x00000139</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysSemProcess</cmp>, <id>0x00000119</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysShm</cmp>, <id>0x00000110</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysSocket</cmp>, <id>0x00000111</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysTarget</cmp>, <id>0x00000112</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysTask</cmp>, <id>0x00000114</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysTime</cmp>, <id>0x00000115</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysTimeRtc</cmp>, <id>0x00000127</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, System: <cmp>SysTimer</cmp>, <id>0x00000116</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpAlarmManager</cmp>, <id>0x0000007c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpApp</cmp>, <id>0x00000002</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpAppBP</cmp>, <id>0x00000073</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpAppForce</cmp>, <id>0x00000074</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpAsyncMgr</cmp>, <id>0x0000005f</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpAuditLog</cmp>, <id>0x000000a1</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpBinTagUtil</cmp>, <id>0x00000004</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpBinTagUtilIec</cmp>, <id>0x0000005c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpBitmapPool</cmp>, <id>0x00000050</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpBlkDrvTcp</cmp>, <id>0x00000030</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpBlkDrvUdp</cmp>, <id>0x00000007</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAAsyncMan</cmp>, <id>0x00004007</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAABehaviourModel</cmp>, <id>0x00004015</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAACallback</cmp>, <id>0x00004001</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAACanL2</cmp>, <id>0x00004004</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAADTUtil</cmp>, <id>0x00004013</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAFile</cmp>, <id>0x00004008</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAMemBlockMan</cmp>, <id>0x00004003</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAANetBaseServices</cmp>, <id>0x00004018</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAARealTimeClock</cmp>, <id>0x00004014</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASdoClient</cmp>, <id>0x00004011</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASdoServer</cmp>, <id>0x00004017</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASegBufferMan</cmp>, <id>0x00004019</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASerialCom</cmp>, <id>0x00004012</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAStorage</cmp>, <id>0x0000007e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATick</cmp>, <id>0x00004009</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATickUtil</cmp>, <id>0x00004010</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATimer</cmp>, <id>0x00004016</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATypes</cmp>, <id>0x00004006</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelClient</cmp>, <id>0x00000008</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelClientIec</cmp>, <id>0x0000005d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelMgr</cmp>, <id>0x00000009</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelServer</cmp>, <id>0x0000000a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCharDevice</cmp>, <id>0x00000300</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpChecksum</cmp>, <id>0x0000000b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCodeMeter</cmp>, <id>0x0000007a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCommunicationLib</cmp>, <id>0x0000000c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCoreDump</cmp>, <id>0x00000083</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpCryptMD5</cmp>, <id>0x0000006a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpDevice</cmp>, <id>0x0000000e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpDynamicText</cmp>, <id>0x00000051</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpEL6751CanDrv</cmp>, <id>0x00005f0b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpEventMgr</cmp>, <id>0x0000005b</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpEventMgrUnixBackend</cmp>, <id>0x000000a4</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpFileTransfer</cmp>, <id>0x0000005e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpIecStringUtils</cmp>, <id>0x0000007f</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpIecTask</cmp>, <id>0x00000011</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpIecVarAccess</cmp>, <id>0x00000060</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpIoDrvIec</cmp>, <id>0x0000005a</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpIoMgr</cmp>, <id>0x00000012</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpKnxStack</cmp>, <id>0x0000004d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxInterrupt</cmp>, <id>0x000000a2</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxRTDiag</cmp>, <id>0x000000a7</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxSL</cmp>, <id>0x00000092</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpMonitor2</cmp>, <id>0x00000032</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceClient</cmp>, <id>0x00000015</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceClientIec</cmp>, <id>0x0000011d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceServer</cmp>, <id>0x00000016</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAClient</cmp>, <id>0x00000096</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAProviderIecVarAccess</cmp>, <id>0x00000126</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAServer</cmp>, <id>0x00000124</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAStack</cmp>, <id>0x0000008d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpObjectMgr</cmp>, <id>0x00000080</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpOpenSSL</cmp>, <id>0x00000033</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpPlcShellLinux</cmp>, <id>0x00000128</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpPlcShellLinuxBackend</cmp>, <id>0x000000a5</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpRedundancy</cmp>, <id>0x00000129</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpRedundancyConnectionIP</cmp>, <id>0x0000ff03</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpRetain</cmp>, <id>0x00000017</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpRouter</cmp>, <id>0x00000018</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpRunStopSwitch</cmp>, <id>0x000000a6</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpSchedule</cmp>, <id>0x00000019</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpSecureChannel</cmp>, <id>0x00000090</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpSecurityManager</cmp>, <id>0x0000008e</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpSessionInformation</cmp>, <id>0x00000097</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpSocketCanDrv</cmp>, <id>0x00005f0d</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpSocketUnix</cmp>, <id>0x000000a3</id> <ver>4.8.0.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpSrv</cmp>, <id>0x0000001c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpTraceMgr</cmp>, <id>0x00000070</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpUserDBFile</cmp>, <id>0x00000098</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpUserGroupsDBFile</cmp>, <id>0x00000099</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpUserMgr</cmp>, <id>0x00000061</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpUserObjectsDBFile</cmp>, <id>0x0000009c</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpVisuHandler</cmp>, <id>0x00000054</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpVisuServer</cmp>, <id>0x00000057</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpWebServer</cmp>, <id>0x00000071</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, <cmp>CmpWebServerHandlerV3</cmp>, <id>0x00000072</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, Dynamic: <cmp>CmpBACnet</cmp>, <id>0x00000400</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x00000001, 1, 0, 10, Dynamic: <cmp>CmpBACnet2</cmp>, <id>0x00000401</id> <ver>3.5.19.0</ver>
+2023-08-02T13:29:56Z, 0x0000013d, 1, 0, 4, MultiCore support: [activated], all cores are used
+2023-08-02T13:29:56Z, 0x0000013d, 1, 0, 4, Number of available cores: 4
+2023-08-02T13:29:56Z, 0x00000401, 2, 0, 0, !!!! Warning: component CmpBACnet loaded already
+2023-08-02T13:29:56Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(codesyscontrol_0.log): No such file or directory
+2023-08-02T13:29:56Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.20.10.3</ipaddress>, subnetmask <subnetmask>255.255.255.240</subnetmask>
+2023-08-02T13:29:56Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 2</interface> at router <instance>0</instance> registered
+2023-08-02T13:29:56Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.17.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-02T13:29:56Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 3</interface> at router <instance>1</instance> registered
+2023-08-02T13:29:56Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.22.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-02T13:29:56Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 4</interface> at router <instance>2</instance> registered
+2023-08-02T13:29:56Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.18.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-02T13:29:56Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 5</interface> at router <instance>3</instance> registered
+2023-08-02T13:29:56Z, 0x00000009, 1, 0, 2, Running as network server
+2023-08-02T13:29:56Z, 0x00000009, 1, 0, 1, Running as network client
+2023-08-02T13:29:56Z, 0x0000000a, 1, 0, 0, <NumOfChannels>4</NumOfChannels> channels available, each of the size <BufferSize>100000</BufferSize> Bytes
+2023-08-02T13:30:11Z, 0x0000007a, 4, 1, 0, **** ERROR: CodeMeter runtime could not be connected: iLastError=101
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0, CmpBACnet 1024 BACstack information
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0,   version = 15.0.1.1
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0,   __BYTE_ORDER = 1234
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0,   TARGET_IEEE_FP_FORMAT = 1
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0,   TARGET_FP_BIG_ENDIAN = 0
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0,   TARGET_DP_BIG_ENDIAN = 0
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0,   TARGET_INTEGRAL_BIG_ENDIAN = 0
+2023-08-02T13:30:11Z, 0x00000400, 1, 0, 0,   TARGET_USED_ALIGNMENT = 1
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0, CmpBACnet2 1025 BACstack information
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0,   version = 24.1.33.1
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0,   __BYTE_ORDER = 1234
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0,   TARGET_IEEE_FP_FORMAT = 1
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0,   TARGET_FP_BIG_ENDIAN = 0
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0,   TARGET_DP_BIG_ENDIAN = 0
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0,   TARGET_INTEGRAL_BIG_ENDIAN = 0
+2023-08-02T13:30:11Z, 0x00000401, 1, 0, 0,   TARGET_MCU_USED_ALIGNMENT = 1
+2023-08-02T13:30:11Z, 0x00000129, 1, 0, 0, Debug Messages not activated
+2023-08-02T13:30:11Z, 0x0000ff03, 1, 0, 0, Read connection settings...
+2023-08-02T13:30:11Z, 0x00000030, 1, 0, 6, Local network address: <ipaddress>172.20.10.3</ipaddress>
+2023-08-02T13:30:11Z, 0x00000018, 1, 0, 4, Network interface <interface>BlkDrvTcp</interface> at router <instance>4</instance> registered
+2023-08-02T13:30:11Z, 0x0000007a, 4, 1, 0, **** ERROR: CodeMWriteLicenseFile: CodeMeter access denied
+2023-08-02T13:30:11Z, 0x0000007a, 4, 25, 0, **** ERROR: CodeMCreateInitialSoftcontainer: Error creating initial empty soft container
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, No certificate for the OPC UA server available.
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, Security policy allows plain text communication. Secure communication is deactivated.
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, **************************************************************
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0,     OPC UA Server Started: 
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0,     Hostname: kbpi, Port: 4840
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0,     URL: opc.tcp://kbpi:4840
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0,     Loopbackadapter activated.
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0,     All available networkadapters are used.
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0,     Multithreading activated. 3 workers used.
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, **************************************************************
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, Provider 'CODESYS_DefaultProvider' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:30:11Z, 0x000000a6, 1, 0, 0, Not able to read file of Run/Stop switch. Functionality of component disabled
+2023-08-02T13:30:11Z, 0x00000001, 1, 0, 0, =========================================================================
+2023-08-02T13:30:11Z, 0x00000001, 1, 0, 4, CODESYS Control for Linux ARM64 SL
+2023-08-02T13:30:11Z, 0x00000001, 1, 0, 4, OS=Linux, CPU=ARM, Arch=64Bit, Coding=C
+2023-08-02T13:30:11Z, 0x00000001, 1, 0, 6, <version>3.5.19.0</version> <builddate>Apr  3 2023</builddate>
+2023-08-02T13:30:11Z, 0x00000001, 1, 0, 5, Copyright CODESYS Development GmbH
+2023-08-02T13:30:11Z, 0x00000001, 1, 0, 0, =========================================================================
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, Provider 'AddressSpaceFragment Provider' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, Provider 'OPC UA for IEC-61131-3' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:30:11Z, 0x00000124, 1, 0, 0, Provider 'AlarmManager' (version 0x3051300) registered at the OPC UA server.
+2023-08-02T13:30:11Z, 0x0000013d, 1, 0, 4, Number of licensed cores for IEC-tasks: 1 from 4
+2023-08-02T13:30:11Z, 0x00000126, 2, 0, 0, !!!! Warning: No valid license found for OPC UA IecVarAccess provider. Running in demo mode (2h).
+2023-08-02T13:30:11Z, 0x00000002, 1, 0, 22, No retain area in bootproject of application [<app>Application</app>]
+2023-08-02T13:30:11Z, 0x00000002, 1, 0, 6, Bootproject of application [<app>Application</app>] loaded
+2023-08-02T13:30:11Z, 0x00000018, 1, 0, 1, Setting router <instance>0</instance> address to <address>(0003)</address>
+2023-08-02T13:30:11Z, 0x00000018, 1, 0, 1, Setting router <instance>1</instance> address to <address>(0000:0001)</address>
+2023-08-02T13:30:11Z, 0x00000018, 1, 0, 1, Setting router <instance>2</instance> address to <address>(0000:0001)</address>
+2023-08-02T13:30:11Z, 0x00000018, 1, 0, 1, Setting router <instance>3</instance> address to <address>(0000:0001)</address>
+2023-08-02T13:30:11Z, 0x00000018, 1, 0, 1, Setting router <instance>4</instance> address to <address>(2ddc:ac14:0a03)</address>
+2023-08-02T13:30:11Z, 0x00000002, 1, 0, 10, Application [<app>Application</app>] started
+2023-08-02T13:30:11Z, 0x00000001, 1, 0, 34, CODESYS Control ready
+2023-08-02T13:30:11Z, 0x00000001, 2, 0, 0, !!!! Warning: no runtime license - running in demo mode(~2 hours)
+2023-08-02T13:33:22Z, 0x00000011, 8, 1, 4, #### Exception: *DETAILS* [task=MainTask] does not react within timeout switching to stop! Application reset is necessary!
+2023-08-02T13:33:22Z, 0x00000019, 8, 16, 3, #### Exception: *EXCEPTION* <task>Schedule</task> <IP>0x0</IP> <BP>0xa57e5670</BP> <SP>0xa57e5670</SP>
+2023-08-02T13:33:23Z, 0x00000002, 1, 0, 2, Application [<app>Application</app>] loaded via [Download]
+2023-08-02T13:33:23Z, 0x00000126, 1, 0, 0, No valid license found for OPC UA IecVarAccess provider. Running in demo mode.
+2023-08-02T13:33:23Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(PlcLogic/Application/Application.core): No such file or directory
+2023-08-02T13:34:19Z, 0x00000002, 1, 0, 2, Application [<app>Application</app>] loaded via [Download]
+2023-08-02T13:34:19Z, 0x00000126, 1, 0, 0, No valid license found for OPC UA IecVarAccess provider. Running in demo mode.
+2023-08-02T13:34:20Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(PlcLogic/Application/Application.core): No such file or directory
+2023-08-02T13:37:46Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(PlcLogic/Application/Application.core): No such file or directory
+2023-08-02T13:39:56Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(PlcLogic/Application/Application.core): No such file or directory
+;****************************************************************
+;<loggername>codesyscontrol.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x0000000f<filter>
+;	<maxentries>100000</maxentries>
+;	<maxfiles>1</maxfiles>
+;	<maxfilesize>1000000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2082-08-25T07:46:43Z, 0x00000109, 16, 0, 0, SysModuleLoad: libCmpBACnet.so: 0x557d057ab0
+2082-08-25T07:46:43Z, 0x00000109, 16, 0, 0, SysModuleLoad: libCmpBACnet2.so: 0x557d0588c0
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <logoptions>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <bEnable>1</bEnable>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <type>normal</type>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <timestamp>rtc</timestamp>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <disableable>0</disableable>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <Filter>0x0000000f</Filter>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <MaxEntries>100000</MaxEntries>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <MaxFiles>1</MaxFiles>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, <MaxFileSize>1000000</MaxFileSize>
+2023-08-08T06:43:36Z, 0x00000013, 1, 0, 0, </logoptions>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>CM</cmp>, <id>0x00000001</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>CmpMemPool</cmp>, <id>0x0000001e</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>CmpLog</cmp>, <id>0x00000013</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>CmpSettings</cmp>, <id>0x0000001a</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysFile</cmp>, <id>0x00000104</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysCom</cmp>, <id>0x00000100</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysCpuHandling</cmp>, <id>0x00000101</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysCpuMultiCore</cmp>, <id>0x0000013d</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysCrypto</cmp>, <id>0x00000141</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysDir</cmp>, <id>0x0000011b</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysEthernet</cmp>, <id>0x0000011c</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysEvent</cmp>, <id>0x00000102</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysExcept</cmp>, <id>0x00000103</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysInternalLib</cmp>, <id>0x00000107</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysMem</cmp>, <id>0x00000108</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysModule</cmp>, <id>0x00000109</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysMsgQ</cmp>, <id>0x0000010a</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysMutex</cmp>, <id>0x0000013a</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysOut</cmp>, <id>0x0000010b</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysProcess</cmp>, <id>0x0000010e</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysSem</cmp>, <id>0x0000010f</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysSemCount</cmp>, <id>0x00000139</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysSemProcess</cmp>, <id>0x00000119</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysShm</cmp>, <id>0x00000110</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysSocket</cmp>, <id>0x00000111</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysTarget</cmp>, <id>0x00000112</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysTask</cmp>, <id>0x00000114</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysTime</cmp>, <id>0x00000115</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysTimeRtc</cmp>, <id>0x00000127</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, System: <cmp>SysTimer</cmp>, <id>0x00000116</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpAlarmManager</cmp>, <id>0x0000007c</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpApp</cmp>, <id>0x00000002</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpAppBP</cmp>, <id>0x00000073</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpAppForce</cmp>, <id>0x00000074</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpAsyncMgr</cmp>, <id>0x0000005f</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpAuditLog</cmp>, <id>0x000000a1</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpBinTagUtil</cmp>, <id>0x00000004</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpBinTagUtilIec</cmp>, <id>0x0000005c</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpBitmapPool</cmp>, <id>0x00000050</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpBlkDrvTcp</cmp>, <id>0x00000030</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpBlkDrvUdp</cmp>, <id>0x00000007</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAAsyncMan</cmp>, <id>0x00004007</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAABehaviourModel</cmp>, <id>0x00004015</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAACallback</cmp>, <id>0x00004001</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAACanL2</cmp>, <id>0x00004004</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAADTUtil</cmp>, <id>0x00004013</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAFile</cmp>, <id>0x00004008</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAMemBlockMan</cmp>, <id>0x00004003</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAANetBaseServices</cmp>, <id>0x00004018</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAARealTimeClock</cmp>, <id>0x00004014</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASdoClient</cmp>, <id>0x00004011</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASdoServer</cmp>, <id>0x00004017</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASegBufferMan</cmp>, <id>0x00004019</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAASerialCom</cmp>, <id>0x00004012</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAAStorage</cmp>, <id>0x0000007e</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATick</cmp>, <id>0x00004009</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATickUtil</cmp>, <id>0x00004010</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATimer</cmp>, <id>0x00004016</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCAATypes</cmp>, <id>0x00004006</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelClient</cmp>, <id>0x00000008</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelClientIec</cmp>, <id>0x0000005d</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelMgr</cmp>, <id>0x00000009</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpChannelServer</cmp>, <id>0x0000000a</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCharDevice</cmp>, <id>0x00000300</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpChecksum</cmp>, <id>0x0000000b</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCodeMeter</cmp>, <id>0x0000007a</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCommunicationLib</cmp>, <id>0x0000000c</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCoreDump</cmp>, <id>0x00000083</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpCryptMD5</cmp>, <id>0x0000006a</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpDevice</cmp>, <id>0x0000000e</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpDynamicText</cmp>, <id>0x00000051</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpEL6751CanDrv</cmp>, <id>0x00005f0b</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpEventMgr</cmp>, <id>0x0000005b</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpEventMgrUnixBackend</cmp>, <id>0x000000a4</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpFileTransfer</cmp>, <id>0x0000005e</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpIecStringUtils</cmp>, <id>0x0000007f</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpIecTask</cmp>, <id>0x00000011</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpIecVarAccess</cmp>, <id>0x00000060</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpIoDrvIec</cmp>, <id>0x0000005a</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpIoMgr</cmp>, <id>0x00000012</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpKnxStack</cmp>, <id>0x0000004d</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxInterrupt</cmp>, <id>0x000000a2</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxRTDiag</cmp>, <id>0x000000a7</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpLinuxSL</cmp>, <id>0x00000092</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpMonitor2</cmp>, <id>0x00000032</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceClient</cmp>, <id>0x00000015</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceClientIec</cmp>, <id>0x0000011d</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpNameServiceServer</cmp>, <id>0x00000016</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAClient</cmp>, <id>0x00000096</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAProviderIecVarAccess</cmp>, <id>0x00000126</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAServer</cmp>, <id>0x00000124</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpOPCUAStack</cmp>, <id>0x0000008d</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpObjectMgr</cmp>, <id>0x00000080</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpOpenSSL</cmp>, <id>0x00000033</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpPlcShellLinux</cmp>, <id>0x00000128</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpPlcShellLinuxBackend</cmp>, <id>0x000000a5</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpRedundancy</cmp>, <id>0x00000129</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpRedundancyConnectionIP</cmp>, <id>0x0000ff03</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpRetain</cmp>, <id>0x00000017</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpRouter</cmp>, <id>0x00000018</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpRunStopSwitch</cmp>, <id>0x000000a6</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpSchedule</cmp>, <id>0x00000019</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpSecureChannel</cmp>, <id>0x00000090</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpSecurityManager</cmp>, <id>0x0000008e</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpSessionInformation</cmp>, <id>0x00000097</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpSocketCanDrv</cmp>, <id>0x00005f0d</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpSocketUnix</cmp>, <id>0x000000a3</id> <ver>4.8.0.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpSrv</cmp>, <id>0x0000001c</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpTraceMgr</cmp>, <id>0x00000070</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpUserDBFile</cmp>, <id>0x00000098</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpUserGroupsDBFile</cmp>, <id>0x00000099</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpUserMgr</cmp>, <id>0x00000061</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpUserObjectsDBFile</cmp>, <id>0x0000009c</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpVisuHandler</cmp>, <id>0x00000054</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpVisuServer</cmp>, <id>0x00000057</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpWebServer</cmp>, <id>0x00000071</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, <cmp>CmpWebServerHandlerV3</cmp>, <id>0x00000072</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, Dynamic: <cmp>CmpBACnet</cmp>, <id>0x00000400</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x00000001, 1, 0, 10, Dynamic: <cmp>CmpBACnet2</cmp>, <id>0x00000401</id> <ver>3.5.19.0</ver>
+2023-08-08T06:43:36Z, 0x0000013d, 1, 0, 4, MultiCore support: [activated], all cores are used
+2023-08-08T06:43:36Z, 0x0000013d, 1, 0, 4, Number of available cores: 4
+2023-08-08T06:43:36Z, 0x00000401, 2, 0, 0, !!!! Warning: component CmpBACnet loaded already
+2023-08-08T06:43:36Z, 0x00000104, 2, 16, 0, !!!! Warning: SysFileGetTime_: stat(codesyscontrol_0.log): No such file or directory
+2023-08-08T06:43:37Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.20.10.3</ipaddress>, subnetmask <subnetmask>255.255.255.240</subnetmask>
+2023-08-08T06:43:37Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 2</interface> at router <instance>0</instance> registered
+2023-08-08T06:43:37Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.17.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-08T06:43:37Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 3</interface> at router <instance>1</instance> registered
+2023-08-08T06:43:37Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.22.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-08T06:43:37Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 4</interface> at router <instance>2</instance> registered
+2023-08-08T06:43:37Z, 0x00000007, 1, 0, 6, Network interface: <ipaddress>172.18.0.1</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+2023-08-08T06:43:37Z, 0x00000018, 1, 0, 4, Network interface <interface>ether 5</interface> at router <instance>3</instance> registered
+2023-08-08T06:43:37Z, 0x00000009, 1, 0, 2, Running as network server
+2023-08-08T06:43:37Z, 0x00000009, 1, 0, 1, Running as network client
+2023-08-08T06:43:37Z, 0x0000000a, 1, 0, 0, <NumOfChannels>4</NumOfChannels> channels available, each of the size <BufferSize>100000</BufferSize> Bytes
+2023-08-08T06:43:52Z, 0x0000007a, 4, 1, 0, **** ERROR: CodeMeter runtime could not be connected: iLastError=101
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0, CmpBACnet 1024 BACstack information
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0,   version = 15.0.1.1
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0,   __BYTE_ORDER = 1234
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0,   TARGET_IEEE_FP_FORMAT = 1
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0,   TARGET_FP_BIG_ENDIAN = 0
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0,   TARGET_DP_BIG_ENDIAN = 0
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0,   TARGET_INTEGRAL_BIG_ENDIAN = 0
+2023-08-08T06:43:52Z, 0x00000400, 1, 0, 0,   TARGET_USED_ALIGNMENT = 1
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0, CmpBACnet2 1025 BACstack information
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0,   version = 24.1.33.1
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0,   __BYTE_ORDER = 1234
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0,   TARGET_IEEE_FP_FORMAT = 1
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0,   TARGET_FP_BIG_ENDIAN = 0
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0,   TARGET_DP_BIG_ENDIAN = 0
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0,   TARGET_INTEGRAL_BIG_ENDIAN = 0
+2023-08-08T06:43:52Z, 0x00000401, 1, 0, 0,   TARGET_MCU_USED_ALIGNMENT = 1
+2023-08-08T06:43:52Z, 0x00000129, 1, 0, 0, Debug Messages not activated
+2023-08-08T06:43:52Z, 0x0000ff03, 1, 0, 0, Read connection settings...
+2023-08-08T06:43:52Z, 0x00000030, 1, 0, 6, Local network address: <ipaddress>172.20.10.3</ipaddress>
+2023-08-08T06:43:52Z, 0x00000018, 1, 0, 4, Network interface <interface>BlkDrvTcp</interface> at router <instance>4</instance> registered
+2023-08-08T06:43:52Z, 0x0000007a, 4, 1, 0, **** ERROR: CodeMWriteLicenseFile: CodeMeter access denied
+2023-08-08T06:43:52Z, 0x0000007a, 4, 25, 0, **** ERROR: CodeMCreateInitialSoftcontainer: Error creating initial empty soft container
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, No certificate for the OPC UA server available.
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, Security policy allows plain text communication. Secure communication is deactivated.
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, **************************************************************
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0,     OPC UA Server Started: 
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0,     Hostname: kbpi, Port: 4840
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0,     URL: opc.tcp://kbpi:4840
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0,     Loopbackadapter activated.
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0,     All available networkadapters are used.
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0,     Multithreading activated. 3 workers used.
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, **************************************************************
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, Provider 'CODESYS_DefaultProvider' (version 0x3051300) registered at the OPC UA server.
+2023-08-08T06:43:52Z, 0x000000a6, 1, 0, 0, Not able to read file of Run/Stop switch. Functionality of component disabled
+2023-08-08T06:43:52Z, 0x00000001, 1, 0, 0, =========================================================================
+2023-08-08T06:43:52Z, 0x00000001, 1, 0, 4, CODESYS Control for Linux ARM64 SL
+2023-08-08T06:43:52Z, 0x00000001, 1, 0, 4, OS=Linux, CPU=ARM, Arch=64Bit, Coding=C
+2023-08-08T06:43:52Z, 0x00000001, 1, 0, 6, <version>3.5.19.0</version> <builddate>Apr  3 2023</builddate>
+2023-08-08T06:43:52Z, 0x00000001, 1, 0, 5, Copyright CODESYS Development GmbH
+2023-08-08T06:43:52Z, 0x00000001, 1, 0, 0, =========================================================================
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, Provider 'AddressSpaceFragment Provider' (version 0x3051300) registered at the OPC UA server.
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, Provider 'OPC UA for IEC-61131-3' (version 0x3051300) registered at the OPC UA server.
+2023-08-08T06:43:52Z, 0x00000124, 1, 0, 0, Provider 'AlarmManager' (version 0x3051300) registered at the OPC UA server.
+2023-08-08T06:43:52Z, 0x0000013d, 1, 0, 4, Number of licensed cores for IEC-tasks: 1 from 4
+2023-08-08T06:43:52Z, 0x00000126, 2, 0, 0, !!!! Warning: No valid license found for OPC UA IecVarAccess provider. Running in demo mode (2h).
+2023-08-08T06:43:52Z, 0x00000002, 1, 0, 22, No retain area in bootproject of application [<app>Application</app>]
+2023-08-08T06:43:52Z, 0x00000002, 1, 0, 6, Bootproject of application [<app>Application</app>] loaded
+2023-08-08T06:43:52Z, 0x00000018, 1, 0, 1, Setting router <instance>0</instance> address to <address>(0003)</address>
+2023-08-08T06:43:52Z, 0x00000018, 1, 0, 1, Setting router <instance>1</instance> address to <address>(0000:0001)</address>
+2023-08-08T06:43:52Z, 0x00000018, 1, 0, 1, Setting router <instance>2</instance> address to <address>(0000:0001)</address>
+2023-08-08T06:43:52Z, 0x00000018, 1, 0, 1, Setting router <instance>3</instance> address to <address>(0000:0001)</address>
+2023-08-08T06:43:52Z, 0x00000018, 1, 0, 1, Setting router <instance>4</instance> address to <address>(2ddc:ac14:0a03)</address>
+2023-08-08T06:43:52Z, 0x00000002, 1, 0, 10, Application [<app>Application</app>] started
+2023-08-08T06:43:52Z, 0x00000001, 1, 0, 34, CODESYS Control ready
+2023-08-08T06:43:52Z, 0x00000001, 2, 0, 0, !!!! Warning: no runtime license - running in demo mode(~2 hours)

@@ -1,0 +1,1570 @@
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T11:32:03.806Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T11:32:03.836Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T11:32:03.836Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T11:32:03.836Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T11:32:03.836Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T11:35:22.512Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T11:35:22.513Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T11:35:22.876Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T11:35:22.897Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T11:35:22.898Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T11:35:22.918Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T11:35:22.918Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T11:35:22.918Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T11:35:22.918Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T11:48:00.730Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T11:48:00.731Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T11:48:01.085Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T11:48:01.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T11:48:01.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T11:48:01.123Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T11:48:01.123Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T11:48:01.123Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T11:48:01.123Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T11:58:33.680Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T11:58:33.681Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T11:58:34.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T11:58:34.052Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T11:58:34.080Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T11:58:34.080Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T11:58:34.080Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T11:58:34.080Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:16:56.735Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:16:56.736Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:16:57.107Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:16:57.145Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:16:57.146Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:16:57.182Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:16:57.182Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:16:57.182Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:16:57.182Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:18:59.923Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:18:59.924Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:19:00.277Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:19:00.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:19:00.323Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:19:00.323Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:19:00.323Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:19:00.323Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:26:25.338Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:26:25.340Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:26:25.719Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:26:25.775Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:26:25.776Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:26:25.813Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:26:25.813Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:26:25.813Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:26:25.813Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:30:14.659Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:30:14.660Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:30:15.013Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:30:15.033Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:30:15.050Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:30:15.050Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:30:15.050Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:30:15.050Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:32:32.481Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:32:32.481Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:32:32.849Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:32:32.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:32:32.886Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:32:32.886Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:32:32.886Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:32:32.886Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:36:41.878Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:36:41.879Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:36:42.239Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:36:42.264Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:36:42.291Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:36:42.291Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:36:42.291Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:36:42.291Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:43:14.400Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:43:14.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:43:14.759Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:43:14.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:43:14.799Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:43:14.825Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:43:14.825Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:43:14.825Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:43:14.825Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:45:54.585Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:45:54.585Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:45:54.937Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:45:54.955Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:45:54.973Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:45:54.973Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:45:54.973Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:45:54.973Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T12:58:54.975Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T12:58:54.977Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T12:58:55.331Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T12:58:55.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T12:58:55.362Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T12:58:55.400Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T12:58:55.400Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T12:58:55.400Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T12:58:55.400Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:18:02.515Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:18:02.516Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:18:02.869Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:18:02.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:18:02.894Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:18:02.911Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:18:02.911Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:18:02.911Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:18:02.911Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:21:23.075Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:21:23.076Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:21:23.429Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:21:23.448Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:21:23.448Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:21:23.448Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:21:23.448Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:21:23.448Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:21:23.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:21:23.467Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:21:23.467Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:21:23.467Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:21:23.467Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:29:50.814Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:29:50.815Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:29:51.173Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:29:51.191Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:29:51.209Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:29:51.209Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:29:51.209Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:29:51.209Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:34:17.435Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:34:17.436Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:34:17.801Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:34:17.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:34:17.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:34:17.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:34:17.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:34:17.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:36:41.934Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:36:41.935Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:36:42.297Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:36:42.315Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:36:42.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:36:42.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:36:42.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:36:42.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:44:18.422Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:44:18.423Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:44:18.780Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:44:18.815Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:44:18.815Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:44:18.815Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:44:18.815Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:44:18.815Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:44:18.816Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:44:18.816Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:44:18.816Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:44:18.816Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:44:18.816Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:44:18.816Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:44:18.816Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:44:18.817Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:44:18.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:44:18.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:44:18.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:44:18.868Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:52:28.708Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:52:28.711Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:52:29.074Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:52:29.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:52:29.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:52:29.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:52:29.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:52:29.104Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:52:29.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:52:29.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:52:29.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:52:29.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:52:29.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:52:29.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:52:29.105Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:52:29.108Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:52:29.159Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:52:29.159Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:52:29.159Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:52:29.159Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T13:58:32.822Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T13:58:32.823Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T13:58:33.184Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T13:58:33.211Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T13:58:33.258Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T13:58:33.258Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T13:58:33.258Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T13:58:33.258Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T14:24:09.763Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T14:24:09.764Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T14:24:10.132Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T14:24:10.177Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T14:24:10.178Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T14:24:10.218Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T14:24:10.218Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T14:24:10.218Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T14:24:10.218Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T14:38:51.661Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T14:38:51.662Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T14:38:52.018Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T14:38:52.036Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T14:38:52.037Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T14:38:52.061Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T14:38:52.061Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T14:38:52.061Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T14:38:52.061Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T14:44:11.243Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T14:44:11.244Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T14:44:11.604Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T14:44:11.655Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T14:44:11.656Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T14:44:11.780Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T14:44:11.780Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T14:44:11.780Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T14:44:11.780Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T14:52:51.605Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T14:52:51.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T14:52:51.969Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T14:52:51.999Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T14:52:52.024Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T14:52:52.024Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T14:52:52.024Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T14:52:52.024Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T15:08:25.093Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T15:08:25.094Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T15:08:25.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T15:08:25.471Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T15:08:25.535Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T15:08:25.535Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T15:08:25.535Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T15:08:25.535Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T15:23:32.466Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T15:23:32.467Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T15:23:32.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T15:23:32.852Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T15:23:32.893Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T15:23:32.893Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T15:23:32.893Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T15:23:32.893Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T15:25:24.166Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T15:25:24.167Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T15:25:24.548Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T15:25:24.570Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T15:25:24.628Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T15:25:24.628Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T15:25:24.628Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T15:25:24.628Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T15:30:34.430Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T15:30:34.431Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T15:30:34.785Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T15:30:34.808Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T15:30:34.809Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T15:30:34.809Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T15:30:34.809Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T15:30:34.809Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T15:30:34.809Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T15:30:34.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T15:30:34.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T15:30:34.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T15:30:34.892Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-24T15:45:35.959Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-24T15:45:35.960Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-24T15:45:36.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-24T15:45:36.341Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-24T15:45:36.393Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-24T15:45:36.393Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-24T15:45:36.393Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-24T15:45:36.393Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T06:42:50.306Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T06:42:50.306Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T06:42:50.670Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T06:42:50.689Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T06:42:50.690Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T06:42:50.706Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T06:42:50.706Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T06:42:50.706Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T06:42:50.706Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T07:34:05.778Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T07:34:05.779Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T07:34:06.150Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T07:34:06.169Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T07:34:06.169Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T07:34:06.169Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T07:34:06.169Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T07:34:06.170Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T07:34:06.188Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T07:34:06.188Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T07:34:06.188Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T07:34:06.188Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T07:39:41.235Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T07:39:41.236Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T07:39:41.594Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T07:39:41.614Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T07:39:41.633Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T07:39:41.633Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T07:39:41.633Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T07:39:41.633Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T07:54:06.671Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T07:54:06.673Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T07:54:07.029Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T07:54:07.062Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T07:54:07.063Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T07:54:07.094Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T07:54:07.094Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T07:54:07.094Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T07:54:07.094Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T08:18:43.949Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T08:18:43.950Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T08:18:44.302Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T08:18:44.321Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T08:18:44.338Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T08:18:44.338Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T08:18:44.338Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T08:18:44.338Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T09:36:27.441Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T09:36:27.442Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T09:36:27.798Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful

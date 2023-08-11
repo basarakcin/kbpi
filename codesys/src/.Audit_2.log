@@ -1,0 +1,1366 @@
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T09:36:27.820Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T09:36:27.847Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T09:36:27.847Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T09:36:27.847Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T09:36:27.847Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-26T09:46:25.973Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T09:46:25.973Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T09:46:25.973Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T09:46:25.973Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T09:46:26.018Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T09:51:53.345Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T09:51:53.345Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T09:51:53.345Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T09:51:53.345Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T09:51:53.398Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T09:58:49.684Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T09:58:49.684Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T09:58:49.684Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T09:58:49.684Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T09:58:49.766Z, 0x00000061, 1, 0, 0, Logout (0)
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T10:02:14.254Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T10:02:14.255Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T10:02:14.618Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T10:02:14.639Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T10:02:14.703Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T10:02:14.703Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T10:02:14.703Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T10:02:14.703Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-26T10:02:54.449Z, 0x00000061, 1, 0, 0, System, Remove object 'Logger' successful
+2023-07-26T10:02:54.449Z, 0x00000061, 1, 0, 0, System, Remove object 'Settings' successful
+2023-07-26T10:02:54.449Z, 0x00000061, 4, 2, 0, **** ERROR: System, Remove object '<unknown object>' failed
+2023-07-26T10:02:54.449Z, 0x00000061, 1, 0, 0, System, Remove object 'PlcLogic' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T10:04:58.127Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T10:04:58.127Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T10:04:58.490Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T10:04:58.509Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T10:04:58.510Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T10:04:58.529Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T10:04:58.529Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T10:04:58.529Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T10:04:58.529Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-26T10:15:35.519Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T10:15:35.519Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T10:15:35.519Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T10:15:35.519Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T10:15:35.568Z, 0x00000061, 1, 0, 0, Logout (0)
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T10:55:25.242Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T10:55:25.243Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T10:55:25.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T10:55:25.626Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T10:55:25.644Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T10:55:25.644Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T10:55:25.644Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T10:55:25.644Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T11:42:33.216Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T11:42:33.217Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T11:42:33.576Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T11:42:33.605Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T11:42:33.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T11:42:33.642Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T11:42:33.642Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T11:42:33.642Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T11:42:33.642Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-26T11:49:06.063Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T11:49:06.063Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T11:49:06.063Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T11:49:06.063Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T11:49:06.223Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T11:51:39.299Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T11:51:39.299Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T11:51:39.299Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T11:51:39.299Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T11:51:39.331Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T11:55:46.011Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T11:55:46.011Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T11:55:46.011Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T11:55:46.011Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T11:55:46.060Z, 0x00000061, 1, 0, 0, Logout (0)
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T12:21:29.888Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T12:21:29.889Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T12:21:30.250Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T12:21:30.270Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T12:21:30.271Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T12:21:30.298Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T12:21:30.298Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T12:21:30.298Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T12:21:30.298Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-26T12:24:21.664Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T12:24:21.664Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T12:24:21.664Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T12:24:21.664Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T12:24:21.822Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T12:26:14.813Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T12:26:14.813Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T12:26:14.813Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T12:26:14.813Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T12:26:14.876Z, 0x00000061, 1, 0, 0, Logout (0)
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T12:43:42.234Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T12:43:42.235Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T12:43:42.586Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T12:43:42.606Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T12:43:42.622Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T12:43:42.622Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T12:43:42.622Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T12:43:42.622Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-26T12:49:27.825Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T12:49:27.825Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T12:49:27.825Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T12:49:27.825Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T12:49:27.883Z, 0x00000061, 1, 0, 0, Logout (0)
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T12:52:46.360Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T12:52:46.361Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T12:52:46.369Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T12:52:46.401Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T12:52:46.422Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T12:52:46.422Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T12:52:46.422Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T12:52:46.422Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T12:56:20.586Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T12:56:20.587Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T12:56:20.954Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T12:56:20.973Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T12:56:20.973Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T12:56:20.973Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T12:56:20.974Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T12:56:20.993Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T12:56:20.993Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T12:56:20.993Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T12:56:20.993Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T13:06:18.545Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T13:06:18.546Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T13:06:18.902Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T13:06:18.922Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T13:06:18.943Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T13:06:18.943Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T13:06:18.943Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T13:06:18.943Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T13:08:28.455Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T13:08:28.456Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T13:08:28.810Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T13:08:28.827Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T13:08:28.846Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T13:08:28.846Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T13:08:28.846Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T13:08:28.846Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T13:11:09.728Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T13:11:09.729Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T13:11:10.082Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T13:11:10.101Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T13:11:10.122Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T13:11:10.122Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T13:11:10.122Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T13:11:10.122Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T13:16:19.448Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T13:16:19.449Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T13:16:19.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T13:16:19.821Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T13:16:19.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T13:16:19.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T13:16:19.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T13:16:19.840Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-26T13:56:03.452Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T13:56:03.452Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T13:56:03.452Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T13:56:03.452Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T13:56:11.770Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T13:56:46.762Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T13:56:46.762Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T13:56:46.762Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T13:56:46.762Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T13:56:48.146Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T13:56:50.078Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T13:56:50.078Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T13:56:50.078Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T13:56:50.078Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T13:58:51.520Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T13:59:34.884Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-26T13:59:34.884Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T13:59:34.884Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T13:59:34.884Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:01:01.417Z, 0x00000061, 1, 0, 0, Add user 'basar' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, System, Add group 'Watch' to object 'UserManagement' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Watch' on object 'UserManagement' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Watch' on object 'UserManagement' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, System, Add group 'Watch' to object 'SecuritySettings' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Watch' on object 'SecuritySettings' successful
+2023-07-26T14:01:01.460Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Watch' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, System, Add group 'Service' to object 'UserManagement' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Service' on object 'UserManagement' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Service' on object 'UserManagement' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, System, Add group 'Service' to object 'SecuritySettings' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Service' on object 'SecuritySettings' successful
+2023-07-26T14:01:01.476Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Service' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, System, Add group 'Developer' to object 'UserManagement' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Developer' on object 'UserManagement' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Developer' on object 'UserManagement' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, System, Add group 'Developer' to object 'SecuritySettings' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Developer' on object 'SecuritySettings' successful
+2023-07-26T14:01:01.515Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Developer' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, System, Add group 'Administrator' to object 'UserManagement' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Administrator' on object 'UserManagement' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Administrator' on object 'UserManagement' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, System, Add group 'Administrator' to object 'SecuritySettings' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Administrator' on object 'SecuritySettings' successful
+2023-07-26T14:01:01.532Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Administrator' successful
+2023-07-26T14:01:01.564Z, 0x00000061, 1, 0, 0, Add user 'basar' to group 'Administrator' successful
+2023-07-26T14:01:05.545Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T14:01:06.446Z, 0x0000000e, 4, 25, 0, **** ERROR: User: '<unknown>', Device Login from 0033 failed
+2023-07-26T14:01:16.078Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-26T14:01:16.078Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:01:16.078Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:01:16.078Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-26T14:01:16.243Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-26T14:01:31.504Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-26T14:01:31.504Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:01:31.504Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:01:31.504Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-26T14:01:40.410Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-26T14:01:59.141Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-26T14:01:59.141Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:01:59.141Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:01:59.141Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-26T14:02:04.967Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-26T14:02:05.579Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-26T14:02:05.579Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:02:05.579Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:02:05.579Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-26T14:02:05.604Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-26T14:02:05.605Z, 0x0000000e, 1, 0, 0, User: '<unknown>', Reset Origin Device (6) successful
+2023-07-26T14:02:18.808Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T14:02:18.808Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:02:18.808Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:02:18.808Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:02:18.843Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T14:02:45.283Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T14:02:45.283Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:02:45.283Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:02:45.283Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:02:45.353Z, 0x00000002, 4, 1281, 0, **** ERROR: App Login failed: no App
+2023-07-26T14:03:01.952Z, 0x00000002, 4, 1282, 0, **** ERROR: App [<unknown>] Logout failed
+2023-07-26T14:03:03.597Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T14:03:38.955Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T14:03:38.955Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:03:38.955Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:03:38.955Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:03:38.977Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T14:03:42.978Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T14:03:42.978Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:03:42.978Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:03:42.978Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:03:42.992Z, 0x00000002, 4, 1281, 0, **** ERROR: App Login failed: no App
+2023-07-26T14:03:43.103Z, 0x00000002, 4, 1282, 0, **** ERROR: App [<unknown>] Logout failed
+2023-07-26T14:03:43.117Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T14:03:43.461Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T14:03:43.461Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:03:43.461Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:03:43.461Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:03:43.479Z, 0x00000002, 4, 1281, 0, **** ERROR: App Login failed: no App
+2023-07-26T14:03:45.467Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.HiddenOnlineConfigModeApp' successful
+2023-07-26T14:03:45.467Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.HiddenOnlineConfigModeApp.__C-ModuleIntegration__' successful
+2023-07-26T14:03:45.467Z, 0x00000002, 1, 0, 0, App [HiddenOnlineConfigModeApp] Create for Download successful
+2023-07-26T14:03:45.507Z, 0x00000002, 1, 0, 0, App [HiddenOnlineConfigModeApp] Login successful
+2023-07-26T14:03:45.807Z, 0x00000002, 1, 0, 0, App [HiddenOnlineConfigModeApp] Download successful, create bootproject: 0
+2023-07-26T14:03:45.807Z, 0x00000002, 1, 0, 0, App CodeGUID: 284ba1d7-0000-0000-0000-000000000000, DataGUID: 2368d5c0-0000-0000-0000-000000000000
+2023-07-26T14:03:46.361Z, 0x00000002, 1, 0, 0, App [HiddenOnlineConfigModeApp] Download successful, create bootproject: 0
+2023-07-26T14:03:46.361Z, 0x00000002, 1, 0, 0, App CodeGUID: 284ba1d7-0000-0000-0000-000000000000, DataGUID: 2368d5c0-0000-0000-0000-000000000000
+2023-07-26T14:03:46.867Z, 0x00000002, 1, 0, 0, App [HiddenOnlineConfigModeApp] Start successful
+2023-07-26T14:04:27.829Z, 0x00000002, 1, 0, 0, App [HiddenOnlineConfigModeApp] Stop successful
+2023-07-26T14:04:27.865Z, 0x00000061, 1, 0, 0, System, Remove object '__C-ModuleIntegration__' successful
+2023-07-26T14:04:27.865Z, 0x00000061, 1, 0, 0, System, Remove object 'HiddenOnlineConfigModeApp' successful
+2023-07-26T14:04:27.867Z, 0x00000002, 1, 0, 0, App [HiddenOnlineConfigModeApp] Reset Origin successful
+2023-07-26T14:04:28.122Z, 0x00000002, 4, 1282, 0, **** ERROR: App [<unknown>] Logout failed
+2023-07-26T14:04:28.166Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T14:04:29.054Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T14:04:29.054Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:04:29.054Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:04:29.054Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:04:29.071Z, 0x00000002, 4, 1281, 0, **** ERROR: App Login failed: no App
+2023-07-26T14:04:29.087Z, 0x00000002, 4, 2, 0, **** ERROR: App Delete failed: no App
+2023-07-26T14:04:29.118Z, 0x00000002, 4, 1282, 0, **** ERROR: App [<unknown>] Logout failed
+2023-07-26T14:04:29.135Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T14:04:40.810Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T14:04:40.810Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T14:04:40.810Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T14:04:40.810Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T14:04:40.846Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:03:55.573Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:03:55.573Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:03:55.573Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:03:55.573Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:03:55.612Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:03:56.078Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:03:56.078Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:03:56.078Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:03:56.078Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:03:56.187Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:04:01.037Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:04:01.037Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:04:01.037Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:04:01.037Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:04:01.150Z, 0x00000002, 4, 1281, 0, **** ERROR: App Login failed: no App
+2023-07-26T15:04:20.566Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-07-26T15:04:20.566Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-07-26T15:04:20.566Z, 0x00000002, 1, 0, 0, App [Application] Create for Download successful
+2023-07-26T15:04:20.587Z, 0x00000002, 1, 0, 0, App [Application] Login successful
+2023-07-26T15:04:20.885Z, 0x00000002, 1, 0, 0, App [Application] Download successful, create bootproject: 1
+2023-07-26T15:04:20.885Z, 0x00000002, 1, 0, 0, App CodeGUID: 12306a7c-0000-0000-0000-000000000000, DataGUID: a10b6c00-0000-0000-0000-000000000000
+2023-07-26T15:04:21.533Z, 0x00000002, 1, 0, 0, App [Application] Download successful, create bootproject: 1
+2023-07-26T15:04:21.533Z, 0x00000002, 1, 0, 0, App CodeGUID: 12306a7c-0000-0000-0000-000000000000, DataGUID: a10b6c00-0000-0000-0000-000000000000
+2023-07-26T15:04:47.460Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:04:47.460Z, 0x00000002, 1, 0, 0, App [Application] Logout because of broken channel
+2023-07-26T15:07:27.238Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:07:27.238Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:07:27.238Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:07:27.238Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:07:27.264Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:07:27.768Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:07:27.768Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:07:27.768Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:07:27.768Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:07:27.857Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:07:37.127Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:07:37.127Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:07:37.127Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:07:37.127Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:07:39.682Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:08:11.598Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:08:11.598Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:08:11.598Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:08:11.598Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:08:11.671Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:08:47.845Z, 0x00000061, 1, 0, 0, Login (1)
+2023-07-26T15:08:47.845Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-26T15:08:47.845Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-26T15:08:47.845Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-26T15:08:51.541Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-26T15:19:33.776Z, 0x00000061, 1, 0, 0, System, Remove object 'Logger' successful
+2023-07-26T15:19:33.776Z, 0x00000061, 1, 0, 0, System, Remove object 'Settings' successful
+2023-07-26T15:19:33.776Z, 0x00000061, 4, 2, 0, **** ERROR: System, Remove object '<unknown object>' failed
+2023-07-26T15:19:33.778Z, 0x00000061, 1, 0, 0, System, Remove object '__C-ModuleIntegration__' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T15:27:21.715Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T15:27:21.716Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T15:27:22.070Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T15:27:22.090Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T15:27:22.109Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T15:27:22.109Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T15:27:22.109Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T15:27:22.109Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T16:21:28.639Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T16:21:28.640Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T16:21:29.002Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T16:21:29.045Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T16:21:29.046Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T16:21:29.070Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T16:21:29.070Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T16:21:29.070Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T16:21:29.070Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-26T16:28:10.134Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-26T16:28:10.134Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-26T16:28:10.486Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-26T16:28:10.506Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-26T16:28:10.525Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-26T16:28:10.525Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-26T16:28:10.525Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-26T16:28:10.525Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-28T08:46:11.256Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-28T08:46:11.257Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-28T08:46:11.615Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-28T08:46:11.635Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-28T08:46:11.636Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-28T08:46:11.656Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-28T08:46:11.656Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-28T08:46:11.656Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-28T08:46:11.656Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-28T10:49:42.822Z, 0x00000061, 1, 0, 0, System, Remove object 'Logger' successful
+2023-07-28T10:49:42.822Z, 0x00000061, 1, 0, 0, System, Remove object 'Settings' successful
+2023-07-28T10:49:42.822Z, 0x00000061, 4, 2, 0, **** ERROR: System, Remove object '<unknown object>' failed
+2023-07-28T10:49:42.823Z, 0x00000061, 1, 0, 0, System, Remove object 'PlcLogic' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-28T11:16:45.424Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-28T11:16:45.425Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-28T11:16:45.783Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-28T11:16:45.802Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-28T11:16:45.828Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-28T11:16:45.828Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-28T11:16:45.828Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-28T11:16:45.828Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-28T12:37:38.614Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-28T12:37:38.614Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T12:37:38.614Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T12:37:38.614Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-28T12:37:42.468Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-28T12:37:45.844Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-28T12:37:45.844Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T12:37:45.844Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T12:37:45.844Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-28T12:37:56.001Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-28T12:38:04.250Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-28T12:38:04.250Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T12:38:04.250Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T12:38:04.250Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-28T12:38:17.987Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-28T12:38:24.963Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-28T12:38:24.963Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T12:38:24.963Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T12:38:24.963Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-28T12:42:31.997Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-28T12:42:36.507Z, 0x00000061, 1, 70, 0, Login (1)
+2023-07-28T12:42:36.507Z, 0x00000097, 1, 0, 0, Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T12:42:36.507Z, 0x00000097, 1, 0, 0, Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T12:42:36.507Z, 0x0000000e, 1, 0, 0, Device Login from 0033 successful
+2023-07-28T12:42:50.475Z, 0x00000061, 1, 0, 0, Add user 'basar' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, System, Add group 'Watch' to object 'UserManagement' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Watch' on object 'UserManagement' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Watch' on object 'UserManagement' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, System, Add group 'Watch' to object 'SecuritySettings' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Watch' on object 'SecuritySettings' successful
+2023-07-28T12:42:50.488Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Watch' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, System, Add group 'Service' to object 'UserManagement' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Service' on object 'UserManagement' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Service' on object 'UserManagement' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, System, Add group 'Service' to object 'SecuritySettings' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Service' on object 'SecuritySettings' successful
+2023-07-28T12:42:50.504Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Service' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, System, Add group 'Developer' to object 'UserManagement' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Developer' on object 'UserManagement' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Developer' on object 'UserManagement' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, System, Add group 'Developer' to object 'SecuritySettings' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Developer' on object 'SecuritySettings' successful
+2023-07-28T12:42:50.519Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Developer' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, System, Add group 'Administrator' to object 'UserManagement' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, System, Set rights of group 'Administrator' on object 'UserManagement' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Administrator' on object 'UserManagement' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, System, Add object 'Device.Settings.SecuritySettings' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, System, Add group 'Administrator' to object 'SecuritySettings' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, System, Set denied rights of group 'Administrator' on object 'SecuritySettings' successful
+2023-07-28T12:42:50.532Z, 0x00000061, 1, 0, 0, User: '7341cb231471b6d2a08e28f47e6e393db0eeae39', Add group 'Administrator' successful
+2023-07-28T12:42:50.571Z, 0x00000061, 1, 0, 0, Add user 'basar' to group 'Administrator' successful
+2023-07-28T12:42:53.858Z, 0x00000061, 4, 25, 0, **** ERROR: User: 'basar', Login failed
+2023-07-28T12:42:53.858Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T12:42:53.858Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T12:42:53.858Z, 0x0000000e, 4, 25, 0, **** ERROR: Device Login from 0033 failed
+2023-07-28T12:42:53.935Z, 0x00000061, 1, 0, 0, Logout (0)
+2023-07-28T12:43:01.098Z, 0x0000000e, 4, 25, 0, **** ERROR: User: '<unknown>', Device Login from 0033 failed
+2023-07-28T12:43:07.603Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-28T12:43:07.603Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T12:43:07.603Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T12:43:07.603Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-28T12:43:36.693Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-28T13:00:50.433Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-28T13:00:50.433Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T13:00:50.433Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T13:00:50.433Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-28T13:00:50.555Z, 0x00000002, 4, 1281, 0, **** ERROR: User: 'basar', App Login failed: no App
+2023-07-28T13:00:52.552Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-07-28T13:00:52.553Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-07-28T13:00:52.553Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Create for Download successful
+2023-07-28T13:00:52.575Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-07-28T13:00:53.308Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-07-28T13:00:53.308Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: c0d88f9b-0000-0000-0000-000000000000, DataGUID: 08eb5862-0000-0000-0000-000000000000
+2023-07-28T13:00:53.927Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Download successful, create bootproject: 1
+2023-07-28T13:00:53.927Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: c0d88f9b-0000-0000-0000-000000000000, DataGUID: 08eb5862-0000-0000-0000-000000000000
+2023-07-28T13:01:10.197Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-07-28T13:02:36.742Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Stop successful
+2023-07-28T13:03:15.546Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-07-28T13:03:15.565Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-28T13:03:38.012Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-28T13:03:38.012Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T13:03:38.012Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T13:03:38.012Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-28T13:03:38.103Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Login successful
+2023-07-28T13:03:48.506Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] OnlineChange successful, create bootproject: 0
+2023-07-28T13:03:48.506Z, 0x00000002, 1, 0, 0, User: 'basar', App CodeGUID: 4677e25b-0000-0000-0000-000000000000, DataGUID: 08eb5862-0000-0000-0000-000000000000
+2023-07-28T13:03:52.364Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Start successful
+2023-07-28T13:12:13.657Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Stop successful
+2023-07-28T13:12:23.590Z, 0x00000002, 1, 0, 0, User: 'basar', App [Application] Logout successful
+2023-07-28T13:12:23.607Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-28T13:12:59.606Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-28T13:12:59.606Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T13:12:59.606Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T13:12:59.606Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-28T13:12:59.644Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-28T13:13:00.604Z, 0x00000061, 1, 0, 0, User: 'basar', Login (1)
+2023-07-28T13:13:00.604Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client: 'CODESYS', host: 'MUCL409303.corp.knorr-bremse.com'
+2023-07-28T13:13:00.604Z, 0x00000097, 1, 0, 0, User: 'basar', Sessioninfo: client version: 'CODESYS V3.5 SP18', CDS version: '3.5.18.0'
+2023-07-28T13:13:00.604Z, 0x0000000e, 1, 0, 0, User: 'basar', Device Login from 0033 successful
+2023-07-28T13:19:36.632Z, 0x00000061, 1, 0, 0, User: 'basar', Logout (0)
+2023-07-28T13:19:40.965Z, 0x00000061, 1, 0, 0, System, Remove object 'Logger' successful
+2023-07-28T13:19:40.965Z, 0x00000061, 1, 0, 0, System, Remove object 'Settings' successful
+2023-07-28T13:19:40.965Z, 0x00000061, 4, 2, 0, **** ERROR: System, Remove object '<unknown object>' failed
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-28T13:20:30.058Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-28T13:20:30.059Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-28T13:20:30.415Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-28T13:20:30.434Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-28T13:20:30.435Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-07-28T13:20:30.458Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-07-28T13:20:30.550Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application' successful
+2023-07-28T13:20:30.550Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcLogic.Application.__C-ModuleIntegration__' successful
+2023-07-28T13:20:30.550Z, 0x00000002, 1, 0, 0, System, App [Application] Create for Download successful
+2023-07-28T13:20:30.559Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-07-28T13:20:30.559Z, 0x00000002, 1, 0, 0, System, App CodeGUID: c0d88f9b-0000-0000-0000-000000000000, DataGUID: 08eb5862-0000-0000-0000-000000000000
+2023-07-28T13:20:31.021Z, 0x00000002, 1, 0, 0, System, App [Application] Download successful, create bootproject: 0
+2023-07-28T13:20:31.021Z, 0x00000002, 1, 0, 0, System, App CodeGUID: c0d88f9b-0000-0000-0000-000000000000, DataGUID: 08eb5862-0000-0000-0000-000000000000
+2023-07-28T13:20:31.035Z, 0x00000002, 1, 0, 10, System, App [Application] started
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-28T13:41:27.291Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-28T13:41:27.293Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-28T13:41:27.667Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-28T13:41:27.687Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-07-28T13:41:27.704Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-28T13:45:59.936Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-28T13:45:59.937Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-28T13:46:00.289Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-28T13:46:00.307Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-07-28T13:46:00.334Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-07-28T13:47:13.950Z, 0x00000061, 1, 0, 0, System, Remove object 'Logger' successful
+2023-07-28T13:47:13.950Z, 0x00000061, 1, 0, 0, System, Remove object 'Settings' successful
+2023-07-28T13:47:13.950Z, 0x00000061, 4, 2, 0, **** ERROR: System, Remove object '<unknown object>' failed
+2023-07-28T13:47:13.950Z, 0x00000061, 1, 0, 0, System, Remove object 'PlcLogic' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************
+2023-07-28T14:01:07.653Z, 0x000000a1, 1, 0, 0, System, Startup
+2023-07-28T14:01:07.654Z, 0x00000061, 1, 0, 0, System, Add object 'Device.CodeMeter' successful
+2023-07-28T14:01:08.007Z, 0x00000061, 1, 0, 0, System, Add object 'Device.RemoteConnections.OPCUAServer' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportCertificate' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportCertificate' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.DeleteCertificate' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.MoveCertificate' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListCertificates' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ListUseCases' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateSelfSignedCertificate' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.CreateCertificateSigningRequest' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.GetStatus' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ImportPkcs12Keystore' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.X509.ExportPkcs12Keystore' successful
+2023-07-28T14:01:08.030Z, 0x00000061, 1, 0, 0, System, Add object 'Device.PlcShell' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Users' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Access Rights' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Watch' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Service' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Developer' successful
+2023-07-28T14:01:08.084Z, 0x00000061, 1, 0, 0, System, Add object 'Device.UserManagement.Groups.Administrator' successful
+2023-07-28T14:01:18.344Z, 0x00000061, 1, 0, 0, System, Remove object 'Logger' successful
+2023-07-28T14:01:18.344Z, 0x00000061, 1, 0, 0, System, Remove object 'Settings' successful
+2023-07-28T14:01:18.344Z, 0x00000061, 4, 2, 0, **** ERROR: System, Remove object '<unknown object>' failed
+2023-07-28T14:01:18.344Z, 0x00000061, 1, 0, 0, System, Remove object 'PlcLogic' successful
+;****************************************************************
+;<loggername>.Audit.log</loggername>
+;<logoptions>
+;	<enable>1</enable>
+;	<type>normal</type>
+;	<timestamp>rtc high resolution</timestamp>
+;	<deactivatable>0</deactivatable>
+;	<dump>always</dump>
+;	<filter>0x7fffffff<filter>
+;	<maxentries>500</maxentries>
+;	<maxfiles>3</maxfiles>
+;	<maxfilesize>100000</maxfilesize>
+;</logoptions>
+;<entries>
+;Timestamp, CmpId, ClassId, ErrorId, InfoId, InfoText
+;ClassId: LOG_INFO		=1
+;ClassId: LOG_WARNING	=2
+;ClassId: LOG_ERROR		=4
+;ClassId: LOG_EXCEPTION	=8
+;ClassId: LOG_DEBUG		=16
+;ClassId: LOG_PRINTF	=32
+;ClassId: LOG_COM		=64
+;</entries>
+;****************************************************************

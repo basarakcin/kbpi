@@ -90,6 +90,15 @@ window.onload = async function() {
         return table;
     }
 
+    const CLASS_ID_MAPPING = {
+        '1': 'LOG_INFO',
+        '2': 'LOG_WARNING',
+        '4': 'LOG_ERROR',
+        '8': 'LOG_EXCEPTION',
+        '16': 'LOG_DEBUG',
+        '32': 'LOG_PRINTF',
+        '64': 'LOG_COM'
+    };
 
     function createTableRowFromColumns(columns) {
         const tr = document.createElement('tr');
@@ -106,7 +115,14 @@ window.onload = async function() {
             if (index === 2 || index === 3 || index === 4) {
                 td.classList.add('center-text');
             }
-            
+
+            if (index === 2) {
+                const classType = CLASS_ID_MAPPING[col.trim()];
+                if (classType) {
+                    td.title = classType;
+                }
+            }
+
             if (index === 3 && errorDb && errorDb[col.trim()]) {
                 td.setAttribute('tooltip-content', `${errorDb[col.trim()].Name}: ${errorDb[col.trim()].Comment}`);
             }

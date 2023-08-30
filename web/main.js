@@ -1,3 +1,20 @@
+document.getElementById("scrollToTop").addEventListener("click", function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+document.getElementById("scrollToBottom").addEventListener("click", function() {
+    window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+});
+
+// Show or hide the "scroll to top" button based on the scroll position
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 100) {  // If the user has scrolled more than 100px from the top
+        document.getElementById("scrollToTop").style.display = "block";
+    } else {
+        document.getElementById("scrollToTop").style.display = "none";
+    }
+});
+
 window.onload = async function() {
     const infoContainer = document.getElementById('info');
     const logContainer = document.getElementById('logs');

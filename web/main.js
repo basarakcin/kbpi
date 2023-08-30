@@ -136,17 +136,8 @@ window.onload = async function() {
             if (index === 1 ) {
                 td.classList.add('cmp-id');
             }
-            if (index === 2 ) {
-                td.classList.add('class-id');
-            }
-            if (index === 3 ) {
-                td.classList.add('error-id');
-            }
-            if (index === 2 || index === 3 ) {
-                td.classList.add('center-text');
-            }
-    
             if (index === 2) {
+                td.classList.add('class-id');
                 const classType = CLASS_ID_MAPPING[col.trim()];
                 if (classType) {
                     td.textContent = classType;
@@ -154,6 +145,9 @@ window.onload = async function() {
                         tr.style.display = 'none';
                     }
                 }
+            }
+            if (index === 3 ) {
+                td.classList.add('error-id');
             }
     
             if (index === 3 && errorDb && errorDb[col.trim()]) {

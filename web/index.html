@@ -9,113 +9,116 @@
     <link rel="icon" type="image/png" href="assets/favicon/favicon-192x192.png" sizes="192x192">
     <style>
       #header {
-      font-size: 1.5em;
-      margin-bottom: 20px;
-      font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        font-weight: bold;
       }
       body {
-      background-color: rgb(0, 69, 126);
-      color: rgb(255, 255, 255);
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        background-color: rgb(0, 69, 126);
+        color: rgb(255, 255, 255);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       #content-wrapper {
-      background-color: rgba(0, 89, 146, 0.2); /* Lighter blue for secondary background */
-      padding: 20px;
-      width: 80%;
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 89, 146, 0.2); /* Lighter blue for secondary background */
+        padding: 20px;
+        width: 80%;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       }
       #info {
-      display: inline-block;
-      margin-bottom: 20px;
+        display: inline-block;
+        margin-bottom: 20px;
       }
       #info-content {
-      font-family: 'Courier New', Courier, monospace;
-      white-space: pre-wrap;
-      word-break: break-word;
-      margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+        white-space: pre-wrap;
+        word-break: break-word;
+        margin: 0;
       }
       #logs {
-      font-family: 'Courier New', Courier, monospace;
-      white-space: pre-wrap;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        white-space: pre-wrap;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 10px;
       }
       table {
-      white-space: nowrap;
-      border-collapse: collapse;
-      width: 100%;
+        white-space: nowrap;
+        border-collapse: collapse;
+        width: 100%;
       }
       #logs table {
-      table-layout: auto;
+        table-layout: auto;
       }
       #logs table tr th:first-child {
-      text-align: center;
+        text-align: center;
       }
       #logs table tr td:first-child {
-      white-space: nowrap;
-      max-width: fit-content; 
-      padding-left: 10px; /* Optional, adds some padding on the left */
-      padding-right: 10px; /* Optional, adds some padding on the right */
+        white-space: nowrap;
+        max-width: fit-content; 
+        padding-left: 10px; /* Optional, adds some padding on the left */
+        padding-right: 10px; /* Optional, adds some padding on the right */
       }
 
       table td {
-      padding: 8px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
       h3 {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 5px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 5px;
+      }
+      .timestamp {
+        max-width: fit-content;
       }
       .center-text {
-      max-width: fit-content;
-      text-align: center; /* Center the content */
-      text-overflow: ellipsis; /* Add ellipsis for any overflow */
-      white-space: nowrap; /* Prevent breaking into multiple lines */
+        max-width: fit-content;
+        text-align: center; /* Center the content */
+        text-overflow: ellipsis; /* Add ellipsis for any overflow */
+        white-space: nowrap; /* Prevent breaking into multiple lines */
       }
       td[tooltip-content] {
-      position: relative;
+        position: relative;
       }
       td[tooltip-content]:hover::before {
-      content: attr(tooltip-content);
-      position: absolute;
-      top: 100%; left: 50%;
-      white-space: nowrap;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 5px 10px;
-      border-radius: 3px;
-      font-size: 0.9em;
-      z-index: 10;
-      transform: translateY(5px) translateX(-50%); /* This is to center the tooltip above the td element */
+        content: attr(tooltip-content);
+        position: absolute;
+        top: 100%; left: 50%;
+        white-space: nowrap;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 0.9em;
+        z-index: 10;
+        transform: translateY(5px) translateX(-50%); /* This is to center the tooltip above the td element */
       }
      .scrollButton {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      border: none;
-      background-color: #333; /* Change this color if needed */
-      color: white;
-      font-size: 24px;
-      border-radius: 50%; /* Makes the button circular */
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      z-index: 1000; /* Ensure it appears on top of other content */
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        border: none;
+        background-color: #333; /* Change this color if needed */
+        color: white;
+        font-size: 24px;
+        border-radius: 50%; /* Makes the button circular */
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        z-index: 1000; /* Ensure it appears on top of other content */
       }
       
       .scrollButton:hover {
-      background-color: #555; /* Slightly lighter on hover */
+        background-color: #555; /* Slightly lighter on hover */
       }
       
       #scrollToTop {
-      bottom: 70px; /* Position it above the scroll to bottom button */
+        bottom: 70px; /* Position it above the scroll to bottom button */
       }
 
     </style>

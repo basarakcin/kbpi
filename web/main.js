@@ -130,6 +130,18 @@ window.onload = async function() {
             td.textContent = col.trim();
     
             // Add 'center-text' class to the specific columns: ClassId, ErrorId
+            if (index === 1 ) {
+                td.classList.add('timestamp');
+            }
+            if (index === 2 ) {
+                td.classList.add('cmp-id');
+            }
+            if (index === 3 ) {
+                td.classList.add('class-id');
+            }
+            if (index === 4 ) {
+                td.classList.add('error-id');
+            }
             if (index === 2 || index === 3 ) {
                 td.classList.add('center-text');
             }

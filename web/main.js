@@ -203,6 +203,13 @@ window.onload = async function() {
         let columns = row.split(',');
 
         const [date, time] = convertToLocalTime(columns.shift());
+
+        // Check if date and time are valid
+        if (date === "Invalid Date" || time === "Invalid Date") {
+            console.error("Invalid date detected:", row);
+            return '';
+        }
+        
         const timestamp = `${date} ${time}`;
         const cmpId = columns.shift();
         const classId = columns.shift();
@@ -218,10 +225,16 @@ window.onload = async function() {
 
 
     async function handleLogData(data) {
-        const table = createTableFromLogs(data);
-        logContainer.innerHTML = ''; // Reset current logs before appending
-        logContainer.appendChild(table);
+    // Check if the data ends with a newline and remove it
+    if (data.endsWith('\n')) {
+        data = data.slice(0, -1);
     }
+
+    const table = createTableFromLogs(data);
+    logContainer.innerHTML = ''; // Reset current logs before appending
+    logContainer.appendChild(table);
+}
+
 
     // Fetch and display
     try {

@@ -45,10 +45,13 @@
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 10px;
       }
+      #logs table {
+        table-layout: auto;
+      }
       table {
         white-space: nowrap;
         border-collapse: collapse;
-        width: 100%;
+        width: fit-content;
       }
 
       table td {
@@ -62,6 +65,7 @@
       .timestamp {
         max-width: fit-content;
         white-space: nowrap; 
+        padding-right: 8px;
       }
       .cmp-id {
         text-align: center; 

@@ -1,11 +1,19 @@
+// Global Set to avoid duplicate logs
+const processedLogs = new Set();
+
 window.onload = async function() {
-    const processedLogs = new Set();
     document.getElementById("scrollToTop").addEventListener("click", function() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 
     document.getElementById("scrollToBottom").addEventListener("click", function() {
-        window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
     });
 
     window.addEventListener("scroll", function() {
@@ -28,6 +36,7 @@ window.onload = async function() {
         console.error('Failed to fetch the error database:', error);
     }
 
+
     async function fetchInfoAndDisplay() {
         try {
             const response = await fetch('http://localhost:5000/info');
@@ -49,7 +58,53 @@ window.onload = async function() {
         const logDate = new Date(timestamp);
         return now - logDate > oneDayInMillis;
     }
-    
+    const logTable = createTableHeaders();
+    logContainer.appendChild(logTable);
+
+    function createTableHeaders() {
+        const table = document.createElement('table');
+
+        // Creating top-level headers
+        const topLevelHeaderRow = document.createElement('tr');
+        const topLevelHeaders = ["Timestamp", "Ids", "InfoText"];
+
+        topLevelHeaders.forEach(text => {
+            const th = document.createElement('th');
+            if (text === "Ids") {
+                th.colSpan = 3;
+            } else {
+                th.rowSpan = 2;
+            }
+            th.textContent = text;
+            topLevelHeaderRow.appendChild(th);
+        });
+        table.appendChild(topLevelHeaderRow);
+
+        // Creating second-level headers
+        const secondLevelHeaderRow = document.createElement('tr');
+        const secondLevelHeaders = ["Cmp", "Class", "Error"];
+
+        secondLevelHeaders.forEach(text => {
+            const th = document.createElement('th');
+            th.textContent = text;
+            secondLevelHeaderRow.appendChild(th);
+        });
+        table.appendChild(secondLevelHeaderRow);
+
+        return table;
+    }
+
+    function handleNewLogs(data) {
+        data.split('\n').forEach(row => {
+            const formattedRow = formatLogRow(row);
+            if (formattedRow && !processedLogs.has(formattedRow)) {
+                const tr = createTableRowFromColumns(formattedRow.split(','));
+                logTable.appendChild(tr);
+                processedLogs.add(formattedRow);
+            }
+        });
+    }
+
     function createTableFromLogs(data) {
         const table = document.createElement('table');
 
@@ -87,12 +142,12 @@ window.onload = async function() {
 
             // Extract the original timestamp
             const originalTimestamp = columns[0];
-            
+
             // Check if log is older than 24 hours, if so, skip this log entry
             if (isOlderThan24Hours(originalTimestamp)) {
                 return;
             }
-    
+
             const formattedRow = formatLogRow(row);
             const columnsAfterFormat = formattedRow.split(',');
             if (columnsAfterFormat.length >= 4) {
@@ -118,23 +173,23 @@ window.onload = async function() {
         const checkbox = document.querySelector(`input[value="${classType}"]`);
         return checkbox.checked;
     }
-    
+
     function createTableRowFromColumns(columns) {
         const tr = document.createElement('tr');
-    
+
         // Handling special case of InfoText
         const infoTextParts = columns.slice(4);
         columns = columns.slice(0, 4).concat(infoTextParts.join(','));
-    
+
         columns.forEach((col, index) => {
             const td = document.createElement('td');
             td.textContent = col.trim();
-    
+
             // Add 'center-text' class to the specific columns: ClassId, ErrorId
-            if (index === 0 ) {
+            if (index === 0) {
                 td.classList.add('timestamp');
             }
-            if (index === 1 ) {
+            if (index === 1) {
                 td.classList.add('cmp-id');
             }
             if (index === 2) {
@@ -147,32 +202,32 @@ window.onload = async function() {
                     }
                 }
             }
-            if (index === 3 ) {
+            if (index === 3) {
                 td.classList.add('error-id');
             }
-    
+
             if (index === 3 && errorDb && errorDb[col.trim()]) {
                 td.setAttribute('tooltip-content', `[Error ID: ${errorDb[col.trim()]}] ${errorDb[col.trim()].Name}: ${errorDb[col.trim()].Comment}`);
             }
-    
+
             tr.appendChild(td);
         });
-    
+
         // Remove the column corresponding to InfoId
-        tr.removeChild(tr.children[3]);  // Assuming InfoId is the 4th column
-    
+        tr.removeChild(tr.children[3]); // Assuming InfoId is the 4th column
+
         // Styling rows based on ClassId
         const logClass = columns[2].trim();
         if (logClass.includes('LOG_')) {
             tr.className = logClass.toLowerCase().replace("log_", "log-");
         }
-        
+
         // Add a tooltip for ErrorId using the error database
         const errorId = columns[3].trim();
         if (errorDb && errorDb[errorId]) {
             tr.title = `[Error ID: ${errorId}] ${errorDb[errorId].Name}: ${errorDb[errorId].Comment}`;
         }
-        
+
         return tr;
     }
 
@@ -210,7 +265,7 @@ window.onload = async function() {
             console.error("Invalid date detected:", row);
             return '';
         }
-        
+
         const timestamp = `${date} ${time}`;
         const cmpId = columns.shift();
         const classId = columns.shift();
@@ -233,7 +288,7 @@ window.onload = async function() {
             processedLogs.add(log);
             return true;
         }).join('\n');
-    
+
         if (newLogs) {
             const table = createTableFromLogs(newLogs);
             logContainer.appendChild(table);
@@ -241,7 +296,9 @@ window.onload = async function() {
     }
 
 
-
+    // Create table headers once on load
+    const logTable = createTableHeaders();
+    logContainer.appendChild(logTable);
     // Fetch and display
     try {
         await fetchInfoAndDisplay();

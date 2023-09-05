@@ -280,6 +280,19 @@ window.onload = async function() {
     }
 
 
+    function createTableRowFromLog(log) {
+        const tr = document.createElement('tr');
+        const logData = formatLogRow(log);
+        
+        logData.split(', ').forEach(col => {
+            const td = document.createElement('td');
+            td.textContent = col.trim();
+            tr.appendChild(td);
+        });
+        
+        return tr;
+    }
+    
     async function handleLogData(data) {
         const newLogs = data.split('\n').filter(log => {
             if (processedLogs.has(log) || log.trim() === "") {
@@ -287,18 +300,30 @@ window.onload = async function() {
             }
             processedLogs.add(log);
             return true;
-        }).join('\n');
-
-        if (newLogs) {
-            const table = createTableFromLogs(newLogs);
-            logContainer.appendChild(table);
-        }
+        });
+    
+        newLogs.forEach(log => {
+            const row = createTableRowFromLog(log);
+            logTable.appendChild(row);
+        });
     }
 
 
+
     // Create table headers once on load
-    const logTable = createTableHeaders();
+    const logTable = document.createElement('table');
+    const headerRow = document.createElement('tr');
+    
+    const headers = ["Timestamp", "Cmp", "Class", "Error", "InfoText"];
+    headers.forEach(header => {
+        const th = document.createElement('th');
+        th.textContent = header;
+        headerRow.appendChild(th);
+    });
+    
+    logTable.appendChild(headerRow);
     logContainer.appendChild(logTable);
+
     // Fetch and display
     try {
         await fetchInfoAndDisplay();

@@ -24,6 +24,12 @@ window.onload = async function() {
 
     const infoContainer = document.getElementById('info');
     const logContainer = document.getElementById('logs');
+     // Create table and append headers on page load.
+    const table = document.createElement('table');
+    const [topHeaderRow, secondHeaderRow] = createTableHeaders();
+    table.appendChild(topHeaderRow);
+    table.appendChild(secondHeaderRow);
+    logContainer.appendChild(table);
 
     // Fetch the error database
     let errorDb = {};
@@ -57,12 +63,12 @@ window.onload = async function() {
     }
 
     function createTableHeaders() {
-        const table = document.createElement('table');
-
+        // Only create and return the header rows
+    
         // Creating top-level headers
         const topLevelHeaderRow = document.createElement('tr');
         const topLevelHeaders = ["Timestamp", "Ids", "InfoText"];
-
+    
         topLevelHeaders.forEach(text => {
             const th = document.createElement('th');
             if (text === "Ids") {
@@ -73,21 +79,20 @@ window.onload = async function() {
             th.textContent = text;
             topLevelHeaderRow.appendChild(th);
         });
-        table.appendChild(topLevelHeaderRow);
-
+    
         // Creating second-level headers
         const secondLevelHeaderRow = document.createElement('tr');
         const secondLevelHeaders = ["Cmp", "Class", "Error"];
-
+    
         secondLevelHeaders.forEach(text => {
             const th = document.createElement('th');
             th.textContent = text;
             secondLevelHeaderRow.appendChild(th);
         });
-        table.appendChild(secondLevelHeaderRow);
-
-        return table;
+    
+        return [topLevelHeaderRow, secondLevelHeaderRow]; // Return both header rows
     }
+
 
     const CLASS_ID_MAPPING = {
         '1': 'INFO',

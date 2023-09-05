@@ -56,7 +56,7 @@ window.onload = async function() {
         return now - logDate > oneDayInMillis;
     }
 
-    function createTableFromLogs(data) {
+    function createTableHeaders() {
         const table = document.createElement('table');
 
         // Creating top-level headers
@@ -85,27 +85,6 @@ window.onload = async function() {
             secondLevelHeaderRow.appendChild(th);
         });
         table.appendChild(secondLevelHeaderRow);
-
-        // Parsing and appending rows
-        data.split('\n').forEach(row => {
-            if (row.startsWith(';') || row.includes('ClassId:')) return;
-            const columns = row.split(',');
-
-            // Extract the original timestamp
-            const originalTimestamp = columns[0];
-
-            // Check if log is older than 24 hours, if so, skip this log entry
-            if (isOlderThan24Hours(originalTimestamp)) {
-                return;
-            }
-
-            const formattedRow = formatLogRow(row);
-            const columnsAfterFormat = formattedRow.split(',');
-            if (columnsAfterFormat.length >= 4) {
-                const tr = createTableRowFromColumns(columnsAfterFormat);
-                table.appendChild(tr);
-            }
-        });
 
         return table;
     }
@@ -239,11 +218,29 @@ window.onload = async function() {
             }
             processedLogs.add(log);
             return true;
-        }).join('\n');
+        });
 
-        if (newLogs) {
-            const table = createTableFromLogs(newLogs);
-            logContainer.appendChild(table);
+        if (newLogs.length) {
+            const tableExists = logContainer.querySelector('table');
+            let table;
+
+            if (tableExists) {
+                table = tableExists;
+            } else {
+                table = createTableHeaders();
+                logContainer.appendChild(table);
+            }
+
+            newLogs.forEach(log => {
+                if (!log.startsWith(';') && !log.includes('ClassId:') && !isOlderThan24Hours(log.split(',')[0])) {
+                    const formattedRow = formatLogRow(log);
+                    const columnsAfterFormat = formattedRow.split(',');
+                    if (columnsAfterFormat.length >= 4) {
+                        const tr = createTableRowFromColumns(columnsAfterFormat);
+                        table.appendChild(tr);
+                    }
+                }
+            });
         }
     }
 

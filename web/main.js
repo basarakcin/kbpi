@@ -27,10 +27,15 @@ window.onload = async function() {
         console.error('Failed to fetch the error database:', error);
     }
     async function computeHash(data) {
+        if (typeof data !== 'string') {
+            console.error("computeHash expects a string input. Received:", data);
+            throw new Error("Invalid input to computeHash");
+        }
         const encoder = new TextEncoder();
         const digest = await crypto.subtle.digest('SHA-256', encoder.encode(data));
         return Array.from(new Uint8Array(digest)).map(byte => byte.toString(16).padStart(2, '0')).join('');
     }
+
 
     async function fetchInfoAndDisplay() {
         try {

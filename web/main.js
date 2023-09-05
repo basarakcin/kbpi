@@ -151,7 +151,6 @@ window.onload = async function() {
             }
             const errorNumber = col.trim();
             console.log('Error Number:', errorNumber, typeof errorNumber);
-            errorNumber = String(col.trim());
             if (index === 3 && errorDb && errorDb[errorNumber]) {
                   td.title = `[${errorNumber}] - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`;
             }

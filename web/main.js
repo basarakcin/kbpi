@@ -151,7 +151,7 @@ window.onload = async function() {
             }
             const errorNumber = col.trim();
             if (index === 3 && errorDb && errorDb[errorNumber]) {
-                td.setAttribute('tooltip-content', `[${errorNumber}] - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`);
+                  td.title = `[${errorNumber}] - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`;
             }
     
             tr.appendChild(td);

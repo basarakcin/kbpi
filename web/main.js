@@ -101,6 +101,7 @@ window.onload = async function() {
             const columnsAfterFormat = formattedRow.split(',');
             if (columnsAfterFormat.length >= 4) {
                 const tr = createTableRowFromColumns(columnsAfterFormat);
+                console.log('Line 105: Appending child:', tr);
                 table.appendChild(tr);
             }
         });

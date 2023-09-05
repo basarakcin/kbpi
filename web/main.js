@@ -149,16 +149,16 @@ window.onload = async function() {
             if (index === 3 ) {
                 td.classList.add('error-id');
             }
-    
-            if (index === 3 && errorDb && errorDb[col.trim()]) {
-                td.setAttribute('tooltip-content', `${errorDb[col.trim()].Name}: ${errorDb[col.trim()].Comment}`);
+            const errorNumber = col.trim();
+            if (index === 3 && errorDb && errorDb[errorNumber]) {
+                td.setAttribute('tooltip-content', `${errorNumber} - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`);
             }
     
             tr.appendChild(td);
         });
     
         // Remove the column corresponding to InfoId
-        tr.removeChild(tr.children[3]);  // Assuming InfoId is the 4th column
+        // tr.removeChild(tr.children[3]);  // Assuming InfoId is the 4th column
     
         // Styling rows based on ClassId
         const logClass = columns[2].trim();
@@ -167,9 +167,8 @@ window.onload = async function() {
         }
         
         // Add a tooltip for ErrorId using the error database
-        const errorId = columns[3].trim();
-        if (errorDb && errorDb[errorId]) {
-            tr.title = `${errorDb[errorId].Name}: ${errorDb[errorId].Comment}`;
+        if (errorDb && errorDb[errorNumber]) {
+            tr.title = `${errorNumber} - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`;
         }
         
         return tr;

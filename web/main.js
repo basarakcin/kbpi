@@ -121,15 +121,10 @@ window.onload = async function() {
     function createTableRowFromColumns(columns) {
         const tr = document.createElement('tr');
     
-        // Handling special case of InfoText
-        const infoTextParts = columns.slice(4);
-        columns = columns.slice(0, 4).concat(infoTextParts.join(','));
-    
         columns.forEach((col, index) => {
             const td = document.createElement('td');
             td.textContent = col.trim();
     
-            // Add 'center-text' class to the specific columns: ClassId, ErrorId
             if (index === 0 ) {
                 td.classList.add('timestamp');
             }
@@ -148,29 +143,24 @@ window.onload = async function() {
             }
             if (index === 3 ) {
                 td.classList.add('error-id');
-            }
-            const errorNumber = col.trim();
-            console.log('Error Number:', errorNumber, typeof errorNumber);
-            if (index === 3 && errorDb && errorDb[errorNumber]) {
-                  td.title = `[${errorNumber}] - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`;
+                const errorNumber = col.trim();
+                if (errorDb && errorDb[errorNumber]) {
+                    td.title = `[${errorNumber}] - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`;
+                }
             }
     
             tr.appendChild(td);
         });
-    
-        // Remove the column corresponding to InfoId
-        tr.removeChild(tr.children[3]);  // Assuming InfoId is the 4th column
     
         // Styling rows based on ClassId
         const logClass = columns[2].trim();
         if (logClass.includes('LOG_')) {
             tr.className = logClass.toLowerCase().replace("log_", "log-");
         }
-        
-
-        
+    
         return tr;
     }
+
 
 
     function convertToLocalTime(isoString) {
@@ -196,11 +186,11 @@ window.onload = async function() {
         if (row.trim().startsWith(';')) {
             return row.replace(/^;/, '').trim();
         }
-
+    
         let columns = row.split(',');
-
+    
         const [date, time] = convertToLocalTime(columns.shift());
-
+    
         // Check if date and time are valid
         if (date === "Invalid Date" || time === "Invalid Date") {
             console.error("Invalid date detected:", row);
@@ -210,15 +200,20 @@ window.onload = async function() {
         const timestamp = `${date} ${time}`;
         const cmpId = columns.shift();
         const classId = columns.shift();
-        const errorId = columns.shift();
+        const errorId = columns.shift(); // We'll not be using this as per the given format
         let infoText = columns.join(','); // Rest of the row, as info might contain commas
-
+    
+        const idRegex = /<id>([^<]+)<\/id>/;
+        const extractedIdMatch = infoText.match(idRegex);
+        const extractedId = extractedIdMatch ? extractedIdMatch[1].trim() : "";
+    
         // General transformation for XML-like tags
         infoText = infoText.replace(/<(\w+)>([^<]+)<\/\1>/g, "$1: $2").replace(/\s*,\s*/g, ", ").trim();
-
+    
         // Construct the new row
-        return [timestamp, cmpId, classId, errorId, infoText].join(', ');
+        return [timestamp, cmpId, classId, extractedId, infoText].join(', ');
     }
+
 
 
     async function handleLogData(data) {

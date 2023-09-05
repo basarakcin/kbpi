@@ -151,14 +151,14 @@ window.onload = async function() {
             }
             const errorNumber = col.trim();
             if (index === 3 && errorDb && errorDb[errorNumber]) {
-                td.setAttribute('tooltip-content', `${errorNumber} - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`);
+                td.setAttribute('tooltip-content', `[${errorNumber}] - ${errorDb[errorNumber].Name}: ${errorDb[errorNumber].Comment}`);
             }
     
             tr.appendChild(td);
         });
     
         // Remove the column corresponding to InfoId
-        // tr.removeChild(tr.children[3]);  // Assuming InfoId is the 4th column
+        tr.removeChild(tr.children[3]);  // Assuming InfoId is the 4th column
     
         // Styling rows based on ClassId
         const logClass = columns[2].trim();
@@ -166,11 +166,7 @@ window.onload = async function() {
             tr.className = logClass.toLowerCase().replace("log_", "log-");
         }
         
-        // Add a tooltip for ErrorId using the error database
-        const errorId = columns[3].trim();
-        if (errorDb && errorDb[errorId]) {
-            tr.title = `${errorId} - ${errorDb[errorId].Name}: ${errorDb[errorId].Comment}`;
-        }
+        
         return tr;
     }
 

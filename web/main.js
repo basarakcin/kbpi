@@ -169,7 +169,7 @@ window.onload = async function() {
         // Add a tooltip for ErrorId using the error database
         const errorId = columns[3].trim();
         if (errorDb && errorDb[errorId]) {
-            tr.title = `${errorDb[errorId].Name}: ${errorDb[errorId].Comment}`;
+            tr.title = `[Error ID: ${errorDb[col.trim()]}] ${errorDb[errorId].Name}: ${errorDb[errorId].Comment}`;
         }
         
         return tr;

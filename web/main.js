@@ -181,8 +181,13 @@ window.onload = async function() {
     function convertToLocalTime(logTime) {
         const [day, month, year, hour, minute, second] = logTime.split(/[\s:.]/);
         const date = new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}Z`);
+        if (isNaN(date.getTime())) {
+            console.error("Invalid log time:", logTime);
+            return ["Invalid Date", "Invalid Date"];
+        }
         return [date.toLocaleDateString(), date.toLocaleTimeString()];
     }
+
 
     function isOlderThan24Hours(logTimestamp) {
         const logDate = new Date(logTimestamp.split(' ')[0]);

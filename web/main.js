@@ -26,9 +26,9 @@ window.onload = async function() {
     const logContainer = document.getElementById('logs');
      // Create table and append headers on page load.
     const table = document.createElement('table');
-    const [topHeaderRow, secondHeaderRow] = createTableHeaders();
-    table.appendChild(topHeaderRow);
-    table.appendChild(secondHeaderRow);
+    const headerRow = createTableHeaders();
+    table.appendChild(headerRow);
+    logContainer.appendChild(table);
     logContainer.appendChild(table);
 
     // Fetch the error database
@@ -63,35 +63,19 @@ window.onload = async function() {
     }
 
     function createTableHeaders() {
-        // Only create and return the header rows
-    
-        // Creating top-level headers
-        const topLevelHeaderRow = document.createElement('tr');
-        const topLevelHeaders = ["Timestamp", "Ids", "InfoText"];
-    
-        topLevelHeaders.forEach(text => {
-            const th = document.createElement('th');
-            if (text === "Ids") {
-                th.colSpan = 3;
-            } else {
-                th.rowSpan = 2;
-            }
-            th.textContent = text;
-            topLevelHeaderRow.appendChild(th);
-        });
-    
-        // Creating second-level headers
-        const secondLevelHeaderRow = document.createElement('tr');
-        const secondLevelHeaders = ["Cmp", "Class", "Error"];
-    
-        secondLevelHeaders.forEach(text => {
+        // Create a single header row
+        const headerRow = document.createElement('tr');
+        const headers = ["Timestamp", "CmpId", "ClassId", "InfoText"];
+        
+        headers.forEach(text => {
             const th = document.createElement('th');
             th.textContent = text;
-            secondLevelHeaderRow.appendChild(th);
+            headerRow.appendChild(th);
         });
-    
-        return [topLevelHeaderRow, secondLevelHeaderRow]; // Return both header rows
+        
+        return headerRow; // Return the single header row
     }
+
 
 
     const CLASS_ID_MAPPING = {

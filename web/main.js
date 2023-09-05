@@ -1,4 +1,5 @@
 window.onload = async function() {
+    const processedLogs = new Set();
     document.getElementById("scrollToTop").addEventListener("click", function() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
@@ -26,16 +27,6 @@ window.onload = async function() {
     } catch (error) {
         console.error('Failed to fetch the error database:', error);
     }
-    async function computeHash(data) {
-        if (typeof data !== 'string') {
-            console.error("computeHash expects a string input. Received:", data);
-            throw new Error("Invalid input to computeHash");
-        }
-        const encoder = new TextEncoder();
-        const digest = await crypto.subtle.digest('SHA-256', encoder.encode(data));
-        return Array.from(new Uint8Array(digest)).map(byte => byte.toString(16).padStart(2, '0')).join('');
-    }
-
 
     async function fetchInfoAndDisplay() {
         try {
@@ -106,7 +97,6 @@ window.onload = async function() {
             const columnsAfterFormat = formattedRow.split(',');
             if (columnsAfterFormat.length >= 4) {
                 const tr = createTableRowFromColumns(columnsAfterFormat);
-                console.log('Line 105: Appending child:', tr);
                 table.appendChild(tr);
             }
         });
@@ -129,13 +119,13 @@ window.onload = async function() {
         return checkbox.checked;
     }
     
-    async function createTableRowFromColumns(columns) {
+    function createTableRowFromColumns(columns) {
         const tr = document.createElement('tr');
-        
-        // Compute hash of the row data and set it as a data attribute
-        const hash = await computeHash(columns.join(', '));
-        tr.setAttribute('data-hash', hash);
-        
+    
+        // Handling special case of InfoText
+        const infoTextParts = columns.slice(4);
+        columns = columns.slice(0, 4).concat(infoTextParts.join(','));
+    
         columns.forEach((col, index) => {
             const td = document.createElement('td');
             td.textContent = col.trim();
@@ -187,7 +177,6 @@ window.onload = async function() {
     }
 
 
-
     function convertToLocalTime(isoString) {
         const date = new Date(isoString);
         const optionsDate = {
@@ -237,30 +226,17 @@ window.onload = async function() {
 
 
     async function handleLogData(data) {
-        // Check if the data ends with a newline and remove it
-        if (data.endsWith('\n')) {
-            data = data.slice(0, -1);
-        }
-    
-        const table = logContainer.querySelector('table');
-        
-        if (!table) {
-            const newTable = createTableFromLogs(data); // Note: Assuming createTableFromLogs is synchronous
-            logContainer.appendChild(newTable);
-        } else {
-            const logRows = data.split('\n').map(row => formatLogRow(row)).filter(row => row.split(',').length >= 4);
-            
-            for (const logRow of logRows) {
-                const hash = await computeHash(logRow);
-                
-                // Check if a log with this hash already exists in the table
-                if (!document.querySelector(`tr[data-hash="${hash}"]`)) {
-                    const columns = logRow.split(',');
-                    const tr = await createTableRowFromColumns(columns); // Since this is now async
-                    tr.setAttribute('data-hash', hash); // Assign a data attribute with the hash
-                    table.appendChild(tr);
-                }
+        const newLogs = data.split('\n').filter(log => {
+            if (processedLogs.has(log) || log.trim() === "") {
+                return false;
             }
+            processedLogs.add(log);
+            return true;
+        }).join('\n');
+    
+        if (newLogs) {
+            const table = createTableFromLogs(newLogs);
+            logContainer.appendChild(table);
         }
     }
 

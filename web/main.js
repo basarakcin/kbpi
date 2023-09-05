@@ -1,7 +1,5 @@
-// Global Set to avoid duplicate logs
-const processedLogs = new Set();
-
 window.onload = async function() {
+    const processedLogs = new Set();
     document.getElementById("scrollToTop").addEventListener("click", function() {
         window.scrollTo({
             top: 0,
@@ -36,7 +34,6 @@ window.onload = async function() {
         console.error('Failed to fetch the error database:', error);
     }
 
-
     async function fetchInfoAndDisplay() {
         try {
             const response = await fetch('http://localhost:5000/info');
@@ -57,52 +54,6 @@ window.onload = async function() {
         const now = new Date();
         const logDate = new Date(timestamp);
         return now - logDate > oneDayInMillis;
-    }
-    // const logTable = createTableHeaders();
-    // logContainer.appendChild(logTable);
-
-    function createTableHeaders() {
-        const table = document.createElement('table');
-
-        // Creating top-level headers
-        const topLevelHeaderRow = document.createElement('tr');
-        const topLevelHeaders = ["Timestamp", "Ids", "InfoText"];
-
-        topLevelHeaders.forEach(text => {
-            const th = document.createElement('th');
-            if (text === "Ids") {
-                th.colSpan = 3;
-            } else {
-                th.rowSpan = 2;
-            }
-            th.textContent = text;
-            topLevelHeaderRow.appendChild(th);
-        });
-        table.appendChild(topLevelHeaderRow);
-
-        // Creating second-level headers
-        const secondLevelHeaderRow = document.createElement('tr');
-        const secondLevelHeaders = ["Cmp", "Class", "Error"];
-
-        secondLevelHeaders.forEach(text => {
-            const th = document.createElement('th');
-            th.textContent = text;
-            secondLevelHeaderRow.appendChild(th);
-        });
-        table.appendChild(secondLevelHeaderRow);
-
-        return table;
-    }
-
-    function handleNewLogs(data) {
-        data.split('\n').forEach(row => {
-            const formattedRow = formatLogRow(row);
-            if (formattedRow && !processedLogs.has(formattedRow)) {
-                const tr = createTableRowFromColumns(formattedRow.split(','));
-                logTable.appendChild(tr);
-                processedLogs.add(formattedRow);
-            }
-        });
     }
 
     function createTableFromLogs(data) {
@@ -280,19 +231,6 @@ window.onload = async function() {
     }
 
 
-    function createTableRowFromLog(log) {
-        const tr = document.createElement('tr');
-        const logData = formatLogRow(log);
-        
-        logData.split(', ').forEach(col => {
-            const td = document.createElement('td');
-            td.textContent = col.trim();
-            tr.appendChild(td);
-        });
-        
-        return tr;
-    }
-    
     async function handleLogData(data) {
         const newLogs = data.split('\n').filter(log => {
             if (processedLogs.has(log) || log.trim() === "") {
@@ -300,29 +238,15 @@ window.onload = async function() {
             }
             processedLogs.add(log);
             return true;
-        });
-    
-        newLogs.forEach(log => {
-            const row = createTableRowFromLog(log);
-            logTable.appendChild(row);
-        });
+        }).join('\n');
+
+        if (newLogs) {
+            const table = createTableFromLogs(newLogs);
+            logContainer.appendChild(table);
+        }
     }
 
 
-
-    // Create table headers once on load
-    const logTable = document.createElement('table');
-    const headerRow = document.createElement('tr');
-    
-    const headers = ["Timestamp", "Cmp", "Class", "Error", "InfoText"];
-    headers.forEach(header => {
-        const th = document.createElement('th');
-        th.textContent = header;
-        headerRow.appendChild(th);
-    });
-    
-    logTable.appendChild(headerRow);
-    logContainer.appendChild(logTable);
 
     // Fetch and display
     try {

@@ -221,6 +221,7 @@ window.onload = async function() {
         const cmpId = columns.shift();
         const classId = columns.shift();
         const errorId = columns.shift();
+        const infoId = columns.shift();
         let infoText = columns.join(','); // Rest of the row, as info might contain commas
 
         // General transformation for XML-like tags

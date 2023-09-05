@@ -166,6 +166,7 @@ window.onload = async function() {
             tr.className = logClass.toLowerCase().replace("log_", "log-");
         }
         
+
         
         return tr;
     }

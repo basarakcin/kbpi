@@ -1,18 +1,4 @@
-caught (in promise) TypeError: Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.
-    at main.js:104:23
-    at Array.forEach (<anonymous>)
-    at createTableFromLogs (main.js:88:26)
-    at handleLogData (main.js:242:30)
-    at eventSource.onmessage (main.js:280:13)
-main.js:31 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'digest')
-    at computeHash (main.js:31:44)
-    at createTableRowFromColumns (main.js:130:28)
-    at main.js:103:28
-    at Array.forEach (<anonymous>)
-    at createTableFromLogs (main.js:88:26)
-    at handleLogData (main.js:242:30)
-    at eventSource.onmessage (main.js:280:13)
-###########################
+
 CODESYS Control V3.5.19.0 for ARM-64Bit - build Apr  3 2023
 Device type: 4096 id: 0x00000007 
 Device vendor: CODESYS GmbH

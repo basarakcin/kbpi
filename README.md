@@ -7,48 +7,77 @@ This project deploys a CODESYS Control system and an accompanying web applicatio
 ## System Operation
 
 ### 0. Docker
+**0.1. Check if Docker is installed**
 
-1) **Check if Docker is installed**  
-To see if Docker is installed, you can use the command which to determine the path of the Docker binary, if it exists.  
-`which docker`  
-If Docker is installed, this command will return a path (usually `/usr/bin/docker`). If nothing is returned, then Docker isn't installed.  
+   To see if Docker is installed, you can use the `which` command to determine the path of the Docker binary, if it exists.
 
-1.1) **Install Docker**  
-If Docker is not installed, install it following the instructions in it's official page:  
-`https://docs.docker.com/engine/install/debian/`  
-Suggested installation method: Install using the Apt repository.
-Make sure not to skip any of the steps!  
+   ```bash
+   which docker
+   ```
 
-1.2) **Linux post-installation steps for Docker Engine**  
-The post-installation procedures are optional but highly suggested. This shows you how to configure your Linux host machine to work better with Docker.  
-`https://docs.docker.com/engine/install/linux-postinstall/`  
+   If Docker is installed, this command will return a path (usually `/usr/bin/docker`). If nothing is returned, then Docker isn't installed.
 
-2) **Check if Docker Service is Running**  
-`systemctl status docker`  
-Look for the `Active:` line in the output. If Docker is running, it should say `Active: active (running)`. If it's not running, you can start it with:  
-`sudo systemctl start docker`  
-To enable Docker to start on boot:  
-`sudo systemctl enable docker`
+   - **0.1.1. Install Docker**
+
+     If Docker is not installed, install it following the instructions on [Docker's official page](https://docs.docker.com/engine/install/debian/).
+
+     Suggested installation method: Install using the Apt repository. Make sure not to skip any of the steps!
+
+   - **0.1.2. Linux post-installation steps for Docker Engine**
+
+     The post-installation procedures are optional but highly suggested. This shows you how to configure your Linux host machine to work better with Docker. Follow the steps from [this link](https://docs.docker.com/engine/install/linux-postinstall/).
+
+**0.2. Check if Docker Service is Running**
+
+   Check the status of the Docker service with:
+
+   ```bash
+   systemctl status docker
+   ```
+
+   Look for the `Active:` line in the output. If Docker is running, it should say `Active: active (running)`. If it's not running, you can start it with:
+
+   ```bash
+   sudo systemctl start docker
+   ```
+
+   To enable Docker to start on boot:
+
+   ```bash
+   sudo systemctl enable docker
+   ```
 
 ### 1. Building a New Version  
-After making changes in the code, a new docker image should be built.
-+ **Build all images:** `docker compose build`
-+ **Build only one specific image:** `docker compose build <service_name>`
+   After making changes in the code, a new docker image should be built.
+
+   - **Build all images:** 
+   
+     ```bash
+     docker compose build
+     ```
+
+   - **Build only one specific image:** 
+     
+     ```bash
+     docker compose build <service_name>
+     ```
 
 ### 2. Create and start the containers:  
- + `docker compose up`  
-This command will create and start the containers according to the settings defined in the `docker-compose.yml` file.  
-More information can be found in:  
-`https://docs.docker.com/engine/reference/commandline/compose/` 
+   ```bash
+   docker compose up
+   ```
+
+   This command will create and start the containers according to the settings defined in the `docker-compose.yml` file. More information can be found [here](https://docs.docker.com/engine/reference/commandline/compose/).
 
 ### 3. Access the web interface application on rbpi
-Open your browser at `http://localhost` to interact with the CODESYS Control system and view the logs in real-time.
+   Open your browser at `http://localhost` to interact with the CODESYS Control system and view the logs in real-time.
 
 ## Remote Connection with CODESYS
-In order to connect CODESYS, which is running on the PC, with the CODESYS Control, which is running on the rbpi, they must be in the same network. For this we have 3 options:  
+In order to connect CODESYS, which is running on the PC, with the CODESYS Control, which is running on the rbpi, they must be in the same network. For this we have 3 options:
 
 ### 1. KB-WLAN  
-This option would be the best option IF the rbpi is registered to KB Network and have access to the KB-WLAN. In the current state, this is not the case.  
+   This option would be the best option IF the rbpi is registered to KB Network and have access to the KB-WLAN. In the current state, this is not the case.
+   
 ### 2. Router via Ethernet
 
 
